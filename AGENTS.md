@@ -27,15 +27,15 @@ One Next.js app: App Router, React 19, MUI 9 (`@mui/material-nextjs` cache provi
 ```text
 src/app/
   layout.tsx              root layout: Roboto font, metadata, Providers
-  page.tsx                `/`: loads the report, header line, sample-data banner, BuildMatrix
+  page.tsx                `/`: loads the reports, sample-data banner, BuildMatrix
   theme.ts                MUI theme, light + dark colour schemes via CSS variables
   components/
     Providers.tsx         AppRouterCacheProvider, ThemeProvider, CssBaseline
-    BuildMatrix.tsx       the matrix table and the fight-summary dialog (client component)
+    BuildMatrix.tsx       action-points switch, header line, matrix table, fight-summary dialog (client)
 src/data/
-  schema.ts               zod schema of design-guard.json (schemaVersion 1)
+  schema.ts               zod schema of design-guard.json (schemaVersion 1, an array of reports)
   report.ts               loadReport(): download at build time, fall back to the sample
-data/sample-design-guard.json   made-up report used when the download fails
+data/sample-design-guard.json   old snapshot of a real report, used when the download fails
 docs/                     knowledge notes, index in docs/README.md
 ```
 
@@ -52,4 +52,10 @@ docs/                     knowledge notes, index in docs/README.md
 
 # Rules and docs
 
-Agent rules: `.claude/rules/` (`workflow`, `documentation`, `kiss-dry-yagni`). Base branch `dev`; pull requests are squash-merged; conventional commits. Knowledge notes: `docs/README.md`.
+Agent rules: `.claude/rules/` (`workflow`, `documentation`, `kiss-dry-yagni`). Base branch `dev`; pull requests are squash-merged; conventional commits.
+
+# Branches and deploy
+
+- `dev` (default) gets the work; `dev` and pull requests get Vercel previews. `main` is production (Vercel Production Branch).
+- A release is a pull request `dev` → `main` merged with a **merge commit**, never squash: a squash commit on `main` is not in `dev`'s history, so every later release PR would show old changes again and conflict.
+- Production rebuilds only on a push to `main`. The simulator publishes a report on every push to its `dev`; the Deploy Hook in `README.md` (owner action) rebuilds production after each report. Knowledge notes: `docs/README.md`.
