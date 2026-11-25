@@ -1,853 +1,4083 @@
-{
-  "schemaVersion": 1,
-  "generatedUtc": "2026-11-25T12:00:00Z",
-  "commit": "0000000000000000000000000000000000000000",
-  "policy": "greedy-nearest",
-  "actionsPerRound": 2,
-  "seeds": 200,
-  "builds": ["Starter mix", "Acid ×4", "Lava ×4", "Poison ×4", "Water ×6"],
-  "encounters": [
-    "1× Rat",
-    "2× Rat",
-    "3× Rat",
-    "1× Bat",
-    "2× Bat",
-    "3× Bat",
-    "1× Scorpion",
-    "2× Scorpion",
-    "3× Scorpion",
-    "1× Cat",
-    "2× Cat",
-    "3× Cat",
-    "1× Dog",
-    "2× Dog",
-    "3× Dog"
-  ],
-  "cells": [
-    {
-      "build": "Starter mix",
-      "encounter": "1× Rat",
-      "enemy": "Rat",
-      "enemies": 1,
-      "winRate": 1,
-      "avgRounds": 5.14,
-      "avgUnitsLeft": 5,
-      "avgUnitsSpent": 1,
-      "cause": null
-    },
-    {
-      "build": "Starter mix",
-      "encounter": "2× Rat",
-      "enemy": "Rat",
-      "enemies": 2,
-      "winRate": 0.835,
-      "avgRounds": 7.48,
-      "avgUnitsLeft": 3.17,
-      "avgUnitsSpent": 2.2,
-      "cause": "round limit"
-    },
-    {
-      "build": "Starter mix",
-      "encounter": "3× Rat",
-      "enemy": "Rat",
-      "enemies": 3,
-      "winRate": 0.45,
-      "avgRounds": 9.78,
-      "avgUnitsLeft": 1.32,
-      "avgUnitsSpent": 3.06,
-      "cause": "body spent"
-    },
-    {
-      "build": "Starter mix",
-      "encounter": "1× Bat",
-      "enemy": "Bat",
-      "enemies": 1,
-      "winRate": 1,
-      "avgRounds": 5,
-      "avgUnitsLeft": 4.77,
-      "avgUnitsSpent": 1.23,
-      "cause": null
-    },
-    {
-      "build": "Starter mix",
-      "encounter": "2× Bat",
-      "enemy": "Bat",
-      "enemies": 2,
-      "winRate": 0.72,
-      "avgRounds": 7.16,
-      "avgUnitsLeft": 2.74,
-      "avgUnitsSpent": 2.2,
-      "cause": "surrounded"
-    },
-    {
-      "build": "Starter mix",
-      "encounter": "3× Bat",
-      "enemy": "Bat",
-      "enemies": 3,
-      "winRate": 0.41,
-      "avgRounds": 10.46,
-      "avgUnitsLeft": 0.8,
-      "avgUnitsSpent": 4.04,
-      "cause": "body spent"
-    },
-    {
-      "build": "Starter mix",
-      "encounter": "1× Scorpion",
-      "enemy": "Scorpion",
-      "enemies": 1,
-      "winRate": 1,
-      "avgRounds": 5.3,
-      "avgUnitsLeft": 4.94,
-      "avgUnitsSpent": 1.06,
-      "cause": null
-    },
-    {
-      "build": "Starter mix",
-      "encounter": "2× Scorpion",
-      "enemy": "Scorpion",
-      "enemies": 2,
-      "winRate": 0.65,
-      "avgRounds": 7.7,
-      "avgUnitsLeft": 1.88,
-      "avgUnitsSpent": 3.11,
-      "cause": "round limit"
-    },
-    {
-      "build": "Starter mix",
-      "encounter": "3× Scorpion",
-      "enemy": "Scorpion",
-      "enemies": 3,
-      "winRate": 0.13,
-      "avgRounds": 11.2,
-      "avgUnitsLeft": 0.18,
-      "avgUnitsSpent": 4.58,
-      "cause": "body spent"
-    },
-    {
-      "build": "Starter mix",
-      "encounter": "1× Cat",
-      "enemy": "Cat",
-      "enemies": 1,
-      "winRate": 0.965,
-      "avgRounds": 4.91,
-      "avgUnitsLeft": 4.24,
-      "avgUnitsSpent": 1.61,
-      "cause": "round limit"
-    },
-    {
-      "build": "Starter mix",
-      "encounter": "2× Cat",
-      "enemy": "Cat",
-      "enemies": 2,
-      "winRate": 0.46,
-      "avgRounds": 8.41,
-      "avgUnitsLeft": 1.26,
-      "avgUnitsSpent": 3.27,
-      "cause": "round limit"
-    },
-    {
-      "build": "Starter mix",
-      "encounter": "3× Cat",
-      "enemy": "Cat",
-      "enemies": 3,
-      "winRate": 0.01,
-      "avgRounds": 12.2,
-      "avgUnitsLeft": 0,
-      "avgUnitsSpent": 5.56,
-      "cause": "body spent"
-    },
-    {
-      "build": "Starter mix",
-      "encounter": "1× Dog",
-      "enemy": "Dog",
-      "enemies": 1,
-      "winRate": 0.7,
-      "avgRounds": 5.9,
-      "avgUnitsLeft": 2.41,
-      "avgUnitsSpent": 2.56,
-      "cause": "surrounded"
-    },
-    {
-      "build": "Starter mix",
-      "encounter": "2× Dog",
-      "enemy": "Dog",
-      "enemies": 2,
-      "winRate": 0,
-      "avgRounds": 10.27,
-      "avgUnitsLeft": 0,
-      "avgUnitsSpent": 5.77,
-      "cause": "body spent"
-    },
-    {
-      "build": "Starter mix",
-      "encounter": "3× Dog",
-      "enemy": "Dog",
-      "enemies": 3,
-      "winRate": 0,
-      "avgRounds": 15.09,
-      "avgUnitsLeft": 0,
-      "avgUnitsSpent": 6,
-      "cause": "body spent"
-    },
-    {
-      "build": "Acid ×4",
-      "encounter": "1× Rat",
-      "enemy": "Rat",
-      "enemies": 1,
-      "winRate": 1,
-      "avgRounds": 4.34,
-      "avgUnitsLeft": 4.89,
-      "avgUnitsSpent": 1.11,
-      "cause": null
-    },
-    {
-      "build": "Acid ×4",
-      "encounter": "2× Rat",
-      "enemy": "Rat",
-      "enemies": 2,
-      "winRate": 0.88,
-      "avgRounds": 7.21,
-      "avgUnitsLeft": 3.72,
-      "avgUnitsSpent": 1.77,
-      "cause": "round limit"
-    },
-    {
-      "build": "Acid ×4",
-      "encounter": "3× Rat",
-      "enemy": "Rat",
-      "enemies": 3,
-      "winRate": 0.68,
-      "avgRounds": 9.62,
-      "avgUnitsLeft": 2.18,
-      "avgUnitsSpent": 2.79,
-      "cause": "body spent"
-    },
-    {
-      "build": "Acid ×4",
-      "encounter": "1× Bat",
-      "enemy": "Bat",
-      "enemies": 1,
-      "winRate": 1,
-      "avgRounds": 5.08,
-      "avgUnitsLeft": 5.31,
-      "avgUnitsSpent": 0.69,
-      "cause": null
-    },
-    {
-      "build": "Acid ×4",
-      "encounter": "2× Bat",
-      "enemy": "Bat",
-      "enemies": 2,
-      "winRate": 0.9,
-      "avgRounds": 7.5,
-      "avgUnitsLeft": 3.8,
-      "avgUnitsSpent": 1.78,
-      "cause": "body spent"
-    },
-    {
-      "build": "Acid ×4",
-      "encounter": "3× Bat",
-      "enemy": "Bat",
-      "enemies": 3,
-      "winRate": 0.535,
-      "avgRounds": 9.4,
-      "avgUnitsLeft": 1.67,
-      "avgUnitsSpent": 2.87,
-      "cause": "body spent"
-    },
-    {
-      "build": "Acid ×4",
-      "encounter": "1× Scorpion",
-      "enemy": "Scorpion",
-      "enemies": 1,
-      "winRate": 1,
-      "avgRounds": 5.34,
-      "avgUnitsLeft": 4.85,
-      "avgUnitsSpent": 1.15,
-      "cause": null
-    },
-    {
-      "build": "Acid ×4",
-      "encounter": "2× Scorpion",
-      "enemy": "Scorpion",
-      "enemies": 2,
-      "winRate": 0.715,
-      "avgRounds": 7.47,
-      "avgUnitsLeft": 2.62,
-      "avgUnitsSpent": 2.33,
-      "cause": "round limit"
-    },
-    {
-      "build": "Acid ×4",
-      "encounter": "3× Scorpion",
-      "enemy": "Scorpion",
-      "enemies": 3,
-      "winRate": 0.33,
-      "avgRounds": 10.86,
-      "avgUnitsLeft": 0.78,
-      "avgUnitsSpent": 3.65,
-      "cause": "round limit"
-    },
-    {
-      "build": "Acid ×4",
-      "encounter": "1× Cat",
-      "enemy": "Cat",
-      "enemies": 1,
-      "winRate": 1,
-      "avgRounds": 5.12,
-      "avgUnitsLeft": 4.98,
-      "avgUnitsSpent": 1.02,
-      "cause": null
-    },
-    {
-      "build": "Acid ×4",
-      "encounter": "2× Cat",
-      "enemy": "Cat",
-      "enemies": 2,
-      "winRate": 0.67,
-      "avgRounds": 7.95,
-      "avgUnitsLeft": 2.15,
-      "avgUnitsSpent": 2.8,
-      "cause": "round limit"
-    },
-    {
-      "build": "Acid ×4",
-      "encounter": "3× Cat",
-      "enemy": "Cat",
-      "enemies": 3,
-      "winRate": 0.23,
-      "avgRounds": 10.48,
-      "avgUnitsLeft": 0.42,
-      "avgUnitsSpent": 4.18,
-      "cause": "body spent"
-    },
-    {
-      "build": "Acid ×4",
-      "encounter": "1× Dog",
-      "enemy": "Dog",
-      "enemies": 1,
-      "winRate": 0.84,
-      "avgRounds": 6.09,
-      "avgUnitsLeft": 3.51,
-      "avgUnitsSpent": 1.82,
-      "cause": "surrounded"
-    },
-    {
-      "build": "Acid ×4",
-      "encounter": "2× Dog",
-      "enemy": "Dog",
-      "enemies": 2,
-      "winRate": 0.21,
-      "avgRounds": 9.98,
-      "avgUnitsLeft": 0.36,
-      "avgUnitsSpent": 4.27,
-      "cause": "round limit"
-    },
-    {
-      "build": "Acid ×4",
-      "encounter": "3× Dog",
-      "enemy": "Dog",
-      "enemies": 3,
-      "winRate": 0,
-      "avgRounds": 13.51,
-      "avgUnitsLeft": 0,
-      "avgUnitsSpent": 6,
-      "cause": "body spent"
-    },
-    {
-      "build": "Lava ×4",
-      "encounter": "1× Rat",
-      "enemy": "Rat",
-      "enemies": 1,
-      "winRate": 1,
-      "avgRounds": 4.6,
-      "avgUnitsLeft": 4.01,
-      "avgUnitsSpent": 0.99,
-      "cause": null
-    },
-    {
-      "build": "Lava ×4",
-      "encounter": "2× Rat",
-      "enemy": "Rat",
-      "enemies": 2,
-      "winRate": 0.91,
-      "avgRounds": 7.43,
-      "avgUnitsLeft": 2.83,
-      "avgUnitsSpent": 1.89,
-      "cause": "round limit"
-    },
-    {
-      "build": "Lava ×4",
-      "encounter": "3× Rat",
-      "enemy": "Rat",
-      "enemies": 3,
-      "winRate": 0.555,
-      "avgRounds": 9.23,
-      "avgUnitsLeft": 1.18,
-      "avgUnitsSpent": 2.87,
-      "cause": "surrounded"
-    },
-    {
-      "build": "Lava ×4",
-      "encounter": "1× Bat",
-      "enemy": "Bat",
-      "enemies": 1,
-      "winRate": 1,
-      "avgRounds": 4.73,
-      "avgUnitsLeft": 3.89,
-      "avgUnitsSpent": 1.11,
-      "cause": null
-    },
-    {
-      "build": "Lava ×4",
-      "encounter": "2× Bat",
-      "enemy": "Bat",
-      "enemies": 2,
-      "winRate": 0.76,
-      "avgRounds": 7.33,
-      "avgUnitsLeft": 2.43,
-      "avgUnitsSpent": 1.81,
-      "cause": "round limit"
-    },
-    {
-      "build": "Lava ×4",
-      "encounter": "3× Bat",
-      "enemy": "Bat",
-      "enemies": 3,
-      "winRate": 0.545,
-      "avgRounds": 10.5,
-      "avgUnitsLeft": 1.06,
-      "avgUnitsSpent": 3.05,
-      "cause": "surrounded"
-    },
-    {
-      "build": "Lava ×4",
-      "encounter": "1× Scorpion",
-      "enemy": "Scorpion",
-      "enemies": 1,
-      "winRate": 1,
-      "avgRounds": 4.93,
-      "avgUnitsLeft": 3.74,
-      "avgUnitsSpent": 1.26,
-      "cause": null
-    },
-    {
-      "build": "Lava ×4",
-      "encounter": "2× Scorpion",
-      "enemy": "Scorpion",
-      "enemies": 2,
-      "winRate": 0.68,
-      "avgRounds": 7.48,
-      "avgUnitsLeft": 1.66,
-      "avgUnitsSpent": 2.56,
-      "cause": "body spent"
-    },
-    {
-      "build": "Lava ×4",
-      "encounter": "3× Scorpion",
-      "enemy": "Scorpion",
-      "enemies": 3,
-      "winRate": 0.225,
-      "avgRounds": 11.33,
-      "avgUnitsLeft": 0.2,
-      "avgUnitsSpent": 4.09,
-      "cause": "round limit"
-    },
-    {
-      "build": "Lava ×4",
-      "encounter": "1× Cat",
-      "enemy": "Cat",
-      "enemies": 1,
-      "winRate": 0.97,
-      "avgRounds": 4.78,
-      "avgUnitsLeft": 3.49,
-      "avgUnitsSpent": 1.4,
-      "cause": "surrounded"
-    },
-    {
-      "build": "Lava ×4",
-      "encounter": "2× Cat",
-      "enemy": "Cat",
-      "enemies": 2,
-      "winRate": 0.67,
-      "avgRounds": 7.54,
-      "avgUnitsLeft": 1.57,
-      "avgUnitsSpent": 2.66,
-      "cause": "round limit"
-    },
-    {
-      "build": "Lava ×4",
-      "encounter": "3× Cat",
-      "enemy": "Cat",
-      "enemies": 3,
-      "winRate": 0.2,
-      "avgRounds": 10.98,
-      "avgUnitsLeft": 0.06,
-      "avgUnitsSpent": 4.71,
-      "cause": "surrounded"
-    },
-    {
-      "build": "Lava ×4",
-      "encounter": "1× Dog",
-      "enemy": "Dog",
-      "enemies": 1,
-      "winRate": 0.86,
-      "avgRounds": 5.24,
-      "avgUnitsLeft": 2.69,
-      "avgUnitsSpent": 1.87,
-      "cause": "body spent"
-    },
-    {
-      "build": "Lava ×4",
-      "encounter": "2× Dog",
-      "enemy": "Dog",
-      "enemies": 2,
-      "winRate": 0.085,
-      "avgRounds": 9.54,
-      "avgUnitsLeft": 0.02,
-      "avgUnitsSpent": 4.78,
-      "cause": "body spent"
-    },
-    {
-      "build": "Lava ×4",
-      "encounter": "3× Dog",
-      "enemy": "Dog",
-      "enemies": 3,
-      "winRate": 0,
-      "avgRounds": 13.94,
-      "avgUnitsLeft": 0,
-      "avgUnitsSpent": 5,
-      "cause": "body spent"
-    },
-    {
-      "build": "Poison ×4",
-      "encounter": "1× Rat",
-      "enemy": "Rat",
-      "enemies": 1,
-      "winRate": 1,
-      "avgRounds": 4.3,
-      "avgUnitsLeft": 5.07,
-      "avgUnitsSpent": 0.93,
-      "cause": null
-    },
-    {
-      "build": "Poison ×4",
-      "encounter": "2× Rat",
-      "enemy": "Rat",
-      "enemies": 2,
-      "winRate": 0.825,
-      "avgRounds": 7.75,
-      "avgUnitsLeft": 3.42,
-      "avgUnitsSpent": 1.85,
-      "cause": "body spent"
-    },
-    {
-      "build": "Poison ×4",
-      "encounter": "3× Rat",
-      "enemy": "Rat",
-      "enemies": 3,
-      "winRate": 0.475,
-      "avgRounds": 10.48,
-      "avgUnitsLeft": 1.28,
-      "avgUnitsSpent": 3.31,
-      "cause": "body spent"
-    },
-    {
-      "build": "Poison ×4",
-      "encounter": "1× Bat",
-      "enemy": "Bat",
-      "enemies": 1,
-      "winRate": 1,
-      "avgRounds": 4.79,
-      "avgUnitsLeft": 4.83,
-      "avgUnitsSpent": 1.17,
-      "cause": null
-    },
-    {
-      "build": "Poison ×4",
-      "encounter": "2× Bat",
-      "enemy": "Bat",
-      "enemies": 2,
-      "winRate": 0.735,
-      "avgRounds": 7.83,
-      "avgUnitsLeft": 2.51,
-      "avgUnitsSpent": 2.58,
-      "cause": "round limit"
-    },
-    {
-      "build": "Poison ×4",
-      "encounter": "3× Bat",
-      "enemy": "Bat",
-      "enemies": 3,
-      "winRate": 0.295,
-      "avgRounds": 10.97,
-      "avgUnitsLeft": 0.57,
-      "avgUnitsSpent": 4.08,
-      "cause": "surrounded"
-    },
-    {
-      "build": "Poison ×4",
-      "encounter": "1× Scorpion",
-      "enemy": "Scorpion",
-      "enemies": 1,
-      "winRate": 0.965,
-      "avgRounds": 4.66,
-      "avgUnitsLeft": 4.71,
-      "avgUnitsSpent": 1.12,
-      "cause": "surrounded"
-    },
-    {
-      "build": "Poison ×4",
-      "encounter": "2× Scorpion",
-      "enemy": "Scorpion",
-      "enemies": 2,
-      "winRate": 0.565,
-      "avgRounds": 8.61,
-      "avgUnitsLeft": 1.63,
-      "avgUnitsSpent": 3.11,
-      "cause": "surrounded"
-    },
-    {
-      "build": "Poison ×4",
-      "encounter": "3× Scorpion",
-      "enemy": "Scorpion",
-      "enemies": 3,
-      "winRate": 0.095,
-      "avgRounds": 11.2,
-      "avgUnitsLeft": 0.07,
-      "avgUnitsSpent": 5.3,
-      "cause": "body spent"
-    },
-    {
-      "build": "Poison ×4",
-      "encounter": "1× Cat",
-      "enemy": "Cat",
-      "enemies": 1,
-      "winRate": 0.935,
-      "avgRounds": 4.73,
-      "avgUnitsLeft": 4.26,
-      "avgUnitsSpent": 1.45,
-      "cause": "round limit"
-    },
-    {
-      "build": "Poison ×4",
-      "encounter": "2× Cat",
-      "enemy": "Cat",
-      "enemies": 2,
-      "winRate": 0.505,
-      "avgRounds": 8.84,
-      "avgUnitsLeft": 1.29,
-      "avgUnitsSpent": 3.44,
-      "cause": "surrounded"
-    },
-    {
-      "build": "Poison ×4",
-      "encounter": "3× Cat",
-      "enemy": "Cat",
-      "enemies": 3,
-      "winRate": 0,
-      "avgRounds": 12.45,
-      "avgUnitsLeft": 0,
-      "avgUnitsSpent": 5.33,
-      "cause": "body spent"
-    },
-    {
-      "build": "Poison ×4",
-      "encounter": "1× Dog",
-      "enemy": "Dog",
-      "enemies": 1,
-      "winRate": 0.715,
-      "avgRounds": 5.74,
-      "avgUnitsLeft": 2.61,
-      "avgUnitsSpent": 2.36,
-      "cause": "body spent"
-    },
-    {
-      "build": "Poison ×4",
-      "encounter": "2× Dog",
-      "enemy": "Dog",
-      "enemies": 2,
-      "winRate": 0,
-      "avgRounds": 10.94,
-      "avgUnitsLeft": 0,
-      "avgUnitsSpent": 5.65,
-      "cause": "body spent"
-    },
-    {
-      "build": "Poison ×4",
-      "encounter": "3× Dog",
-      "enemy": "Dog",
-      "enemies": 3,
-      "winRate": 0,
-      "avgRounds": 16.18,
-      "avgUnitsLeft": 0,
-      "avgUnitsSpent": 6,
-      "cause": "body spent"
-    },
-    {
-      "build": "Water ×6",
-      "encounter": "1× Rat",
-      "enemy": "Rat",
-      "enemies": 1,
-      "winRate": 1,
-      "avgRounds": 4.27,
-      "avgUnitsLeft": 7.16,
-      "avgUnitsSpent": 0.84,
-      "cause": null
-    },
-    {
-      "build": "Water ×6",
-      "encounter": "2× Rat",
-      "enemy": "Rat",
-      "enemies": 2,
-      "winRate": 0.74,
-      "avgRounds": 7.65,
-      "avgUnitsLeft": 4.16,
-      "avgUnitsSpent": 2.38,
-      "cause": "round limit"
-    },
-    {
-      "build": "Water ×6",
-      "encounter": "3× Rat",
-      "enemy": "Rat",
-      "enemies": 3,
-      "winRate": 0.425,
-      "avgRounds": 10.13,
-      "avgUnitsLeft": 1.85,
-      "avgUnitsSpent": 3.66,
-      "cause": "round limit"
-    },
-    {
-      "build": "Water ×6",
-      "encounter": "1× Bat",
-      "enemy": "Bat",
-      "enemies": 1,
-      "winRate": 1,
-      "avgRounds": 4.79,
-      "avgUnitsLeft": 6.74,
-      "avgUnitsSpent": 1.26,
-      "cause": null
-    },
-    {
-      "build": "Water ×6",
-      "encounter": "2× Bat",
-      "enemy": "Bat",
-      "enemies": 2,
-      "winRate": 0.645,
-      "avgRounds": 7.23,
-      "avgUnitsLeft": 3.73,
-      "avgUnitsSpent": 2.22,
-      "cause": "round limit"
-    },
-    {
-      "build": "Water ×6",
-      "encounter": "3× Bat",
-      "enemy": "Bat",
-      "enemies": 3,
-      "winRate": 0.305,
-      "avgRounds": 10.99,
-      "avgUnitsLeft": 1.25,
-      "avgUnitsSpent": 3.89,
-      "cause": "surrounded"
-    },
-    {
-      "build": "Water ×6",
-      "encounter": "1× Scorpion",
-      "enemy": "Scorpion",
-      "enemies": 1,
-      "winRate": 0.96,
-      "avgRounds": 4.88,
-      "avgUnitsLeft": 6.57,
-      "avgUnitsSpent": 1.16,
-      "cause": "round limit"
-    },
-    {
-      "build": "Water ×6",
-      "encounter": "2× Scorpion",
-      "enemy": "Scorpion",
-      "enemies": 2,
-      "winRate": 0.57,
-      "avgRounds": 8.4,
-      "avgUnitsLeft": 2.9,
-      "avgUnitsSpent": 2.91,
-      "cause": "surrounded"
-    },
-    {
-      "build": "Water ×6",
-      "encounter": "3× Scorpion",
-      "enemy": "Scorpion",
-      "enemies": 3,
-      "winRate": 0.025,
-      "avgRounds": 11.35,
-      "avgUnitsLeft": 0.07,
-      "avgUnitsSpent": 5.4,
-      "cause": "body spent"
-    },
-    {
-      "build": "Water ×6",
-      "encounter": "1× Cat",
-      "enemy": "Cat",
-      "enemies": 1,
-      "winRate": 0.965,
-      "avgRounds": 5.69,
-      "avgUnitsLeft": 6.48,
-      "avgUnitsSpent": 1.29,
-      "cause": "round limit"
-    },
-    {
-      "build": "Water ×6",
-      "encounter": "2× Cat",
-      "enemy": "Cat",
-      "enemies": 2,
-      "winRate": 0.495,
-      "avgRounds": 8.63,
-      "avgUnitsLeft": 2.32,
-      "avgUnitsSpent": 3.31,
-      "cause": "surrounded"
-    },
-    {
-      "build": "Water ×6",
-      "encounter": "3× Cat",
-      "enemy": "Cat",
-      "enemies": 3,
-      "winRate": 0,
-      "avgRounds": 11.78,
-      "avgUnitsLeft": 0,
-      "avgUnitsSpent": 5.45,
-      "cause": "body spent"
-    },
-    {
-      "build": "Water ×6",
-      "encounter": "1× Dog",
-      "enemy": "Dog",
-      "enemies": 1,
-      "winRate": 0.7,
-      "avgRounds": 5.96,
-      "avgUnitsLeft": 3.93,
-      "avgUnitsSpent": 2.39,
-      "cause": "body spent"
-    },
-    {
-      "build": "Water ×6",
-      "encounter": "2× Dog",
-      "enemy": "Dog",
-      "enemies": 2,
-      "winRate": 0,
-      "avgRounds": 10.58,
-      "avgUnitsLeft": 0,
-      "avgUnitsSpent": 5.74,
-      "cause": "body spent"
-    },
-    {
-      "build": "Water ×6",
-      "encounter": "3× Dog",
-      "enemy": "Dog",
-      "enemies": 3,
-      "winRate": 0,
-      "avgRounds": 15.89,
-      "avgUnitsLeft": 0,
-      "avgUnitsSpent": 8,
-      "cause": "body spent"
-    }
-  ]
-}
+[
+  {
+    "schemaVersion": 1,
+    "generatedUtc": "2026-11-25T12:51:10Z",
+    "commit": "a2f83f6b58e277e68ffe1ca29c2a552c4962c9fd",
+    "policy": "face-tank",
+    "actionsPerRound": 1,
+    "seeds": 50,
+    "builds": [
+      {
+        "id": "start",
+        "name": "Starting mix",
+        "units": {
+          "Water": 2,
+          "Oil": 1,
+          "Poison": 1,
+          "Acid": 1,
+          "Lava": 1
+        }
+      },
+      {
+        "id": "water",
+        "name": "10 Water",
+        "units": {
+          "Water": 10
+        }
+      },
+      {
+        "id": "oil",
+        "name": "10 Oil",
+        "units": {
+          "Oil": 10
+        }
+      },
+      {
+        "id": "poison",
+        "name": "10 Poison",
+        "units": {
+          "Poison": 10
+        }
+      },
+      {
+        "id": "acid",
+        "name": "10 Acid",
+        "units": {
+          "Acid": 10
+        }
+      },
+      {
+        "id": "blood",
+        "name": "10 Blood",
+        "units": {
+          "Blood": 10
+        }
+      },
+      {
+        "id": "lava",
+        "name": "10 Lava",
+        "units": {
+          "Lava": 10
+        }
+      },
+      {
+        "id": "mercury",
+        "name": "10 Mercury",
+        "units": {
+          "Mercury": 10
+        }
+      }
+    ],
+    "encounters": [
+      {
+        "id": "bat-1",
+        "enemy": "Bat",
+        "enemies": 1
+      },
+      {
+        "id": "bat-2",
+        "enemy": "Bat",
+        "enemies": 2
+      },
+      {
+        "id": "bat-3",
+        "enemy": "Bat",
+        "enemies": 3
+      },
+      {
+        "id": "mushroom-1",
+        "enemy": "Mushroom",
+        "enemies": 1
+      },
+      {
+        "id": "mushroom-2",
+        "enemy": "Mushroom",
+        "enemies": 2
+      },
+      {
+        "id": "mushroom-3",
+        "enemy": "Mushroom",
+        "enemies": 3
+      },
+      {
+        "id": "undine-1",
+        "enemy": "Undine",
+        "enemies": 1
+      },
+      {
+        "id": "undine-2",
+        "enemy": "Undine",
+        "enemies": 2
+      },
+      {
+        "id": "undine-3",
+        "enemy": "Undine",
+        "enemies": 3
+      },
+      {
+        "id": "cactus-1",
+        "enemy": "Cactus",
+        "enemies": 1
+      },
+      {
+        "id": "cactus-2",
+        "enemy": "Cactus",
+        "enemies": 2
+      },
+      {
+        "id": "cactus-3",
+        "enemy": "Cactus",
+        "enemies": 3
+      },
+      {
+        "id": "mandragora-1",
+        "enemy": "Mandragora",
+        "enemies": 1
+      },
+      {
+        "id": "mandragora-2",
+        "enemy": "Mandragora",
+        "enemies": 2
+      },
+      {
+        "id": "mandragora-3",
+        "enemy": "Mandragora",
+        "enemies": 3
+      },
+      {
+        "id": "eye-1",
+        "enemy": "Eye",
+        "enemies": 1
+      },
+      {
+        "id": "eye-2",
+        "enemy": "Eye",
+        "enemies": 2
+      },
+      {
+        "id": "eye-3",
+        "enemy": "Eye",
+        "enemies": 3
+      }
+    ],
+    "cells": [
+      {
+        "build": "start",
+        "encounter": "bat-1",
+        "enemy": "Bat",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 7.18,
+        "avgUnitsLeft": 1.0,
+        "avgUnitsSpent": 3.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "start",
+        "encounter": "bat-2",
+        "enemy": "Bat",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 200.0,
+        "avgUnitsLeft": 1.0,
+        "avgUnitsSpent": 3.0,
+        "cause": "timeout",
+        "causes": {
+          "timeout": 50
+        }
+      },
+      {
+        "build": "start",
+        "encounter": "bat-3",
+        "enemy": "Bat",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 176.82,
+        "avgUnitsLeft": 0.88,
+        "avgUnitsSpent": 2.92,
+        "cause": "timeout",
+        "causes": {
+          "melee:Bat": 6,
+          "timeout": 44
+        }
+      },
+      {
+        "build": "start",
+        "encounter": "mushroom-1",
+        "enemy": "Mushroom",
+        "enemies": 1,
+        "winRate": 0.0,
+        "avgRounds": 5.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 3.0,
+        "cause": "melee:Mushroom",
+        "causes": {
+          "melee:Mushroom": 50
+        }
+      },
+      {
+        "build": "start",
+        "encounter": "mushroom-2",
+        "enemy": "Mushroom",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 2.0,
+        "cause": "melee:Mushroom",
+        "causes": {
+          "melee:Mushroom": 50
+        }
+      },
+      {
+        "build": "start",
+        "encounter": "mushroom-3",
+        "enemy": "Mushroom",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 2.0,
+        "cause": "melee:Mushroom",
+        "causes": {
+          "melee:Mushroom": 50
+        }
+      },
+      {
+        "build": "start",
+        "encounter": "undine-1",
+        "enemy": "Undine",
+        "enemies": 1,
+        "winRate": 0.0,
+        "avgRounds": 5.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 3.0,
+        "cause": "melee:Undine",
+        "causes": {
+          "melee:Undine": 50
+        }
+      },
+      {
+        "build": "start",
+        "encounter": "undine-2",
+        "enemy": "Undine",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 2.0,
+        "cause": "melee:Undine",
+        "causes": {
+          "melee:Undine": 50
+        }
+      },
+      {
+        "build": "start",
+        "encounter": "undine-3",
+        "enemy": "Undine",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 2.0,
+        "cause": "melee:Undine",
+        "causes": {
+          "melee:Undine": 50
+        }
+      },
+      {
+        "build": "start",
+        "encounter": "cactus-1",
+        "enemy": "Cactus",
+        "enemies": 1,
+        "winRate": 0.0,
+        "avgRounds": 5.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 3.0,
+        "cause": "melee:Cactus",
+        "causes": {
+          "melee:Cactus": 50
+        }
+      },
+      {
+        "build": "start",
+        "encounter": "cactus-2",
+        "enemy": "Cactus",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 2.0,
+        "cause": "melee:Cactus",
+        "causes": {
+          "melee:Cactus": 50
+        }
+      },
+      {
+        "build": "start",
+        "encounter": "cactus-3",
+        "enemy": "Cactus",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 2.0,
+        "cause": "melee:Cactus",
+        "causes": {
+          "melee:Cactus": 50
+        }
+      },
+      {
+        "build": "start",
+        "encounter": "mandragora-1",
+        "enemy": "Mandragora",
+        "enemies": 1,
+        "winRate": 0.0,
+        "avgRounds": 5.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 3.0,
+        "cause": "melee:Mandragora",
+        "causes": {
+          "melee:Mandragora": 50
+        }
+      },
+      {
+        "build": "start",
+        "encounter": "mandragora-2",
+        "enemy": "Mandragora",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 2.0,
+        "cause": "melee:Mandragora",
+        "causes": {
+          "melee:Mandragora": 50
+        }
+      },
+      {
+        "build": "start",
+        "encounter": "mandragora-3",
+        "enemy": "Mandragora",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 2.0,
+        "cause": "melee:Mandragora",
+        "causes": {
+          "melee:Mandragora": 50
+        }
+      },
+      {
+        "build": "start",
+        "encounter": "eye-1",
+        "enemy": "Eye",
+        "enemies": 1,
+        "winRate": 0.0,
+        "avgRounds": 5.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 3.0,
+        "cause": "melee:Eye",
+        "causes": {
+          "melee:Eye": 50
+        }
+      },
+      {
+        "build": "start",
+        "encounter": "eye-2",
+        "enemy": "Eye",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 2.0,
+        "cause": "melee:Eye",
+        "causes": {
+          "melee:Eye": 50
+        }
+      },
+      {
+        "build": "start",
+        "encounter": "eye-3",
+        "enemy": "Eye",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 2.0,
+        "cause": "melee:Eye",
+        "causes": {
+          "melee:Eye": 50
+        }
+      },
+      {
+        "build": "water",
+        "encounter": "bat-1",
+        "enemy": "Bat",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 7.18,
+        "avgUnitsLeft": 5.0,
+        "avgUnitsSpent": 3.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "water",
+        "encounter": "bat-2",
+        "enemy": "Bat",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 11.88,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 5.0,
+        "cause": "melee:Bat",
+        "causes": {
+          "melee:Bat": 50
+        }
+      },
+      {
+        "build": "water",
+        "encounter": "bat-3",
+        "enemy": "Bat",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 10.36,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 4.88,
+        "cause": "melee:Bat",
+        "causes": {
+          "melee:Bat": 50
+        }
+      },
+      {
+        "build": "water",
+        "encounter": "mushroom-1",
+        "enemy": "Mushroom",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 7.0,
+        "avgUnitsLeft": 1.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "water",
+        "encounter": "mushroom-2",
+        "enemy": "Mushroom",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 6.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 3.0,
+        "cause": "melee:Mushroom",
+        "causes": {
+          "melee:Mushroom": 50
+        }
+      },
+      {
+        "build": "water",
+        "encounter": "mushroom-3",
+        "enemy": "Mushroom",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 5.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 3.0,
+        "cause": "melee:Mushroom",
+        "causes": {
+          "melee:Mushroom": 50
+        }
+      },
+      {
+        "build": "water",
+        "encounter": "undine-1",
+        "enemy": "Undine",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 7.0,
+        "avgUnitsLeft": 1.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "water",
+        "encounter": "undine-2",
+        "enemy": "Undine",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 6.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 3.0,
+        "cause": "melee:Undine",
+        "causes": {
+          "melee:Undine": 50
+        }
+      },
+      {
+        "build": "water",
+        "encounter": "undine-3",
+        "enemy": "Undine",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 5.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 3.0,
+        "cause": "melee:Undine",
+        "causes": {
+          "melee:Undine": 50
+        }
+      },
+      {
+        "build": "water",
+        "encounter": "cactus-1",
+        "enemy": "Cactus",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 7.0,
+        "avgUnitsLeft": 1.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "water",
+        "encounter": "cactus-2",
+        "enemy": "Cactus",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 6.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 3.0,
+        "cause": "melee:Cactus",
+        "causes": {
+          "melee:Cactus": 50
+        }
+      },
+      {
+        "build": "water",
+        "encounter": "cactus-3",
+        "enemy": "Cactus",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 5.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 3.0,
+        "cause": "melee:Cactus",
+        "causes": {
+          "melee:Cactus": 50
+        }
+      },
+      {
+        "build": "water",
+        "encounter": "mandragora-1",
+        "enemy": "Mandragora",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 7.0,
+        "avgUnitsLeft": 1.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "water",
+        "encounter": "mandragora-2",
+        "enemy": "Mandragora",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 6.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 3.0,
+        "cause": "melee:Mandragora",
+        "causes": {
+          "melee:Mandragora": 50
+        }
+      },
+      {
+        "build": "water",
+        "encounter": "mandragora-3",
+        "enemy": "Mandragora",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 5.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 3.0,
+        "cause": "melee:Mandragora",
+        "causes": {
+          "melee:Mandragora": 50
+        }
+      },
+      {
+        "build": "water",
+        "encounter": "eye-1",
+        "enemy": "Eye",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 7.0,
+        "avgUnitsLeft": 1.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "water",
+        "encounter": "eye-2",
+        "enemy": "Eye",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 6.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 3.0,
+        "cause": "melee:Eye",
+        "causes": {
+          "melee:Eye": 50
+        }
+      },
+      {
+        "build": "water",
+        "encounter": "eye-3",
+        "enemy": "Eye",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 5.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 3.0,
+        "cause": "melee:Eye",
+        "causes": {
+          "melee:Eye": 50
+        }
+      },
+      {
+        "build": "oil",
+        "encounter": "bat-1",
+        "enemy": "Bat",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 7.18,
+        "avgUnitsLeft": 5.0,
+        "avgUnitsSpent": 3.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "oil",
+        "encounter": "bat-2",
+        "enemy": "Bat",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 11.88,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 5.0,
+        "cause": "melee:Bat",
+        "causes": {
+          "melee:Bat": 50
+        }
+      },
+      {
+        "build": "oil",
+        "encounter": "bat-3",
+        "enemy": "Bat",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 10.36,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 4.88,
+        "cause": "melee:Bat",
+        "causes": {
+          "melee:Bat": 50
+        }
+      },
+      {
+        "build": "oil",
+        "encounter": "mushroom-1",
+        "enemy": "Mushroom",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 7.0,
+        "avgUnitsLeft": 1.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "oil",
+        "encounter": "mushroom-2",
+        "enemy": "Mushroom",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 6.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 3.0,
+        "cause": "melee:Mushroom",
+        "causes": {
+          "melee:Mushroom": 50
+        }
+      },
+      {
+        "build": "oil",
+        "encounter": "mushroom-3",
+        "enemy": "Mushroom",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 5.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 3.0,
+        "cause": "melee:Mushroom",
+        "causes": {
+          "melee:Mushroom": 50
+        }
+      },
+      {
+        "build": "oil",
+        "encounter": "undine-1",
+        "enemy": "Undine",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 7.0,
+        "avgUnitsLeft": 1.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "oil",
+        "encounter": "undine-2",
+        "enemy": "Undine",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 6.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 3.0,
+        "cause": "melee:Undine",
+        "causes": {
+          "melee:Undine": 50
+        }
+      },
+      {
+        "build": "oil",
+        "encounter": "undine-3",
+        "enemy": "Undine",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 5.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 3.0,
+        "cause": "melee:Undine",
+        "causes": {
+          "melee:Undine": 50
+        }
+      },
+      {
+        "build": "oil",
+        "encounter": "cactus-1",
+        "enemy": "Cactus",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 7.0,
+        "avgUnitsLeft": 1.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "oil",
+        "encounter": "cactus-2",
+        "enemy": "Cactus",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 6.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 3.0,
+        "cause": "melee:Cactus",
+        "causes": {
+          "melee:Cactus": 50
+        }
+      },
+      {
+        "build": "oil",
+        "encounter": "cactus-3",
+        "enemy": "Cactus",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 5.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 3.0,
+        "cause": "melee:Cactus",
+        "causes": {
+          "melee:Cactus": 50
+        }
+      },
+      {
+        "build": "oil",
+        "encounter": "mandragora-1",
+        "enemy": "Mandragora",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 7.0,
+        "avgUnitsLeft": 1.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "oil",
+        "encounter": "mandragora-2",
+        "enemy": "Mandragora",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 6.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 3.0,
+        "cause": "melee:Mandragora",
+        "causes": {
+          "melee:Mandragora": 50
+        }
+      },
+      {
+        "build": "oil",
+        "encounter": "mandragora-3",
+        "enemy": "Mandragora",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 5.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 3.0,
+        "cause": "melee:Mandragora",
+        "causes": {
+          "melee:Mandragora": 50
+        }
+      },
+      {
+        "build": "oil",
+        "encounter": "eye-1",
+        "enemy": "Eye",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 7.0,
+        "avgUnitsLeft": 1.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "oil",
+        "encounter": "eye-2",
+        "enemy": "Eye",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 6.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 3.0,
+        "cause": "melee:Eye",
+        "causes": {
+          "melee:Eye": 50
+        }
+      },
+      {
+        "build": "oil",
+        "encounter": "eye-3",
+        "enemy": "Eye",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 5.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 3.0,
+        "cause": "melee:Eye",
+        "causes": {
+          "melee:Eye": 50
+        }
+      },
+      {
+        "build": "poison",
+        "encounter": "bat-1",
+        "enemy": "Bat",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 6.18,
+        "avgUnitsLeft": 7.0,
+        "avgUnitsSpent": 2.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "poison",
+        "encounter": "bat-2",
+        "enemy": "Bat",
+        "enemies": 2,
+        "winRate": 1.0,
+        "avgRounds": 9.74,
+        "avgUnitsLeft": 4.0,
+        "avgUnitsSpent": 4.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "poison",
+        "encounter": "bat-3",
+        "enemy": "Bat",
+        "enemies": 3,
+        "winRate": 1.0,
+        "avgRounds": 12.64,
+        "avgUnitsLeft": 1.1,
+        "avgUnitsSpent": 5.9,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "poison",
+        "encounter": "mushroom-1",
+        "enemy": "Mushroom",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 7.0,
+        "avgUnitsSpent": 2.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "poison",
+        "encounter": "mushroom-2",
+        "enemy": "Mushroom",
+        "enemies": 2,
+        "winRate": 1.0,
+        "avgRounds": 5.0,
+        "avgUnitsLeft": 4.0,
+        "avgUnitsSpent": 3.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "poison",
+        "encounter": "mushroom-3",
+        "enemy": "Mushroom",
+        "enemies": 3,
+        "winRate": 1.0,
+        "avgRounds": 6.0,
+        "avgUnitsLeft": 1.0,
+        "avgUnitsSpent": 3.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "poison",
+        "encounter": "undine-1",
+        "enemy": "Undine",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 7.0,
+        "avgUnitsSpent": 2.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "poison",
+        "encounter": "undine-2",
+        "enemy": "Undine",
+        "enemies": 2,
+        "winRate": 1.0,
+        "avgRounds": 5.0,
+        "avgUnitsLeft": 4.0,
+        "avgUnitsSpent": 3.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "poison",
+        "encounter": "undine-3",
+        "enemy": "Undine",
+        "enemies": 3,
+        "winRate": 1.0,
+        "avgRounds": 6.0,
+        "avgUnitsLeft": 1.0,
+        "avgUnitsSpent": 3.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "poison",
+        "encounter": "cactus-1",
+        "enemy": "Cactus",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 7.0,
+        "avgUnitsSpent": 2.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "poison",
+        "encounter": "cactus-2",
+        "enemy": "Cactus",
+        "enemies": 2,
+        "winRate": 1.0,
+        "avgRounds": 5.0,
+        "avgUnitsLeft": 4.0,
+        "avgUnitsSpent": 3.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "poison",
+        "encounter": "cactus-3",
+        "enemy": "Cactus",
+        "enemies": 3,
+        "winRate": 1.0,
+        "avgRounds": 6.0,
+        "avgUnitsLeft": 1.0,
+        "avgUnitsSpent": 3.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "poison",
+        "encounter": "mandragora-1",
+        "enemy": "Mandragora",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 7.0,
+        "avgUnitsSpent": 2.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "poison",
+        "encounter": "mandragora-2",
+        "enemy": "Mandragora",
+        "enemies": 2,
+        "winRate": 1.0,
+        "avgRounds": 5.0,
+        "avgUnitsLeft": 4.0,
+        "avgUnitsSpent": 3.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "poison",
+        "encounter": "mandragora-3",
+        "enemy": "Mandragora",
+        "enemies": 3,
+        "winRate": 1.0,
+        "avgRounds": 6.0,
+        "avgUnitsLeft": 1.0,
+        "avgUnitsSpent": 3.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "poison",
+        "encounter": "eye-1",
+        "enemy": "Eye",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 7.0,
+        "avgUnitsSpent": 2.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "poison",
+        "encounter": "eye-2",
+        "enemy": "Eye",
+        "enemies": 2,
+        "winRate": 1.0,
+        "avgRounds": 5.0,
+        "avgUnitsLeft": 4.0,
+        "avgUnitsSpent": 3.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "poison",
+        "encounter": "eye-3",
+        "enemy": "Eye",
+        "enemies": 3,
+        "winRate": 1.0,
+        "avgRounds": 6.0,
+        "avgUnitsLeft": 1.0,
+        "avgUnitsSpent": 3.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "acid",
+        "encounter": "bat-1",
+        "enemy": "Bat",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 6.18,
+        "avgUnitsLeft": 7.0,
+        "avgUnitsSpent": 2.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "acid",
+        "encounter": "bat-2",
+        "enemy": "Bat",
+        "enemies": 2,
+        "winRate": 1.0,
+        "avgRounds": 9.74,
+        "avgUnitsLeft": 4.0,
+        "avgUnitsSpent": 4.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "acid",
+        "encounter": "bat-3",
+        "enemy": "Bat",
+        "enemies": 3,
+        "winRate": 1.0,
+        "avgRounds": 12.64,
+        "avgUnitsLeft": 1.1,
+        "avgUnitsSpent": 5.9,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "acid",
+        "encounter": "mushroom-1",
+        "enemy": "Mushroom",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 7.0,
+        "avgUnitsSpent": 2.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "acid",
+        "encounter": "mushroom-2",
+        "enemy": "Mushroom",
+        "enemies": 2,
+        "winRate": 1.0,
+        "avgRounds": 5.0,
+        "avgUnitsLeft": 4.0,
+        "avgUnitsSpent": 3.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "acid",
+        "encounter": "mushroom-3",
+        "enemy": "Mushroom",
+        "enemies": 3,
+        "winRate": 1.0,
+        "avgRounds": 6.0,
+        "avgUnitsLeft": 1.0,
+        "avgUnitsSpent": 3.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "acid",
+        "encounter": "undine-1",
+        "enemy": "Undine",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 7.0,
+        "avgUnitsSpent": 2.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "acid",
+        "encounter": "undine-2",
+        "enemy": "Undine",
+        "enemies": 2,
+        "winRate": 1.0,
+        "avgRounds": 5.0,
+        "avgUnitsLeft": 4.0,
+        "avgUnitsSpent": 3.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "acid",
+        "encounter": "undine-3",
+        "enemy": "Undine",
+        "enemies": 3,
+        "winRate": 1.0,
+        "avgRounds": 6.0,
+        "avgUnitsLeft": 1.0,
+        "avgUnitsSpent": 3.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "acid",
+        "encounter": "cactus-1",
+        "enemy": "Cactus",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 7.0,
+        "avgUnitsSpent": 2.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "acid",
+        "encounter": "cactus-2",
+        "enemy": "Cactus",
+        "enemies": 2,
+        "winRate": 1.0,
+        "avgRounds": 5.0,
+        "avgUnitsLeft": 4.0,
+        "avgUnitsSpent": 3.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "acid",
+        "encounter": "cactus-3",
+        "enemy": "Cactus",
+        "enemies": 3,
+        "winRate": 1.0,
+        "avgRounds": 6.0,
+        "avgUnitsLeft": 1.0,
+        "avgUnitsSpent": 3.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "acid",
+        "encounter": "mandragora-1",
+        "enemy": "Mandragora",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 7.0,
+        "avgUnitsSpent": 2.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "acid",
+        "encounter": "mandragora-2",
+        "enemy": "Mandragora",
+        "enemies": 2,
+        "winRate": 1.0,
+        "avgRounds": 5.0,
+        "avgUnitsLeft": 4.0,
+        "avgUnitsSpent": 3.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "acid",
+        "encounter": "mandragora-3",
+        "enemy": "Mandragora",
+        "enemies": 3,
+        "winRate": 1.0,
+        "avgRounds": 6.0,
+        "avgUnitsLeft": 1.0,
+        "avgUnitsSpent": 3.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "acid",
+        "encounter": "eye-1",
+        "enemy": "Eye",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 7.0,
+        "avgUnitsSpent": 2.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "acid",
+        "encounter": "eye-2",
+        "enemy": "Eye",
+        "enemies": 2,
+        "winRate": 1.0,
+        "avgRounds": 5.0,
+        "avgUnitsLeft": 4.0,
+        "avgUnitsSpent": 3.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "acid",
+        "encounter": "eye-3",
+        "enemy": "Eye",
+        "enemies": 3,
+        "winRate": 1.0,
+        "avgRounds": 6.0,
+        "avgUnitsLeft": 1.0,
+        "avgUnitsSpent": 3.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "blood",
+        "encounter": "bat-1",
+        "enemy": "Bat",
+        "enemies": 1,
+        "winRate": 0.0,
+        "avgRounds": 13.18,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 9.0,
+        "cause": "melee:Bat",
+        "causes": {
+          "melee:Bat": 50
+        }
+      },
+      {
+        "build": "blood",
+        "encounter": "bat-2",
+        "enemy": "Bat",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 12.66,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 9.0,
+        "cause": "melee:Bat",
+        "causes": {
+          "melee:Bat": 50
+        }
+      },
+      {
+        "build": "blood",
+        "encounter": "bat-3",
+        "enemy": "Bat",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 11.92,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 8.48,
+        "cause": "melee:Bat",
+        "causes": {
+          "melee:Bat": 50
+        }
+      },
+      {
+        "build": "blood",
+        "encounter": "mushroom-1",
+        "enemy": "Mushroom",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 7.0,
+        "avgUnitsLeft": 5.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "blood",
+        "encounter": "mushroom-2",
+        "enemy": "Mushroom",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 7.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 5.0,
+        "cause": "melee:Mushroom",
+        "causes": {
+          "melee:Mushroom": 50
+        }
+      },
+      {
+        "build": "blood",
+        "encounter": "mushroom-3",
+        "enemy": "Mushroom",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 5.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 3.0,
+        "cause": "melee:Mushroom",
+        "causes": {
+          "melee:Mushroom": 50
+        }
+      },
+      {
+        "build": "blood",
+        "encounter": "undine-1",
+        "enemy": "Undine",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 7.0,
+        "avgUnitsLeft": 5.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "blood",
+        "encounter": "undine-2",
+        "enemy": "Undine",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 7.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 5.0,
+        "cause": "melee:Undine",
+        "causes": {
+          "melee:Undine": 50
+        }
+      },
+      {
+        "build": "blood",
+        "encounter": "undine-3",
+        "enemy": "Undine",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 5.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 3.0,
+        "cause": "melee:Undine",
+        "causes": {
+          "melee:Undine": 50
+        }
+      },
+      {
+        "build": "blood",
+        "encounter": "cactus-1",
+        "enemy": "Cactus",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 7.0,
+        "avgUnitsLeft": 5.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "blood",
+        "encounter": "cactus-2",
+        "enemy": "Cactus",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 7.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 5.0,
+        "cause": "melee:Cactus",
+        "causes": {
+          "melee:Cactus": 50
+        }
+      },
+      {
+        "build": "blood",
+        "encounter": "cactus-3",
+        "enemy": "Cactus",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 5.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 3.0,
+        "cause": "melee:Cactus",
+        "causes": {
+          "melee:Cactus": 50
+        }
+      },
+      {
+        "build": "blood",
+        "encounter": "mandragora-1",
+        "enemy": "Mandragora",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 7.0,
+        "avgUnitsLeft": 5.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "blood",
+        "encounter": "mandragora-2",
+        "enemy": "Mandragora",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 7.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 5.0,
+        "cause": "melee:Mandragora",
+        "causes": {
+          "melee:Mandragora": 50
+        }
+      },
+      {
+        "build": "blood",
+        "encounter": "mandragora-3",
+        "enemy": "Mandragora",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 5.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 3.0,
+        "cause": "melee:Mandragora",
+        "causes": {
+          "melee:Mandragora": 50
+        }
+      },
+      {
+        "build": "blood",
+        "encounter": "eye-1",
+        "enemy": "Eye",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 7.0,
+        "avgUnitsLeft": 5.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "blood",
+        "encounter": "eye-2",
+        "enemy": "Eye",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 7.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 5.0,
+        "cause": "melee:Eye",
+        "causes": {
+          "melee:Eye": 50
+        }
+      },
+      {
+        "build": "blood",
+        "encounter": "eye-3",
+        "enemy": "Eye",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 5.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 3.0,
+        "cause": "melee:Eye",
+        "causes": {
+          "melee:Eye": 50
+        }
+      },
+      {
+        "build": "lava",
+        "encounter": "bat-1",
+        "enemy": "Bat",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 6.18,
+        "avgUnitsLeft": 7.0,
+        "avgUnitsSpent": 2.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "lava",
+        "encounter": "bat-2",
+        "enemy": "Bat",
+        "enemies": 2,
+        "winRate": 1.0,
+        "avgRounds": 9.74,
+        "avgUnitsLeft": 4.0,
+        "avgUnitsSpent": 4.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "lava",
+        "encounter": "bat-3",
+        "enemy": "Bat",
+        "enemies": 3,
+        "winRate": 1.0,
+        "avgRounds": 12.64,
+        "avgUnitsLeft": 1.1,
+        "avgUnitsSpent": 5.9,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "lava",
+        "encounter": "mushroom-1",
+        "enemy": "Mushroom",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 7.0,
+        "avgUnitsSpent": 2.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "lava",
+        "encounter": "mushroom-2",
+        "enemy": "Mushroom",
+        "enemies": 2,
+        "winRate": 1.0,
+        "avgRounds": 5.0,
+        "avgUnitsLeft": 4.0,
+        "avgUnitsSpent": 3.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "lava",
+        "encounter": "mushroom-3",
+        "enemy": "Mushroom",
+        "enemies": 3,
+        "winRate": 1.0,
+        "avgRounds": 6.0,
+        "avgUnitsLeft": 1.0,
+        "avgUnitsSpent": 3.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "lava",
+        "encounter": "undine-1",
+        "enemy": "Undine",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 7.0,
+        "avgUnitsSpent": 2.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "lava",
+        "encounter": "undine-2",
+        "enemy": "Undine",
+        "enemies": 2,
+        "winRate": 1.0,
+        "avgRounds": 5.0,
+        "avgUnitsLeft": 4.0,
+        "avgUnitsSpent": 3.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "lava",
+        "encounter": "undine-3",
+        "enemy": "Undine",
+        "enemies": 3,
+        "winRate": 1.0,
+        "avgRounds": 6.0,
+        "avgUnitsLeft": 1.0,
+        "avgUnitsSpent": 3.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "lava",
+        "encounter": "cactus-1",
+        "enemy": "Cactus",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 7.0,
+        "avgUnitsSpent": 2.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "lava",
+        "encounter": "cactus-2",
+        "enemy": "Cactus",
+        "enemies": 2,
+        "winRate": 1.0,
+        "avgRounds": 5.0,
+        "avgUnitsLeft": 4.0,
+        "avgUnitsSpent": 3.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "lava",
+        "encounter": "cactus-3",
+        "enemy": "Cactus",
+        "enemies": 3,
+        "winRate": 1.0,
+        "avgRounds": 6.0,
+        "avgUnitsLeft": 1.0,
+        "avgUnitsSpent": 3.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "lava",
+        "encounter": "mandragora-1",
+        "enemy": "Mandragora",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 7.0,
+        "avgUnitsSpent": 2.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "lava",
+        "encounter": "mandragora-2",
+        "enemy": "Mandragora",
+        "enemies": 2,
+        "winRate": 1.0,
+        "avgRounds": 5.0,
+        "avgUnitsLeft": 4.0,
+        "avgUnitsSpent": 3.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "lava",
+        "encounter": "mandragora-3",
+        "enemy": "Mandragora",
+        "enemies": 3,
+        "winRate": 1.0,
+        "avgRounds": 6.0,
+        "avgUnitsLeft": 1.0,
+        "avgUnitsSpent": 3.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "lava",
+        "encounter": "eye-1",
+        "enemy": "Eye",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 7.0,
+        "avgUnitsSpent": 2.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "lava",
+        "encounter": "eye-2",
+        "enemy": "Eye",
+        "enemies": 2,
+        "winRate": 1.0,
+        "avgRounds": 5.0,
+        "avgUnitsLeft": 4.0,
+        "avgUnitsSpent": 3.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "lava",
+        "encounter": "eye-3",
+        "enemy": "Eye",
+        "enemies": 3,
+        "winRate": 1.0,
+        "avgRounds": 6.0,
+        "avgUnitsLeft": 1.0,
+        "avgUnitsSpent": 3.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "mercury",
+        "encounter": "bat-1",
+        "enemy": "Bat",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 7.18,
+        "avgUnitsLeft": 5.0,
+        "avgUnitsSpent": 3.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "mercury",
+        "encounter": "bat-2",
+        "enemy": "Bat",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 11.88,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 5.0,
+        "cause": "melee:Bat",
+        "causes": {
+          "melee:Bat": 50
+        }
+      },
+      {
+        "build": "mercury",
+        "encounter": "bat-3",
+        "enemy": "Bat",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 10.36,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 4.88,
+        "cause": "melee:Bat",
+        "causes": {
+          "melee:Bat": 50
+        }
+      },
+      {
+        "build": "mercury",
+        "encounter": "mushroom-1",
+        "enemy": "Mushroom",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 9.18,
+        "avgUnitsLeft": 1.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "mercury",
+        "encounter": "mushroom-2",
+        "enemy": "Mushroom",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 200.0,
+        "avgUnitsLeft": 1.0,
+        "avgUnitsSpent": 5.0,
+        "cause": "timeout",
+        "causes": {
+          "timeout": 50
+        }
+      },
+      {
+        "build": "mercury",
+        "encounter": "mushroom-3",
+        "enemy": "Mushroom",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 173.1,
+        "avgUnitsLeft": 0.86,
+        "avgUnitsSpent": 4.88,
+        "cause": "timeout",
+        "causes": {
+          "melee:Mushroom": 7,
+          "timeout": 43
+        }
+      },
+      {
+        "build": "mercury",
+        "encounter": "undine-1",
+        "enemy": "Undine",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 9.18,
+        "avgUnitsLeft": 1.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "mercury",
+        "encounter": "undine-2",
+        "enemy": "Undine",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 200.0,
+        "avgUnitsLeft": 1.0,
+        "avgUnitsSpent": 5.0,
+        "cause": "timeout",
+        "causes": {
+          "timeout": 50
+        }
+      },
+      {
+        "build": "mercury",
+        "encounter": "undine-3",
+        "enemy": "Undine",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 173.1,
+        "avgUnitsLeft": 0.86,
+        "avgUnitsSpent": 4.88,
+        "cause": "timeout",
+        "causes": {
+          "melee:Undine": 7,
+          "timeout": 43
+        }
+      },
+      {
+        "build": "mercury",
+        "encounter": "cactus-1",
+        "enemy": "Cactus",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 9.18,
+        "avgUnitsLeft": 1.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "mercury",
+        "encounter": "cactus-2",
+        "enemy": "Cactus",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 200.0,
+        "avgUnitsLeft": 1.0,
+        "avgUnitsSpent": 5.0,
+        "cause": "timeout",
+        "causes": {
+          "timeout": 50
+        }
+      },
+      {
+        "build": "mercury",
+        "encounter": "cactus-3",
+        "enemy": "Cactus",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 173.1,
+        "avgUnitsLeft": 0.86,
+        "avgUnitsSpent": 4.88,
+        "cause": "timeout",
+        "causes": {
+          "melee:Cactus": 7,
+          "timeout": 43
+        }
+      },
+      {
+        "build": "mercury",
+        "encounter": "mandragora-1",
+        "enemy": "Mandragora",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 9.18,
+        "avgUnitsLeft": 1.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "mercury",
+        "encounter": "mandragora-2",
+        "enemy": "Mandragora",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 200.0,
+        "avgUnitsLeft": 1.0,
+        "avgUnitsSpent": 5.0,
+        "cause": "timeout",
+        "causes": {
+          "timeout": 50
+        }
+      },
+      {
+        "build": "mercury",
+        "encounter": "mandragora-3",
+        "enemy": "Mandragora",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 173.1,
+        "avgUnitsLeft": 0.86,
+        "avgUnitsSpent": 4.88,
+        "cause": "timeout",
+        "causes": {
+          "melee:Mandragora": 7,
+          "timeout": 43
+        }
+      },
+      {
+        "build": "mercury",
+        "encounter": "eye-1",
+        "enemy": "Eye",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 9.18,
+        "avgUnitsLeft": 1.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "mercury",
+        "encounter": "eye-2",
+        "enemy": "Eye",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 200.0,
+        "avgUnitsLeft": 1.0,
+        "avgUnitsSpent": 5.0,
+        "cause": "timeout",
+        "causes": {
+          "timeout": 50
+        }
+      },
+      {
+        "build": "mercury",
+        "encounter": "eye-3",
+        "enemy": "Eye",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 173.1,
+        "avgUnitsLeft": 0.86,
+        "avgUnitsSpent": 4.88,
+        "cause": "timeout",
+        "causes": {
+          "melee:Eye": 7,
+          "timeout": 43
+        }
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "generatedUtc": "2026-11-25T12:51:10Z",
+    "commit": "a2f83f6b58e277e68ffe1ca29c2a552c4962c9fd",
+    "policy": "face-tank",
+    "actionsPerRound": 2,
+    "seeds": 50,
+    "builds": [
+      {
+        "id": "start",
+        "name": "Starting mix",
+        "units": {
+          "Water": 2,
+          "Oil": 1,
+          "Poison": 1,
+          "Acid": 1,
+          "Lava": 1
+        }
+      },
+      {
+        "id": "water",
+        "name": "10 Water",
+        "units": {
+          "Water": 10
+        }
+      },
+      {
+        "id": "oil",
+        "name": "10 Oil",
+        "units": {
+          "Oil": 10
+        }
+      },
+      {
+        "id": "poison",
+        "name": "10 Poison",
+        "units": {
+          "Poison": 10
+        }
+      },
+      {
+        "id": "acid",
+        "name": "10 Acid",
+        "units": {
+          "Acid": 10
+        }
+      },
+      {
+        "id": "blood",
+        "name": "10 Blood",
+        "units": {
+          "Blood": 10
+        }
+      },
+      {
+        "id": "lava",
+        "name": "10 Lava",
+        "units": {
+          "Lava": 10
+        }
+      },
+      {
+        "id": "mercury",
+        "name": "10 Mercury",
+        "units": {
+          "Mercury": 10
+        }
+      }
+    ],
+    "encounters": [
+      {
+        "id": "bat-1",
+        "enemy": "Bat",
+        "enemies": 1
+      },
+      {
+        "id": "bat-2",
+        "enemy": "Bat",
+        "enemies": 2
+      },
+      {
+        "id": "bat-3",
+        "enemy": "Bat",
+        "enemies": 3
+      },
+      {
+        "id": "mushroom-1",
+        "enemy": "Mushroom",
+        "enemies": 1
+      },
+      {
+        "id": "mushroom-2",
+        "enemy": "Mushroom",
+        "enemies": 2
+      },
+      {
+        "id": "mushroom-3",
+        "enemy": "Mushroom",
+        "enemies": 3
+      },
+      {
+        "id": "undine-1",
+        "enemy": "Undine",
+        "enemies": 1
+      },
+      {
+        "id": "undine-2",
+        "enemy": "Undine",
+        "enemies": 2
+      },
+      {
+        "id": "undine-3",
+        "enemy": "Undine",
+        "enemies": 3
+      },
+      {
+        "id": "cactus-1",
+        "enemy": "Cactus",
+        "enemies": 1
+      },
+      {
+        "id": "cactus-2",
+        "enemy": "Cactus",
+        "enemies": 2
+      },
+      {
+        "id": "cactus-3",
+        "enemy": "Cactus",
+        "enemies": 3
+      },
+      {
+        "id": "mandragora-1",
+        "enemy": "Mandragora",
+        "enemies": 1
+      },
+      {
+        "id": "mandragora-2",
+        "enemy": "Mandragora",
+        "enemies": 2
+      },
+      {
+        "id": "mandragora-3",
+        "enemy": "Mandragora",
+        "enemies": 3
+      },
+      {
+        "id": "eye-1",
+        "enemy": "Eye",
+        "enemies": 1
+      },
+      {
+        "id": "eye-2",
+        "enemy": "Eye",
+        "enemies": 2
+      },
+      {
+        "id": "eye-3",
+        "enemy": "Eye",
+        "enemies": 3
+      }
+    ],
+    "cells": [
+      {
+        "build": "start",
+        "encounter": "bat-1",
+        "enemy": "Bat",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 3.72,
+        "avgUnitsLeft": 2.0,
+        "avgUnitsSpent": 3.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "start",
+        "encounter": "bat-2",
+        "enemy": "Bat",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 4.72,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 4.0,
+        "cause": "melee:Bat",
+        "causes": {
+          "melee:Bat": 50
+        }
+      },
+      {
+        "build": "start",
+        "encounter": "bat-3",
+        "enemy": "Bat",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 4.28,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 3.96,
+        "cause": "melee:Bat",
+        "causes": {
+          "melee:Bat": 50
+        }
+      },
+      {
+        "build": "start",
+        "encounter": "mushroom-1",
+        "enemy": "Mushroom",
+        "enemies": 1,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 3.0,
+        "cause": "melee:Mushroom",
+        "causes": {
+          "melee:Mushroom": 50
+        }
+      },
+      {
+        "build": "start",
+        "encounter": "mushroom-2",
+        "enemy": "Mushroom",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 3.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 3.0,
+        "cause": "melee:Mushroom",
+        "causes": {
+          "melee:Mushroom": 50
+        }
+      },
+      {
+        "build": "start",
+        "encounter": "mushroom-3",
+        "enemy": "Mushroom",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 3.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 2.0,
+        "cause": "melee:Mushroom",
+        "causes": {
+          "melee:Mushroom": 50
+        }
+      },
+      {
+        "build": "start",
+        "encounter": "undine-1",
+        "enemy": "Undine",
+        "enemies": 1,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 3.0,
+        "cause": "melee:Undine",
+        "causes": {
+          "melee:Undine": 50
+        }
+      },
+      {
+        "build": "start",
+        "encounter": "undine-2",
+        "enemy": "Undine",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 3.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 3.0,
+        "cause": "melee:Undine",
+        "causes": {
+          "melee:Undine": 50
+        }
+      },
+      {
+        "build": "start",
+        "encounter": "undine-3",
+        "enemy": "Undine",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 3.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 2.0,
+        "cause": "melee:Undine",
+        "causes": {
+          "melee:Undine": 50
+        }
+      },
+      {
+        "build": "start",
+        "encounter": "cactus-1",
+        "enemy": "Cactus",
+        "enemies": 1,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 3.0,
+        "cause": "melee:Cactus",
+        "causes": {
+          "melee:Cactus": 50
+        }
+      },
+      {
+        "build": "start",
+        "encounter": "cactus-2",
+        "enemy": "Cactus",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 3.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 3.0,
+        "cause": "melee:Cactus",
+        "causes": {
+          "melee:Cactus": 50
+        }
+      },
+      {
+        "build": "start",
+        "encounter": "cactus-3",
+        "enemy": "Cactus",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 3.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 2.0,
+        "cause": "melee:Cactus",
+        "causes": {
+          "melee:Cactus": 50
+        }
+      },
+      {
+        "build": "start",
+        "encounter": "mandragora-1",
+        "enemy": "Mandragora",
+        "enemies": 1,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 3.0,
+        "cause": "melee:Mandragora",
+        "causes": {
+          "melee:Mandragora": 50
+        }
+      },
+      {
+        "build": "start",
+        "encounter": "mandragora-2",
+        "enemy": "Mandragora",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 3.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 3.0,
+        "cause": "melee:Mandragora",
+        "causes": {
+          "melee:Mandragora": 50
+        }
+      },
+      {
+        "build": "start",
+        "encounter": "mandragora-3",
+        "enemy": "Mandragora",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 3.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 2.0,
+        "cause": "melee:Mandragora",
+        "causes": {
+          "melee:Mandragora": 50
+        }
+      },
+      {
+        "build": "start",
+        "encounter": "eye-1",
+        "enemy": "Eye",
+        "enemies": 1,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 3.0,
+        "cause": "melee:Eye",
+        "causes": {
+          "melee:Eye": 50
+        }
+      },
+      {
+        "build": "start",
+        "encounter": "eye-2",
+        "enemy": "Eye",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 3.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 3.0,
+        "cause": "melee:Eye",
+        "causes": {
+          "melee:Eye": 50
+        }
+      },
+      {
+        "build": "start",
+        "encounter": "eye-3",
+        "enemy": "Eye",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 3.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 2.0,
+        "cause": "melee:Eye",
+        "causes": {
+          "melee:Eye": 50
+        }
+      },
+      {
+        "build": "water",
+        "encounter": "bat-1",
+        "enemy": "Bat",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 3.72,
+        "avgUnitsLeft": 6.0,
+        "avgUnitsSpent": 3.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "water",
+        "encounter": "bat-2",
+        "enemy": "Bat",
+        "enemies": 2,
+        "winRate": 1.0,
+        "avgRounds": 5.72,
+        "avgUnitsLeft": 1.96,
+        "avgUnitsSpent": 6.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "water",
+        "encounter": "bat-3",
+        "enemy": "Bat",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 14.38,
+        "avgUnitsLeft": 0.04,
+        "avgUnitsSpent": 6.88,
+        "cause": "melee:Bat",
+        "causes": {
+          "melee:Bat": 48,
+          "timeout": 2
+        }
+      },
+      {
+        "build": "water",
+        "encounter": "mushroom-1",
+        "enemy": "Mushroom",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 3.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "water",
+        "encounter": "mushroom-2",
+        "enemy": "Mushroom",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 5.0,
+        "cause": "melee:Mushroom",
+        "causes": {
+          "melee:Mushroom": 50
+        }
+      },
+      {
+        "build": "water",
+        "encounter": "mushroom-3",
+        "enemy": "Mushroom",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 3.0,
+        "cause": "melee:Mushroom",
+        "causes": {
+          "melee:Mushroom": 50
+        }
+      },
+      {
+        "build": "water",
+        "encounter": "undine-1",
+        "enemy": "Undine",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 3.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "water",
+        "encounter": "undine-2",
+        "enemy": "Undine",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 5.0,
+        "cause": "melee:Undine",
+        "causes": {
+          "melee:Undine": 50
+        }
+      },
+      {
+        "build": "water",
+        "encounter": "undine-3",
+        "enemy": "Undine",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 3.0,
+        "cause": "melee:Undine",
+        "causes": {
+          "melee:Undine": 50
+        }
+      },
+      {
+        "build": "water",
+        "encounter": "cactus-1",
+        "enemy": "Cactus",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 3.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "water",
+        "encounter": "cactus-2",
+        "enemy": "Cactus",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 5.0,
+        "cause": "melee:Cactus",
+        "causes": {
+          "melee:Cactus": 50
+        }
+      },
+      {
+        "build": "water",
+        "encounter": "cactus-3",
+        "enemy": "Cactus",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 3.0,
+        "cause": "melee:Cactus",
+        "causes": {
+          "melee:Cactus": 50
+        }
+      },
+      {
+        "build": "water",
+        "encounter": "mandragora-1",
+        "enemy": "Mandragora",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 3.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "water",
+        "encounter": "mandragora-2",
+        "enemy": "Mandragora",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 5.0,
+        "cause": "melee:Mandragora",
+        "causes": {
+          "melee:Mandragora": 50
+        }
+      },
+      {
+        "build": "water",
+        "encounter": "mandragora-3",
+        "enemy": "Mandragora",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 3.0,
+        "cause": "melee:Mandragora",
+        "causes": {
+          "melee:Mandragora": 50
+        }
+      },
+      {
+        "build": "water",
+        "encounter": "eye-1",
+        "enemy": "Eye",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 3.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "water",
+        "encounter": "eye-2",
+        "enemy": "Eye",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 5.0,
+        "cause": "melee:Eye",
+        "causes": {
+          "melee:Eye": 50
+        }
+      },
+      {
+        "build": "water",
+        "encounter": "eye-3",
+        "enemy": "Eye",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 3.0,
+        "cause": "melee:Eye",
+        "causes": {
+          "melee:Eye": 50
+        }
+      },
+      {
+        "build": "oil",
+        "encounter": "bat-1",
+        "enemy": "Bat",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 3.72,
+        "avgUnitsLeft": 6.0,
+        "avgUnitsSpent": 3.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "oil",
+        "encounter": "bat-2",
+        "enemy": "Bat",
+        "enemies": 2,
+        "winRate": 1.0,
+        "avgRounds": 5.72,
+        "avgUnitsLeft": 1.96,
+        "avgUnitsSpent": 6.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "oil",
+        "encounter": "bat-3",
+        "enemy": "Bat",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 14.38,
+        "avgUnitsLeft": 0.04,
+        "avgUnitsSpent": 6.88,
+        "cause": "melee:Bat",
+        "causes": {
+          "melee:Bat": 48,
+          "timeout": 2
+        }
+      },
+      {
+        "build": "oil",
+        "encounter": "mushroom-1",
+        "enemy": "Mushroom",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 3.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "oil",
+        "encounter": "mushroom-2",
+        "enemy": "Mushroom",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 5.0,
+        "cause": "melee:Mushroom",
+        "causes": {
+          "melee:Mushroom": 50
+        }
+      },
+      {
+        "build": "oil",
+        "encounter": "mushroom-3",
+        "enemy": "Mushroom",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 3.0,
+        "cause": "melee:Mushroom",
+        "causes": {
+          "melee:Mushroom": 50
+        }
+      },
+      {
+        "build": "oil",
+        "encounter": "undine-1",
+        "enemy": "Undine",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 3.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "oil",
+        "encounter": "undine-2",
+        "enemy": "Undine",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 5.0,
+        "cause": "melee:Undine",
+        "causes": {
+          "melee:Undine": 50
+        }
+      },
+      {
+        "build": "oil",
+        "encounter": "undine-3",
+        "enemy": "Undine",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 3.0,
+        "cause": "melee:Undine",
+        "causes": {
+          "melee:Undine": 50
+        }
+      },
+      {
+        "build": "oil",
+        "encounter": "cactus-1",
+        "enemy": "Cactus",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 3.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "oil",
+        "encounter": "cactus-2",
+        "enemy": "Cactus",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 5.0,
+        "cause": "melee:Cactus",
+        "causes": {
+          "melee:Cactus": 50
+        }
+      },
+      {
+        "build": "oil",
+        "encounter": "cactus-3",
+        "enemy": "Cactus",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 3.0,
+        "cause": "melee:Cactus",
+        "causes": {
+          "melee:Cactus": 50
+        }
+      },
+      {
+        "build": "oil",
+        "encounter": "mandragora-1",
+        "enemy": "Mandragora",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 3.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "oil",
+        "encounter": "mandragora-2",
+        "enemy": "Mandragora",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 5.0,
+        "cause": "melee:Mandragora",
+        "causes": {
+          "melee:Mandragora": 50
+        }
+      },
+      {
+        "build": "oil",
+        "encounter": "mandragora-3",
+        "enemy": "Mandragora",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 3.0,
+        "cause": "melee:Mandragora",
+        "causes": {
+          "melee:Mandragora": 50
+        }
+      },
+      {
+        "build": "oil",
+        "encounter": "eye-1",
+        "enemy": "Eye",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 3.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "oil",
+        "encounter": "eye-2",
+        "enemy": "Eye",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 5.0,
+        "cause": "melee:Eye",
+        "causes": {
+          "melee:Eye": 50
+        }
+      },
+      {
+        "build": "oil",
+        "encounter": "eye-3",
+        "enemy": "Eye",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 3.0,
+        "cause": "melee:Eye",
+        "causes": {
+          "melee:Eye": 50
+        }
+      },
+      {
+        "build": "poison",
+        "encounter": "bat-1",
+        "enemy": "Bat",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 3.26,
+        "avgUnitsLeft": 7.46,
+        "avgUnitsSpent": 2.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "poison",
+        "encounter": "bat-2",
+        "enemy": "Bat",
+        "enemies": 2,
+        "winRate": 1.0,
+        "avgRounds": 4.74,
+        "avgUnitsLeft": 5.04,
+        "avgUnitsSpent": 4.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "poison",
+        "encounter": "bat-3",
+        "enemy": "Bat",
+        "enemies": 3,
+        "winRate": 1.0,
+        "avgRounds": 6.16,
+        "avgUnitsLeft": 2.44,
+        "avgUnitsSpent": 5.92,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "poison",
+        "encounter": "mushroom-1",
+        "enemy": "Mushroom",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 3.0,
+        "avgUnitsLeft": 6.0,
+        "avgUnitsSpent": 3.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "poison",
+        "encounter": "mushroom-2",
+        "enemy": "Mushroom",
+        "enemies": 2,
+        "winRate": 1.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 2.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "poison",
+        "encounter": "mushroom-3",
+        "enemy": "Mushroom",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 4.0,
+        "cause": "melee:Mushroom",
+        "causes": {
+          "melee:Mushroom": 50
+        }
+      },
+      {
+        "build": "poison",
+        "encounter": "undine-1",
+        "enemy": "Undine",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 3.0,
+        "avgUnitsLeft": 6.0,
+        "avgUnitsSpent": 3.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "poison",
+        "encounter": "undine-2",
+        "enemy": "Undine",
+        "enemies": 2,
+        "winRate": 1.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 2.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "poison",
+        "encounter": "undine-3",
+        "enemy": "Undine",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 4.0,
+        "cause": "melee:Undine",
+        "causes": {
+          "melee:Undine": 50
+        }
+      },
+      {
+        "build": "poison",
+        "encounter": "cactus-1",
+        "enemy": "Cactus",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 3.0,
+        "avgUnitsLeft": 6.0,
+        "avgUnitsSpent": 3.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "poison",
+        "encounter": "cactus-2",
+        "enemy": "Cactus",
+        "enemies": 2,
+        "winRate": 1.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 2.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "poison",
+        "encounter": "cactus-3",
+        "enemy": "Cactus",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 4.0,
+        "cause": "melee:Cactus",
+        "causes": {
+          "melee:Cactus": 50
+        }
+      },
+      {
+        "build": "poison",
+        "encounter": "mandragora-1",
+        "enemy": "Mandragora",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 3.0,
+        "avgUnitsLeft": 6.0,
+        "avgUnitsSpent": 3.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "poison",
+        "encounter": "mandragora-2",
+        "enemy": "Mandragora",
+        "enemies": 2,
+        "winRate": 1.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 2.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "poison",
+        "encounter": "mandragora-3",
+        "enemy": "Mandragora",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 4.0,
+        "cause": "melee:Mandragora",
+        "causes": {
+          "melee:Mandragora": 50
+        }
+      },
+      {
+        "build": "poison",
+        "encounter": "eye-1",
+        "enemy": "Eye",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 3.0,
+        "avgUnitsLeft": 6.0,
+        "avgUnitsSpent": 3.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "poison",
+        "encounter": "eye-2",
+        "enemy": "Eye",
+        "enemies": 2,
+        "winRate": 1.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 2.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "poison",
+        "encounter": "eye-3",
+        "enemy": "Eye",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 4.0,
+        "cause": "melee:Eye",
+        "causes": {
+          "melee:Eye": 50
+        }
+      },
+      {
+        "build": "acid",
+        "encounter": "bat-1",
+        "enemy": "Bat",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 3.26,
+        "avgUnitsLeft": 7.46,
+        "avgUnitsSpent": 2.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "acid",
+        "encounter": "bat-2",
+        "enemy": "Bat",
+        "enemies": 2,
+        "winRate": 1.0,
+        "avgRounds": 4.74,
+        "avgUnitsLeft": 5.04,
+        "avgUnitsSpent": 4.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "acid",
+        "encounter": "bat-3",
+        "enemy": "Bat",
+        "enemies": 3,
+        "winRate": 1.0,
+        "avgRounds": 6.16,
+        "avgUnitsLeft": 2.44,
+        "avgUnitsSpent": 5.92,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "acid",
+        "encounter": "mushroom-1",
+        "enemy": "Mushroom",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 3.0,
+        "avgUnitsLeft": 6.0,
+        "avgUnitsSpent": 3.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "acid",
+        "encounter": "mushroom-2",
+        "enemy": "Mushroom",
+        "enemies": 2,
+        "winRate": 1.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 2.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "acid",
+        "encounter": "mushroom-3",
+        "enemy": "Mushroom",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 4.0,
+        "cause": "melee:Mushroom",
+        "causes": {
+          "melee:Mushroom": 50
+        }
+      },
+      {
+        "build": "acid",
+        "encounter": "undine-1",
+        "enemy": "Undine",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 3.0,
+        "avgUnitsLeft": 6.0,
+        "avgUnitsSpent": 3.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "acid",
+        "encounter": "undine-2",
+        "enemy": "Undine",
+        "enemies": 2,
+        "winRate": 1.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 2.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "acid",
+        "encounter": "undine-3",
+        "enemy": "Undine",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 4.0,
+        "cause": "melee:Undine",
+        "causes": {
+          "melee:Undine": 50
+        }
+      },
+      {
+        "build": "acid",
+        "encounter": "cactus-1",
+        "enemy": "Cactus",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 3.0,
+        "avgUnitsLeft": 6.0,
+        "avgUnitsSpent": 3.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "acid",
+        "encounter": "cactus-2",
+        "enemy": "Cactus",
+        "enemies": 2,
+        "winRate": 1.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 2.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "acid",
+        "encounter": "cactus-3",
+        "enemy": "Cactus",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 4.0,
+        "cause": "melee:Cactus",
+        "causes": {
+          "melee:Cactus": 50
+        }
+      },
+      {
+        "build": "acid",
+        "encounter": "mandragora-1",
+        "enemy": "Mandragora",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 3.0,
+        "avgUnitsLeft": 6.0,
+        "avgUnitsSpent": 3.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "acid",
+        "encounter": "mandragora-2",
+        "enemy": "Mandragora",
+        "enemies": 2,
+        "winRate": 1.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 2.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "acid",
+        "encounter": "mandragora-3",
+        "enemy": "Mandragora",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 4.0,
+        "cause": "melee:Mandragora",
+        "causes": {
+          "melee:Mandragora": 50
+        }
+      },
+      {
+        "build": "acid",
+        "encounter": "eye-1",
+        "enemy": "Eye",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 3.0,
+        "avgUnitsLeft": 6.0,
+        "avgUnitsSpent": 3.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "acid",
+        "encounter": "eye-2",
+        "enemy": "Eye",
+        "enemies": 2,
+        "winRate": 1.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 2.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "acid",
+        "encounter": "eye-3",
+        "enemy": "Eye",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 4.0,
+        "cause": "melee:Eye",
+        "causes": {
+          "melee:Eye": 50
+        }
+      },
+      {
+        "build": "blood",
+        "encounter": "bat-1",
+        "enemy": "Bat",
+        "enemies": 1,
+        "winRate": 0.0,
+        "avgRounds": 6.72,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 9.0,
+        "cause": "melee:Bat",
+        "causes": {
+          "melee:Bat": 50
+        }
+      },
+      {
+        "build": "blood",
+        "encounter": "bat-2",
+        "enemy": "Bat",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 6.54,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 8.82,
+        "cause": "melee:Bat",
+        "causes": {
+          "melee:Bat": 50
+        }
+      },
+      {
+        "build": "blood",
+        "encounter": "bat-3",
+        "enemy": "Bat",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 6.24,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 8.76,
+        "cause": "melee:Bat",
+        "causes": {
+          "melee:Bat": 50
+        }
+      },
+      {
+        "build": "blood",
+        "encounter": "mushroom-1",
+        "enemy": "Mushroom",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 5.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "blood",
+        "encounter": "mushroom-2",
+        "enemy": "Mushroom",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 5.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 7.0,
+        "cause": "melee:Mushroom",
+        "causes": {
+          "melee:Mushroom": 50
+        }
+      },
+      {
+        "build": "blood",
+        "encounter": "mushroom-3",
+        "enemy": "Mushroom",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 5.0,
+        "cause": "melee:Mushroom",
+        "causes": {
+          "melee:Mushroom": 50
+        }
+      },
+      {
+        "build": "blood",
+        "encounter": "undine-1",
+        "enemy": "Undine",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 5.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "blood",
+        "encounter": "undine-2",
+        "enemy": "Undine",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 5.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 7.0,
+        "cause": "melee:Undine",
+        "causes": {
+          "melee:Undine": 50
+        }
+      },
+      {
+        "build": "blood",
+        "encounter": "undine-3",
+        "enemy": "Undine",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 5.0,
+        "cause": "melee:Undine",
+        "causes": {
+          "melee:Undine": 50
+        }
+      },
+      {
+        "build": "blood",
+        "encounter": "cactus-1",
+        "enemy": "Cactus",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 5.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "blood",
+        "encounter": "cactus-2",
+        "enemy": "Cactus",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 5.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 7.0,
+        "cause": "melee:Cactus",
+        "causes": {
+          "melee:Cactus": 50
+        }
+      },
+      {
+        "build": "blood",
+        "encounter": "cactus-3",
+        "enemy": "Cactus",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 5.0,
+        "cause": "melee:Cactus",
+        "causes": {
+          "melee:Cactus": 50
+        }
+      },
+      {
+        "build": "blood",
+        "encounter": "mandragora-1",
+        "enemy": "Mandragora",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 5.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "blood",
+        "encounter": "mandragora-2",
+        "enemy": "Mandragora",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 5.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 7.0,
+        "cause": "melee:Mandragora",
+        "causes": {
+          "melee:Mandragora": 50
+        }
+      },
+      {
+        "build": "blood",
+        "encounter": "mandragora-3",
+        "enemy": "Mandragora",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 5.0,
+        "cause": "melee:Mandragora",
+        "causes": {
+          "melee:Mandragora": 50
+        }
+      },
+      {
+        "build": "blood",
+        "encounter": "eye-1",
+        "enemy": "Eye",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 5.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "blood",
+        "encounter": "eye-2",
+        "enemy": "Eye",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 5.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 7.0,
+        "cause": "melee:Eye",
+        "causes": {
+          "melee:Eye": 50
+        }
+      },
+      {
+        "build": "blood",
+        "encounter": "eye-3",
+        "enemy": "Eye",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 5.0,
+        "cause": "melee:Eye",
+        "causes": {
+          "melee:Eye": 50
+        }
+      },
+      {
+        "build": "lava",
+        "encounter": "bat-1",
+        "enemy": "Bat",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 3.26,
+        "avgUnitsLeft": 7.46,
+        "avgUnitsSpent": 2.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "lava",
+        "encounter": "bat-2",
+        "enemy": "Bat",
+        "enemies": 2,
+        "winRate": 1.0,
+        "avgRounds": 4.74,
+        "avgUnitsLeft": 5.04,
+        "avgUnitsSpent": 4.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "lava",
+        "encounter": "bat-3",
+        "enemy": "Bat",
+        "enemies": 3,
+        "winRate": 1.0,
+        "avgRounds": 6.16,
+        "avgUnitsLeft": 2.44,
+        "avgUnitsSpent": 5.92,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "lava",
+        "encounter": "mushroom-1",
+        "enemy": "Mushroom",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 3.0,
+        "avgUnitsLeft": 6.0,
+        "avgUnitsSpent": 3.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "lava",
+        "encounter": "mushroom-2",
+        "enemy": "Mushroom",
+        "enemies": 2,
+        "winRate": 1.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 2.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "lava",
+        "encounter": "mushroom-3",
+        "enemy": "Mushroom",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 4.0,
+        "cause": "melee:Mushroom",
+        "causes": {
+          "melee:Mushroom": 50
+        }
+      },
+      {
+        "build": "lava",
+        "encounter": "undine-1",
+        "enemy": "Undine",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 3.0,
+        "avgUnitsLeft": 6.0,
+        "avgUnitsSpent": 3.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "lava",
+        "encounter": "undine-2",
+        "enemy": "Undine",
+        "enemies": 2,
+        "winRate": 1.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 2.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "lava",
+        "encounter": "undine-3",
+        "enemy": "Undine",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 4.0,
+        "cause": "melee:Undine",
+        "causes": {
+          "melee:Undine": 50
+        }
+      },
+      {
+        "build": "lava",
+        "encounter": "cactus-1",
+        "enemy": "Cactus",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 3.0,
+        "avgUnitsLeft": 6.0,
+        "avgUnitsSpent": 3.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "lava",
+        "encounter": "cactus-2",
+        "enemy": "Cactus",
+        "enemies": 2,
+        "winRate": 1.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 2.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "lava",
+        "encounter": "cactus-3",
+        "enemy": "Cactus",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 4.0,
+        "cause": "melee:Cactus",
+        "causes": {
+          "melee:Cactus": 50
+        }
+      },
+      {
+        "build": "lava",
+        "encounter": "mandragora-1",
+        "enemy": "Mandragora",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 3.0,
+        "avgUnitsLeft": 6.0,
+        "avgUnitsSpent": 3.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "lava",
+        "encounter": "mandragora-2",
+        "enemy": "Mandragora",
+        "enemies": 2,
+        "winRate": 1.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 2.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "lava",
+        "encounter": "mandragora-3",
+        "enemy": "Mandragora",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 4.0,
+        "cause": "melee:Mandragora",
+        "causes": {
+          "melee:Mandragora": 50
+        }
+      },
+      {
+        "build": "lava",
+        "encounter": "eye-1",
+        "enemy": "Eye",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 3.0,
+        "avgUnitsLeft": 6.0,
+        "avgUnitsSpent": 3.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "lava",
+        "encounter": "eye-2",
+        "enemy": "Eye",
+        "enemies": 2,
+        "winRate": 1.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 2.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "lava",
+        "encounter": "eye-3",
+        "enemy": "Eye",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 4.0,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 4.0,
+        "cause": "melee:Eye",
+        "causes": {
+          "melee:Eye": 50
+        }
+      },
+      {
+        "build": "mercury",
+        "encounter": "bat-1",
+        "enemy": "Bat",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 3.72,
+        "avgUnitsLeft": 6.0,
+        "avgUnitsSpent": 3.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "mercury",
+        "encounter": "bat-2",
+        "enemy": "Bat",
+        "enemies": 2,
+        "winRate": 1.0,
+        "avgRounds": 5.72,
+        "avgUnitsLeft": 1.96,
+        "avgUnitsSpent": 6.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "mercury",
+        "encounter": "bat-3",
+        "enemy": "Bat",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 14.38,
+        "avgUnitsLeft": 0.04,
+        "avgUnitsSpent": 6.88,
+        "cause": "melee:Bat",
+        "causes": {
+          "melee:Bat": 48,
+          "timeout": 2
+        }
+      },
+      {
+        "build": "mercury",
+        "encounter": "mushroom-1",
+        "enemy": "Mushroom",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 4.72,
+        "avgUnitsLeft": 3.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "mercury",
+        "encounter": "mushroom-2",
+        "enemy": "Mushroom",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 6.34,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 6.3,
+        "cause": "melee:Mushroom",
+        "causes": {
+          "melee:Mushroom": 50
+        }
+      },
+      {
+        "build": "mercury",
+        "encounter": "mushroom-3",
+        "enemy": "Mushroom",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 5.84,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 6.3,
+        "cause": "melee:Mushroom",
+        "causes": {
+          "melee:Mushroom": 50
+        }
+      },
+      {
+        "build": "mercury",
+        "encounter": "undine-1",
+        "enemy": "Undine",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 4.72,
+        "avgUnitsLeft": 3.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "mercury",
+        "encounter": "undine-2",
+        "enemy": "Undine",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 6.34,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 6.3,
+        "cause": "melee:Undine",
+        "causes": {
+          "melee:Undine": 50
+        }
+      },
+      {
+        "build": "mercury",
+        "encounter": "undine-3",
+        "enemy": "Undine",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 5.84,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 6.3,
+        "cause": "melee:Undine",
+        "causes": {
+          "melee:Undine": 50
+        }
+      },
+      {
+        "build": "mercury",
+        "encounter": "cactus-1",
+        "enemy": "Cactus",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 4.72,
+        "avgUnitsLeft": 3.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "mercury",
+        "encounter": "cactus-2",
+        "enemy": "Cactus",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 6.34,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 6.3,
+        "cause": "melee:Cactus",
+        "causes": {
+          "melee:Cactus": 50
+        }
+      },
+      {
+        "build": "mercury",
+        "encounter": "cactus-3",
+        "enemy": "Cactus",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 5.84,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 6.3,
+        "cause": "melee:Cactus",
+        "causes": {
+          "melee:Cactus": 50
+        }
+      },
+      {
+        "build": "mercury",
+        "encounter": "mandragora-1",
+        "enemy": "Mandragora",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 4.72,
+        "avgUnitsLeft": 3.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "mercury",
+        "encounter": "mandragora-2",
+        "enemy": "Mandragora",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 6.34,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 6.3,
+        "cause": "melee:Mandragora",
+        "causes": {
+          "melee:Mandragora": 50
+        }
+      },
+      {
+        "build": "mercury",
+        "encounter": "mandragora-3",
+        "enemy": "Mandragora",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 5.84,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 6.3,
+        "cause": "melee:Mandragora",
+        "causes": {
+          "melee:Mandragora": 50
+        }
+      },
+      {
+        "build": "mercury",
+        "encounter": "eye-1",
+        "enemy": "Eye",
+        "enemies": 1,
+        "winRate": 1.0,
+        "avgRounds": 4.72,
+        "avgUnitsLeft": 3.0,
+        "avgUnitsSpent": 5.0,
+        "cause": null,
+        "causes": {}
+      },
+      {
+        "build": "mercury",
+        "encounter": "eye-2",
+        "enemy": "Eye",
+        "enemies": 2,
+        "winRate": 0.0,
+        "avgRounds": 6.34,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 6.3,
+        "cause": "melee:Eye",
+        "causes": {
+          "melee:Eye": 50
+        }
+      },
+      {
+        "build": "mercury",
+        "encounter": "eye-3",
+        "enemy": "Eye",
+        "enemies": 3,
+        "winRate": 0.0,
+        "avgRounds": 5.84,
+        "avgUnitsLeft": 0.0,
+        "avgUnitsSpent": 6.3,
+        "cause": "melee:Eye",
+        "causes": {
+          "melee:Eye": 50
+        }
+      }
+    ]
+  }
+]

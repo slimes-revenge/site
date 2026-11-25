@@ -10,7 +10,7 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 # What this project is
 
-The design site of Slime's Revenge (GitHub `slimes-revenge/site`). It draws the report of the design simulator (`slimes-revenge/simulator`, Rust): which slime builds win against which enemies. Later it becomes a player wiki from the same data. The game itself is `slimes-revenge/SlimesRevenge` (Unity). `README.md` lists the pages, the planned ones and the Vercel setup.
+The design site of Slime's Revenge (GitHub `slimes-revenge/site`), run locally for now. It draws the report of the design simulator (`slimes-revenge/simulator`, Rust): which slime builds win against which enemies. Later it becomes a player wiki from the same data. The game itself is `slimes-revenge/SlimesRevenge` (Unity). `README.md` lists the pages and the planned ones.
 
 One Next.js app: App Router, React 19, MUI 9 (`@mui/material-nextjs` cache provider, Emotion), TypeScript, zod. No database, no API routes, no environment variables.
 
@@ -27,15 +27,15 @@ One Next.js app: App Router, React 19, MUI 9 (`@mui/material-nextjs` cache provi
 ```text
 src/app/
   layout.tsx              root layout: Roboto font, metadata, Providers
-  page.tsx                `/`: loads the report, header line, sample-data banner, BuildMatrix
+  page.tsx                `/`: loads the reports, sample-data banner, BuildMatrix
   theme.ts                MUI theme, light + dark colour schemes via CSS variables
   components/
     Providers.tsx         AppRouterCacheProvider, ThemeProvider, CssBaseline
-    BuildMatrix.tsx       the matrix table and the fight-summary dialog (client component)
+    BuildMatrix.tsx       action-points switch, header line, matrix table, fight-summary dialog (client)
 src/data/
-  schema.ts               zod schema of design-guard.json (schemaVersion 1)
+  schema.ts               zod schema of design-guard.json (schemaVersion 1, an array of reports)
   report.ts               loadReport(): download at build time, fall back to the sample
-data/sample-design-guard.json   made-up report used when the download fails
+data/sample-design-guard.json   snapshot of a real report (a2f83f6, 2026-11-25), used when the download fails
 docs/                     knowledge notes, index in docs/README.md
 ```
 
@@ -52,4 +52,9 @@ docs/                     knowledge notes, index in docs/README.md
 
 # Rules and docs
 
-Agent rules: `.claude/rules/` (`workflow`, `documentation`, `kiss-dry-yagni`). Base branch `dev`; pull requests are squash-merged; conventional commits. Knowledge notes: `docs/README.md`.
+Agent rules: `.claude/rules/` (`workflow`, `documentation`, `kiss-dry-yagni`). Base branch `dev`; pull requests are squash-merged; conventional commits.
+
+# Branches and deploy
+
+- `dev` (default) gets the work through squash-merged pull requests.
+- Not deployed anywhere yet: no Vercel project, no release to `main`, until the game is close to a first version. Do not set either up without the owner's word.
