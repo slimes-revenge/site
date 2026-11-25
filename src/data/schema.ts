@@ -44,9 +44,17 @@ export const reportSchema = z
     cells: z.array(cellSchema),
   })
   .superRefine((report, ctx) => {
-    // Every cell must point at a listed build and encounter, or the matrix would drop it silently.
+    // Ids must be unique and every cell must point at a listed build and encounter,
+    // or the matrix would overwrite or drop cells silently.
     const builds = new Set(report.builds.map(build => build.id));
     const encounters = new Set(report.encounters.map(encounter => encounter.id));
+    if (builds.size !== report.builds.length || encounters.size !== report.encounters.length) {
+      ctx.addIssue({ code: "custom", path: [], message: "build or encounter ids are not unique" });
+    }
+    const cellKeys = new Set(report.cells.map(cell => `${cell.build}/${cell.encounter}`));
+    if (cellKeys.size !== report.cells.length) {
+      ctx.addIssue({ code: "custom", path: ["cells"], message: "two cells share a build and encounter" });
+    }
     report.cells.forEach((cell, index) => {
       if (!builds.has(cell.build) || !encounters.has(cell.encounter)) {
         ctx.addIssue({
@@ -59,7 +67,12 @@ export const reportSchema = z
   });
 
 // The file is an array of reports, one per actionsPerRound value.
-export const reportsSchema = z.array(reportSchema).min(1);
+export const reportsSchema = z
+  .array(reportSchema)
+  .min(1)
+  .refine(reports => new Set(reports.map(report => report.actionsPerRound)).size === reports.length, {
+    message: "two reports share actionsPerRound",
+  });
 
 export type Build = z.infer<typeof buildSchema>;
 export type Cell = z.infer<typeof cellSchema>;

@@ -76,9 +76,13 @@ export function BuildMatrix({ reports }: { reports: Report[] }) {
         <Typography variant="body2" color="text.secondary">
           Policy <b>{report.policy}</b> · action points per round <b>{report.actionsPerRound}</b> · seeds{" "}
           <b>{report.seeds}</b> · commit{" "}
-          <Link href={`https://github.com/slimes-revenge/simulator/commit/${report.commit}`}>
-            {report.commit.slice(0, 7)}
-          </Link>{" "}
+          {/^[0-9a-f]{7,40}$/.test(report.commit) ? (
+            <Link href={`https://github.com/slimes-revenge/simulator/commit/${report.commit}`}>
+              {report.commit.slice(0, 7)}
+            </Link>
+          ) : (
+            report.commit
+          )}{" "}
           · generated {generated} UTC
         </Typography>
       </Box>

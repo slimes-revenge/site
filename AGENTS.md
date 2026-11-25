@@ -35,7 +35,7 @@ src/app/
 src/data/
   schema.ts               zod schema of design-guard.json (schemaVersion 1, an array of reports)
   report.ts               loadReport(): download at build time, fall back to the sample
-data/sample-design-guard.json   old snapshot of a real report, used when the download fails
+data/sample-design-guard.json   snapshot of a real report (a2f83f6, 2026-11-25), used when the download fails
 docs/                     knowledge notes, index in docs/README.md
 ```
 

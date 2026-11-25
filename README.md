@@ -38,7 +38,7 @@ Every `next build` downloads the simulator report (never from a cache) and prere
 
 `https://github.com/slimes-revenge/simulator/releases/download/latest/design-guard.json`
 
-The format is defined in the simulator repository, `docs/report-format.md`; `src/data/schema.ts` validates it with zod. When the download fails or the file does not match the schema, the build does not fail: it uses the committed `data/sample-design-guard.json` (an old snapshot of a real report) and the page shows a yellow **Sample data** banner with the reason. The build log says so too (`design-guard.json: … using data/sample-design-guard.json`).
+The format is defined in the simulator repository, `docs/report-format.md`; `src/data/schema.ts` validates it with zod. When the download fails or the file does not match the schema, the build does not fail: it uses the committed `data/sample-design-guard.json` (a snapshot of a real report: simulator commit a2f83f6, 2026-11-25) and the page shows a yellow **Sample data** banner with the reason. The build log says so too (`design-guard.json: … using data/sample-design-guard.json`).
 
 The data is read at build time only: the simulator publishes a new report on every push to its `dev`, and `npm run build` (or a reload in `npm run dev`) picks it up.
 
