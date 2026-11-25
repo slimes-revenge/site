@@ -1,7 +1,7 @@
 # Task workflow
 
 1. **Start** — understand the task from the user. Write the acceptance criteria before writing code; if the task has none, propose them and get them confirmed. If the requirement is ambiguous, ask; do not guess.
-2. **Branch** — before the first edit, switch to a branch for the task created from the base branch **`dev`** (production deploys from `main`). Without a given name use `wip-<short-topic>`.
+2. **Branch** — before the first edit, switch to a branch for the task created from the base branch **`dev`**. Without a given name use `wip-<short-topic>`.
 3. **Implement** — the smallest change that satisfies the criteria. Follow the rules in `.claude/rules/` and the matching note in `docs/` (`AGENTS.md` → notes). Before writing Next.js code, read the guide for that API in `node_modules/next/dist/docs/`.
 4. **Verify** — run the checks CI runs: `npx eslint .`, `npx prettier --check .`, `npx tsc --noEmit`, `npm run build`. A visible change is also checked in the browser (`npm run start` after the build, or `npm run dev`): light and dark mode, laptop and phone width (375 px), with a screenshot or a description in the report. A change to data loading is checked with both the live report and the sample fallback.
 5. **Simplify** — KISS / DRY / YAGNI pass over the whole diff (`kiss-dry-yagni` rule). Re-run the affected checks.

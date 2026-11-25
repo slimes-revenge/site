@@ -10,7 +10,7 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 # What this project is
 
-The design site of Slime's Revenge (GitHub `slimes-revenge/site`). It draws the report of the design simulator (`slimes-revenge/simulator`, Rust): which slime builds win against which enemies. Later it becomes a player wiki from the same data. The game itself is `slimes-revenge/SlimesRevenge` (Unity). `README.md` lists the pages, the planned ones and the Vercel setup.
+The design site of Slime's Revenge (GitHub `slimes-revenge/site`), run locally for now. It draws the report of the design simulator (`slimes-revenge/simulator`, Rust): which slime builds win against which enemies. Later it becomes a player wiki from the same data. The game itself is `slimes-revenge/SlimesRevenge` (Unity). `README.md` lists the pages and the planned ones.
 
 One Next.js app: App Router, React 19, MUI 9 (`@mui/material-nextjs` cache provider, Emotion), TypeScript, zod. No database, no API routes, no environment variables.
 
@@ -56,6 +56,5 @@ Agent rules: `.claude/rules/` (`workflow`, `documentation`, `kiss-dry-yagni`). B
 
 # Branches and deploy
 
-- `dev` (default) gets the work; `dev` and pull requests get Vercel previews. `main` is production (Vercel Production Branch).
-- A release is a pull request `dev` → `main` merged with a **merge commit**, never squash: a squash commit on `main` is not in `dev`'s history, so every later release PR would show old changes again and conflict.
-- Production rebuilds only on a push to `main`. The simulator publishes a report on every push to its `dev`; the Deploy Hook in `README.md` (owner action) rebuilds production after each report. Knowledge notes: `docs/README.md`.
+- `dev` (default) gets the work through squash-merged pull requests.
+- Not deployed anywhere yet: no Vercel project, no release to `main`, until the game is close to a first version. Do not set either up without the owner's word.
