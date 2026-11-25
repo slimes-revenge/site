@@ -41,12 +41,14 @@ docs/                     knowledge notes, index in docs/README.md
 
 # Gotchas
 
-- The report is fetched with the default `fetch` options during prerendering, so it is downloaded once per `next build` and not cached between builds. Do not add `cache: "force-cache"`: Vercel's data cache would keep serving an old report after a new simulator release. Details: `docs/design-guard-report.md`.
-- The page must stay static (`○` in the build output). Reading `cookies()`, `headers()` or search params on the server would make it render per request and download the report every time.
+- The report is fetched with `cache: "no-store"` and the page exports `dynamic = "force-static"`: together they download the report on every `next build`, keep `/` static and store nothing in `.next/cache/fetch-cache`. A fetch with default options IS stored there and a later build reuses it (checked locally; on Vercel the build cache can carry it over too), so a new simulator release would not show. Without `force-static`, `no-store` makes `/` dynamic (ƒ). Details: `docs/design-guard-report.md`.
+- The page must stay static (`○` in the build output). Reading `cookies()`, `headers()` or search params on the server would make it render per request.
 - MUI 9 removed system props on components (`fontWeight={500}`): use `sx`.
 - `@ethberry/eslint-config` wants `interface` over `type` for object types and an `I` prefix on interface names; an inferred type often avoids both.
 - Next.js may warn that it ignored a `package-lock.json` outside the repository (for example in the home folder); the warning is harmless.
 - `next-env.d.ts` and `*.tsbuildinfo` are generated and git-ignored.
+- `.npmrc` has `legacy-peer-deps=true` as in the other EthBerry-style repos: `@ethberry/eslint-config` pins plugin peers that do not always match the newest ESLint; without it `npm install` may refuse to resolve.
+- `REPORT_URL` points at the simulator release whose tag is literally `latest` (`releases/download/latest/…`), not GitHub's "newest release" redirect (`releases/latest/download/…`). The simulator re-publishes that tag; if it switches to versioned tags, change the URL to the redirect form.
 
 # Rules and docs
 

@@ -89,7 +89,7 @@ export function BuildMatrix({ report }: { report: Report }) {
                       {cell ? (
                         <ButtonBase
                           onClick={() => setSelected(cell)}
-                          aria-label={`${build} vs ${cell.encounter}: ${percent(cell.winRate)} wins`}
+                          aria-label={`${build} vs ${cell.encounter}: ${percent(cell.winRate)} wins, ${cell.avgUnitsLeft.toFixed(1)} body left`}
                           sx={[
                             { width: "100%", minWidth: 48, py: 0.5, borderRadius: 0.5, flexDirection: "column" },
                             cellColors(cell.winRate),

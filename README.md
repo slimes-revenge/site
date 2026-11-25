@@ -34,7 +34,7 @@ npx eslint . && npx prettier --check . && npx tsc --noEmit && npm run build
 
 ## Data
 
-`next build` downloads the simulator report once and prerenders the page with it:
+Every `next build` downloads the simulator report (never from a cache) and prerenders the page with it:
 
 `https://github.com/slimes-revenge/simulator/releases/download/latest/design-guard.json`
 

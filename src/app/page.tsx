@@ -3,6 +3,9 @@ import { Alert, Box, Container, Link, Typography } from "@mui/material";
 import { loadReport, REPORT_URL } from "../data/report";
 import { BuildMatrix } from "./components/BuildMatrix";
 
+// Prerendered at build time even though the report fetch uses `no-store` (see src/data/report.ts).
+export const dynamic = "force-static";
+
 export default async function Page() {
   const { report, sampleReason } = await loadReport();
   const generated = new Date(report.generatedUtc).toISOString().replace("T", " ").slice(0, 16);
@@ -15,9 +18,13 @@ export default async function Page() {
       <Typography variant="body2" color="text.secondary" gutterBottom>
         Policy <b>{report.policy}</b> · action points <b>{report.actionsPerRound}</b> · seeds <b>{report.seeds}</b> ·
         commit{" "}
-        <Link href={`https://github.com/slimes-revenge/simulator/commit/${report.commit}`}>
-          {report.commit.slice(0, 7)}
-        </Link>{" "}
+        {sampleReason ? (
+          report.commit.slice(0, 7)
+        ) : (
+          <Link href={`https://github.com/slimes-revenge/simulator/commit/${report.commit}`}>
+            {report.commit.slice(0, 7)}
+          </Link>
+        )}{" "}
         · generated {generated} UTC
       </Typography>
       {sampleReason ? (

@@ -16,17 +16,30 @@ export const cellSchema = z.object({
   cause: z.string().nullable(),
 });
 
-export const reportSchema = z.object({
-  schemaVersion: z.literal(1),
-  generatedUtc: z.iso.datetime(),
-  commit: z.string(),
-  policy: z.string(),
-  actionsPerRound: z.number().int().positive(),
-  seeds: z.number().int().positive(),
-  builds: z.array(z.string()),
-  encounters: z.array(z.string()),
-  cells: z.array(cellSchema),
-});
+export const reportSchema = z
+  .object({
+    schemaVersion: z.literal(1),
+    generatedUtc: z.iso.datetime(),
+    commit: z.string(),
+    policy: z.string(),
+    actionsPerRound: z.number().int().positive(),
+    seeds: z.number().int().positive(),
+    builds: z.array(z.string()),
+    encounters: z.array(z.string()),
+    cells: z.array(cellSchema),
+  })
+  .superRefine((report, ctx) => {
+    // Every cell must belong to a listed build and encounter, or the matrix would drop it silently.
+    report.cells.forEach((cell, index) => {
+      if (!report.builds.includes(cell.build) || !report.encounters.includes(cell.encounter)) {
+        ctx.addIssue({
+          code: "custom",
+          path: ["cells", index],
+          message: `cell ${cell.build} / ${cell.encounter} is not in builds / encounters`,
+        });
+      }
+    });
+  });
 
 export type Cell = z.infer<typeof cellSchema>;
 export type Report = z.infer<typeof reportSchema>;
