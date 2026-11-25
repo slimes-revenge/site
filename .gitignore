@@ -1,0 +1,20 @@
+/node_modules
+npm-debug.log*
+package-lock.json
+
+.vscode/*
+.idea
+.next
+next-env.d.ts
+*.tsbuildinfo
+
+# env
+.env.*
+!.env.sample
+.vercel
+
+# session files, local to a checkout (documentation rule)
+/docs/now.md
+/docs/plan.md
+/docs/questions.md
+/docs/missing.md
