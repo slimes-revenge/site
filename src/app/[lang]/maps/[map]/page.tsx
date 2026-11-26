@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Breadcrumbs, Chip, Container, Stack, Typography } from "@mui/material";
+import { Breadcrumbs, Container, Stack, Typography } from "@mui/material";
 
 import { getBoss, getLevel, getMap, getStop, wiki } from "../../../../data/wiki";
 import { getIntl, tr } from "../../../../i18n";
 import { BossCard } from "../../../components/BossCard";
 import { StatusMark } from "../../../components/StatusMark";
-import { RouterLink } from "../../../components/RouterLink";
+import { RouterChip, RouterLink } from "../../../components/RouterLink";
 
 interface IProps {
   params: Promise<{ lang: string; map: string }>;
@@ -84,7 +84,12 @@ export default async function MapPage({ params }: IProps) {
       </Typography>
       <Stack direction="row" sx={{ flexWrap: "wrap", gap: 0.75, mb: 2 }}>
         {creatures.map(creature => (
-          <Chip key={creature.id} label={tr(creature.name, lang)} size="small" />
+          <RouterChip
+            key={creature.id}
+            href={`/${lang}/bestiary/${creature.id}`}
+            label={tr(creature.name, lang)}
+            size="small"
+          />
         ))}
       </Stack>
 
