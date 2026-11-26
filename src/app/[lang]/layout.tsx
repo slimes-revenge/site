@@ -44,10 +44,12 @@ export default async function RootLayout({ children, params }: Props) {
       <body className={roboto.variable}>
         <Providers>
           <Container component="nav" maxWidth="xl" sx={{ pt: 2, px: { xs: 1, sm: 2 } }}>
-            <Stack direction="row" spacing={2} sx={{ flexWrap: "wrap" }}>
+            <Stack direction="row" sx={{ flexWrap: "wrap", columnGap: 2 }}>
               <RouterLink href={`/${lang}`} sx={{ fontWeight: 500 }}>
                 {intl.formatMessage({ id: "nav.route" })}
               </RouterLink>
+              <RouterLink href={`/${lang}/bestiary`}>{intl.formatMessage({ id: "nav.bestiary" })}</RouterLink>
+              <RouterLink href={`/${lang}/liquids`}>{intl.formatMessage({ id: "nav.liquids" })}</RouterLink>
               <RouterLink href={`/${lang}/sim`}>{intl.formatMessage({ id: "nav.sim" })}</RouterLink>
             </Stack>
           </Container>
