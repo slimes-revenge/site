@@ -237,7 +237,36 @@ function byId<T extends { id: string }>(items: T[]) {
 export const getMap = byId(wiki.maps);
 export const getLevel = byId(wiki.levels);
 export const getBoss = byId(wiki.bosses);
-export const findBoss = (id: string) => wiki.bosses.find(boss => boss.id === id);
+// Every guardian, boss and arena boss with its own page: the `bosses` records plus the pool alternatives that exist
+// only as level `variants` (described by their `about` and `pass`), with the levels each can stand on.
+export const bossPages = [
+  ...wiki.bosses,
+  ...Object.values(
+    Object.fromEntries(
+      wiki.levels
+        .flatMap(level => level.variants.map(variant => ({ variant, level })))
+        .filter(({ variant }) => !wiki.bosses.some(boss => boss.id === variant.id))
+        .map(({ variant, level }) => [variant.id, { variant, level }]),
+    ),
+  ).map(({ variant, level }) => ({
+    id: variant.id,
+    kind: variant.kind,
+    name: variant.name,
+    map: level.map,
+    level: level.id,
+    levels: wiki.levels.filter(item => item.variants.some(v => v.id === variant.id)).map(item => item.id),
+    does: variant.about,
+    pass: variant.pass,
+    break: null,
+    deal: null,
+    loot: null,
+    status: variant.status,
+  })),
+];
+export const getBossPage = byId(bossPages);
+
+// The text fields of a boss, in the order pages show them.
+export const bossFields = ["does", "pass", "break", "deal", "loot"] as const;
 export const getCreature = byId(wiki.creatures);
 export const getLiquid = byId(wiki.liquids);
 export const getStop = byId(wiki.stops);

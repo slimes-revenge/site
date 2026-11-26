@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Breadcrumbs, Container, Stack, Typography } from "@mui/material";
 
-import { getBoss, getLevel, getMap, getStop, wiki } from "../../../../data/wiki";
+import { bossPages, getBoss, getLevel, getMap, getStop, wiki } from "../../../../data/wiki";
 import { getIntl, tr } from "../../../../i18n";
 import { BossCard } from "../../../components/BossCard";
 import { StatusMark } from "../../../components/StatusMark";
@@ -29,7 +29,8 @@ export default async function MapPage({ params }: IProps) {
   const levels = map.levels.map(getLevel);
   const numbers = new Set(levels.map(level => level.n));
   const creatures = wiki.creatures.filter(creature => creature.levels.some(n => numbers.has(n)));
-  const arenas = wiki.bosses.filter(boss => boss.map === map.id && boss.kind === "arena");
+  // The map boss, its pool alternatives and the arena bosses.
+  const bosses = bossPages.filter(boss => boss.map === map.id && boss.kind !== "guardian");
 
   return (
     <Container maxWidth="lg" sx={{ py: 2, px: { xs: 1, sm: 2 } }}>
@@ -73,8 +74,7 @@ export default async function MapPage({ params }: IProps) {
         <Typography variant="h6" component="h2">
           {intl.formatMessage({ id: "map.boss" })}
         </Typography>
-        <BossCard boss={getBoss(map.boss)} lang={lang} intl={intl} />
-        {arenas.map(boss => (
+        {bosses.map(boss => (
           <BossCard key={boss.id} boss={boss} lang={lang} intl={intl} />
         ))}
       </Stack>
@@ -95,7 +95,8 @@ export default async function MapPage({ params }: IProps) {
 
       {map.stop ? (
         <Typography>
-          {intl.formatMessage({ id: "map.stop" })}: {tr(getStop(map.stop).name, lang)}
+          {intl.formatMessage({ id: "map.stop" })}:{" "}
+          <RouterLink href={`/${lang}/stops/${map.stop}`}>{tr(getStop(map.stop).name, lang)}</RouterLink>
         </Typography>
       ) : null}
     </Container>
