@@ -95,7 +95,8 @@ export default async function MapPage({ params }: IProps) {
 
       {map.stop ? (
         <Typography>
-          {intl.formatMessage({ id: "map.stop" })}: {tr(getStop(map.stop).name, lang)}
+          {intl.formatMessage({ id: "map.stop" })}:{" "}
+          <RouterLink href={`/${lang}/stops/${map.stop}`}>{tr(getStop(map.stop).name, lang)}</RouterLink>
         </Typography>
       ) : null}
     </Container>

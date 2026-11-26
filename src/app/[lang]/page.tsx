@@ -51,7 +51,7 @@ export default async function RoutePage({ params }: { params: Promise<{ lang: st
               })}
               {map.stop ? (
                 <Typography variant="body2" sx={{ color: "text.secondary", ml: 1 }}>
-                  → {tr(getStop(map.stop).name, lang)}
+                  → <RouterLink href={`/${lang}/stops/${map.stop}`}>{tr(getStop(map.stop).name, lang)}</RouterLink>
                 </Typography>
               ) : null}
             </Stack>

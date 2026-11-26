@@ -32,6 +32,8 @@ src/app/
   [lang]/levels/[level]/  a level page
   [lang]/bestiary/        creature list + a page per creature
   [lang]/liquids/         liquid list + a page per liquid
+  [lang]/bosses/          guardians and bosses + a page each (bossPages: records + pool alternatives)
+  [lang]/stops/           traders + a page each
   [lang]/sim/page.tsx     `/ru/sim`: loads the simulator reports, sample-data banner, BuildMatrix
   theme.ts                MUI theme, light + dark colour schemes via CSS variables
   components/

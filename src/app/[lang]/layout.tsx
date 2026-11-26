@@ -50,6 +50,8 @@ export default async function RootLayout({ children, params }: Props) {
               </RouterLink>
               <RouterLink href={`/${lang}/bestiary`}>{intl.formatMessage({ id: "nav.bestiary" })}</RouterLink>
               <RouterLink href={`/${lang}/liquids`}>{intl.formatMessage({ id: "nav.liquids" })}</RouterLink>
+              <RouterLink href={`/${lang}/bosses`}>{intl.formatMessage({ id: "nav.bosses" })}</RouterLink>
+              <RouterLink href={`/${lang}/stops`}>{intl.formatMessage({ id: "nav.stops" })}</RouterLink>
               <RouterLink href={`/${lang}/sim`}>{intl.formatMessage({ id: "nav.sim" })}</RouterLink>
             </Stack>
           </Container>
