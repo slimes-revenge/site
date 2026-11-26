@@ -1,0 +1,6601 @@
+{
+ "schemaVersion": 1,
+ "generated": "2026-11-26",
+ "maps": [
+  {
+   "id": "map-1",
+   "n": 1,
+   "name": {
+    "ru": "Карьер и заброшенная гномья шахта",
+    "en": "Quarry and the abandoned dwarven mine"
+   },
+   "sky": {
+    "ru": "под землёй"
+   },
+   "status": "decided",
+   "obstacle": {
+    "ru": "обвал в штольне — обход по выработкам; варианты: закрытый гномий шлюз (найти колесо), подземный водопад (шахтная клеть)"
+   },
+   "levels": [
+    "level-1",
+    "level-2",
+    "level-3",
+    "level-4"
+   ],
+   "guardian": "ballista",
+   "boss": "sentinel",
+   "stop": "smith"
+  },
+  {
+   "id": "map-2",
+   "n": 2,
+   "name": {
+    "ru": "Село у реки",
+    "en": "Village by the river"
+   },
+   "sky": {
+    "ru": "всегда день"
+   },
+   "status": "decided",
+   "obstacle": {
+    "ru": "Жижа пересохла — сельчане перегородили её плотиной; ур. 6–7 без реки (капель и лужи); ур. 8 — обойти плотину посуху, сдвинуть камень-затвор"
+   },
+   "levels": [
+    "level-5",
+    "level-6",
+    "level-7",
+    "level-8"
+   ],
+   "guardian": "scarecrow",
+   "boss": "ligeia",
+   "stop": "undertaker"
+  },
+  {
+   "id": "map-3",
+   "n": 3,
+   "name": {
+    "ru": "Кладбище",
+    "en": "Graveyard"
+   },
+   "sky": {
+    "ru": "всегда ночь"
+   },
+   "status": "decided",
+   "obstacle": {
+    "ru": "склепы в обрыве выше паводка: Жижа по дну оврага, обвалы берега и корни — обход через склепы"
+   },
+   "levels": [
+    "level-9",
+    "level-10",
+    "level-11",
+    "level-12"
+   ],
+   "guardian": "bell",
+   "boss": "striga",
+   "stop": "apothecary"
+  },
+  {
+   "id": "map-4",
+   "n": 4,
+   "name": {
+    "ru": "Тоннели под городом",
+    "en": "Tunnels under the city"
+   },
+   "sky": {
+    "ru": "без неба"
+   },
+   "status": "decided",
+   "obstacle": {
+    "ru": "городские шлюзовые ворота закрыты — обход по сводам; варианты: затор из мусора, насосная"
+   },
+   "levels": [
+    "level-13",
+    "level-14",
+    "level-15",
+    "level-16"
+   ],
+   "guardian": "gargoyle",
+   "boss": "rat-king",
+   "stop": "cell"
+  },
+  {
+   "id": "map-5",
+   "n": 5,
+   "name": {
+    "ru": "Под башней",
+    "en": "Under the tower"
+   },
+   "sky": {
+    "ru": "без неба, двор башни — ночь"
+   },
+   "status": "decided",
+   "obstacle": {
+    "ru": "подъёмы вместо преград: пар перегонных кубов, медный змеевик, ведёрный подъёмник"
+   },
+   "levels": [
+    "level-17",
+    "level-18",
+    "level-19",
+    "level-20"
+   ],
+   "guardian": "athanor",
+   "boss": "final",
+   "stop": null
+  }
+ ],
+ "levels": [
+  {
+   "id": "level-1",
+   "n": 1,
+   "map": "map-1",
+   "name": {
+    "ru": "Карьер: отстойник на дне, подъём по уступам к трубе"
+   },
+   "kind": "unique",
+   "status": "working",
+   "enemies": [
+    "bat",
+    "leech",
+    "mold",
+    "undine"
+   ],
+   "liquids": [
+    {
+     "liquid": "water",
+     "from": [
+      {
+       "kind": "river"
+      },
+      {
+       "kind": "corpse",
+       "creature": "mold"
+      },
+      {
+       "kind": "corpse",
+       "creature": "undine"
+      }
+     ]
+    },
+    {
+     "liquid": "blood",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "bat"
+      },
+      {
+       "kind": "corpse",
+       "creature": "leech"
+      }
+     ]
+    }
+   ],
+   "guardian": null,
+   "boss": null,
+   "secrets": [],
+   "inside": [],
+   "resetsOnExit": [],
+   "exit": "none",
+   "capacity": {
+    "easy": 10,
+    "normal": 7,
+    "hard": 6
+   },
+   "rooms": 5,
+   "perRoom": {
+    "ru": "E 1 · N 1–2 · H 1–2"
+   },
+   "hunters": null,
+   "variants": []
+  },
+  {
+   "id": "level-2",
+   "n": 2,
+   "map": "map-1",
+   "name": {
+    "ru": "Гномья шахта"
+   },
+   "kind": "typical",
+   "status": "working",
+   "enemies": [
+    "bat",
+    "leech",
+    "mold",
+    "undine",
+    "vine",
+    "scolopendra"
+   ],
+   "liquids": [
+    {
+     "liquid": "water",
+     "from": [
+      {
+       "kind": "river"
+      },
+      {
+       "kind": "corpse",
+       "creature": "mold"
+      },
+      {
+       "kind": "corpse",
+       "creature": "undine"
+      },
+      {
+       "kind": "corpse",
+       "creature": "vine"
+      }
+     ]
+    },
+    {
+     "liquid": "poison",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "scolopendra"
+      }
+     ]
+    },
+    {
+     "liquid": "blood",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "bat"
+      },
+      {
+       "kind": "corpse",
+       "creature": "leech"
+      }
+     ]
+    }
+   ],
+   "guardian": null,
+   "boss": null,
+   "secrets": [
+    {
+     "name": {
+      "ru": "Гномья кузня"
+     },
+     "note": {
+      "ru": "весь объём превращается в Лаву"
+     },
+     "status": "working"
+    },
+    {
+     "name": {
+      "ru": "Кладовая гномов"
+     },
+     "note": {
+      "ru": "запас жидкостей"
+     },
+     "status": "working"
+    },
+    {
+     "name": {
+      "ru": "Сундук"
+     },
+     "note": {
+      "ru": "может оказаться мимиком"
+     },
+     "status": "working"
+    },
+    {
+     "name": {
+      "ru": "Ничего"
+     },
+     "note": {
+      "ru": "в этом забеге тайника на карте нет"
+     },
+     "status": "working"
+    }
+   ],
+   "inside": [
+    {
+     "ru": "водопад (снимает край)"
+    },
+    {
+     "ru": "узкий лаз (по вместимости)"
+    }
+   ],
+   "resetsOnExit": [],
+   "exit": "none",
+   "capacity": {
+    "easy": 11,
+    "normal": 8,
+    "hard": 7
+   },
+   "rooms": 5,
+   "perRoom": {
+    "ru": "E 1 · N 1–2 · H 1–2"
+   },
+   "hunters": null,
+   "variants": []
+  },
+  {
+   "id": "level-3",
+   "n": 3,
+   "map": "map-1",
+   "name": {
+    "ru": "Гномья шахта"
+   },
+   "kind": "typical",
+   "status": "working",
+   "enemies": [
+    "bat",
+    "leech",
+    "undine",
+    "vine",
+    "scolopendra",
+    "borer",
+    "toadstool",
+    "automaton"
+   ],
+   "liquids": [
+    {
+     "liquid": "water",
+     "from": [
+      {
+       "kind": "river"
+      },
+      {
+       "kind": "corpse",
+       "creature": "undine"
+      },
+      {
+       "kind": "corpse",
+       "creature": "vine"
+      }
+     ]
+    },
+    {
+     "liquid": "mercury",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "automaton"
+      },
+      {
+       "kind": "guardian",
+       "creature": "ballista"
+      }
+     ]
+    },
+    {
+     "liquid": "acid",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "borer"
+      }
+     ]
+    },
+    {
+     "liquid": "poison",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "scolopendra"
+      },
+      {
+       "kind": "corpse",
+       "creature": "toadstool"
+      }
+     ]
+    },
+    {
+     "liquid": "blood",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "bat"
+      },
+      {
+       "kind": "corpse",
+       "creature": "leech"
+      }
+     ]
+    }
+   ],
+   "guardian": "ballista",
+   "boss": null,
+   "secrets": [
+    {
+     "name": {
+      "ru": "Гномья кузня"
+     },
+     "note": {
+      "ru": "весь объём превращается в Лаву"
+     },
+     "status": "working"
+    },
+    {
+     "name": {
+      "ru": "Кладовая гномов"
+     },
+     "note": {
+      "ru": "запас жидкостей"
+     },
+     "status": "working"
+    },
+    {
+     "name": {
+      "ru": "Сундук"
+     },
+     "note": {
+      "ru": "может оказаться мимиком"
+     },
+     "status": "working"
+    },
+    {
+     "name": {
+      "ru": "Ничего"
+     },
+     "note": {
+      "ru": "в этом забеге тайника на карте нет"
+     },
+     "status": "working"
+    }
+   ],
+   "inside": [
+    {
+     "ru": "водопад (снимает край)"
+    },
+    {
+     "ru": "узкий лаз (по вместимости)"
+    }
+   ],
+   "resetsOnExit": [],
+   "exit": "none",
+   "capacity": {
+    "easy": 12,
+    "normal": 9,
+    "hard": 8
+   },
+   "rooms": 6,
+   "perRoom": {
+    "ru": "E 1 · N 1–2 · H 1–2"
+   },
+   "hunters": {
+    "note": {
+     "ru": "Сложный: отряд из двух бойцов в предпоследней комнате; один ловит сетью"
+    },
+    "status": "working"
+   },
+   "variants": [
+    {
+     "id": "ballista",
+     "name": {
+      "ru": "Баллиста",
+      "en": "Ballista"
+     },
+     "kind": "guardian",
+     "about": {
+      "ru": "болт по линии ≤ 4 клеток, 2 с края (Easy 1)"
+     },
+     "pass": {
+      "ru": "Ртуть на краю — не пробивает; Эктоплазма — насквозь; обойти −15 % тела"
+     },
+     "status": "decided"
+    }
+   ]
+  },
+  {
+   "id": "level-4",
+   "n": 4,
+   "map": "map-1",
+   "name": {
+    "ru": "Гномья шахта — зал Стража"
+   },
+   "kind": "boss",
+   "status": "working",
+   "enemies": [
+    "bat",
+    "leech",
+    "undine",
+    "vine",
+    "scolopendra",
+    "borer",
+    "toadstool",
+    "automaton",
+    "scarab"
+   ],
+   "liquids": [
+    {
+     "liquid": "water",
+     "from": [
+      {
+       "kind": "river"
+      },
+      {
+       "kind": "corpse",
+       "creature": "undine"
+      },
+      {
+       "kind": "corpse",
+       "creature": "vine"
+      }
+     ]
+    },
+    {
+     "liquid": "ichor",
+     "from": [
+      {
+       "kind": "boss",
+       "creature": "sentinel"
+      }
+     ]
+    },
+    {
+     "liquid": "mercury",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "automaton"
+      },
+      {
+       "kind": "corpse",
+       "creature": "scarab"
+      },
+      {
+       "kind": "boss",
+       "creature": "sentinel"
+      }
+     ]
+    },
+    {
+     "liquid": "acid",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "borer"
+      }
+     ]
+    },
+    {
+     "liquid": "poison",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "scolopendra"
+      },
+      {
+       "kind": "corpse",
+       "creature": "toadstool"
+      }
+     ]
+    },
+    {
+     "liquid": "blood",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "bat"
+      },
+      {
+       "kind": "corpse",
+       "creature": "leech"
+      }
+     ]
+    }
+   ],
+   "guardian": null,
+   "boss": "sentinel",
+   "secrets": [],
+   "inside": [],
+   "resetsOnExit": [
+    {
+     "liquid": "blood",
+     "becomes": "pus",
+     "where": {
+      "ru": "рудная вода с ядом сколопендр"
+     }
+    },
+    {
+     "liquid": "poison",
+     "becomes": "water",
+     "where": {
+      "ru": "угольная засыпка у стока кузни"
+     }
+    },
+    {
+     "liquid": "lava",
+     "becomes": null,
+     "where": {
+      "ru": "закалочная бадья: только Лава из секрет-кузни, ≤ ½ объёма"
+     }
+    }
+   ],
+   "exit": "none",
+   "capacity": {
+    "easy": 12,
+    "normal": 9,
+    "hard": 8
+   },
+   "rooms": 6,
+   "perRoom": {
+    "ru": "E 1 · N 1–2 · H 1–2"
+   },
+   "hunters": null,
+   "variants": [
+    {
+     "id": "sentinel",
+     "name": {
+      "ru": "Страж гномов",
+      "en": "Sentinel"
+     },
+     "kind": "boss",
+     "about": {
+      "ru": "бронзовый, одна жила ихора (как Талос); броня 1, Ихор давит его"
+     },
+     "pass": {
+      "ru": "драться или узкая штольня (−20 %); договора нет"
+     },
+     "status": "decided"
+    }
+   ]
+  },
+  {
+   "id": "level-5",
+   "n": 5,
+   "map": "map-2",
+   "name": {
+    "ru": "Мельница: подъём на колесе через порог"
+   },
+   "kind": "unique",
+   "status": "working",
+   "enemies": [
+    "bat",
+    "undine",
+    "vine",
+    "scolopendra",
+    "borer",
+    "kikimora",
+    "toad",
+    "bramble",
+    "nettle",
+    "sylph",
+    "puffball",
+    "amanita",
+    "salamander",
+    "imp"
+   ],
+   "liquids": [
+    {
+     "liquid": "water",
+     "from": [
+      {
+       "kind": "river"
+      },
+      {
+       "kind": "corpse",
+       "creature": "kikimora"
+      },
+      {
+       "kind": "corpse",
+       "creature": "puffball"
+      },
+      {
+       "kind": "corpse",
+       "creature": "undine"
+      }
+     ]
+    },
+    {
+     "liquid": "lava",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "salamander"
+      },
+      {
+       "kind": "corpse",
+       "creature": "imp"
+      },
+      {
+       "kind": "guardian",
+       "creature": "scarecrow"
+      }
+     ]
+    },
+    {
+     "liquid": "aqua-vitae",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "vine"
+      }
+     ]
+    },
+    {
+     "liquid": "acid",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "borer"
+      },
+      {
+       "kind": "corpse",
+       "creature": "toad"
+      },
+      {
+       "kind": "corpse",
+       "creature": "bramble"
+      },
+      {
+       "kind": "corpse",
+       "creature": "nettle"
+      }
+     ]
+    },
+    {
+     "liquid": "poison",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "scolopendra"
+      },
+      {
+       "kind": "corpse",
+       "creature": "amanita"
+      }
+     ]
+    },
+    {
+     "liquid": "blood",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "bat"
+      }
+     ]
+    }
+   ],
+   "guardian": "scarecrow",
+   "boss": null,
+   "secrets": [],
+   "inside": [],
+   "resetsOnExit": [],
+   "exit": "day",
+   "capacity": {
+    "easy": 12,
+    "normal": 9,
+    "hard": 8
+   },
+   "rooms": 7,
+   "perRoom": {
+    "ru": "E 1 · N 1–3 · H 2–3"
+   },
+   "hunters": {
+    "note": {
+     "ru": "Сложный: охотник входит у выхода на 10-м раунде и идёт к слайму"
+    },
+    "status": "working"
+   },
+   "variants": [
+    {
+     "id": "scarecrow",
+     "name": {
+      "ru": "Пугало",
+      "en": "Scarecrow"
+     },
+     "kind": "guardian",
+     "about": {
+      "ru": "у шлюза мельницы; увидел — гремит жестянками, сбегается село (тревога радиус 6)"
+     },
+     "pass": {
+      "ru": "не попадаться в конус обзора 4; Эктоплазма — морок; обойти −15 %"
+     },
+     "status": "decided"
+    }
+   ]
+  },
+  {
+   "id": "level-6",
+   "n": 6,
+   "map": "map-2",
+   "name": {
+    "ru": "Сухое русло, канавы и погреба села"
+   },
+   "kind": "typical",
+   "status": "working",
+   "enemies": [
+    "bat",
+    "undine",
+    "vine",
+    "scolopendra",
+    "borer",
+    "kikimora",
+    "drowned",
+    "toad",
+    "bramble",
+    "nettle",
+    "sunflower",
+    "sylph",
+    "bee",
+    "fairy",
+    "puffball",
+    "amanita",
+    "salamander",
+    "imp",
+    "firefly",
+    "skeleton"
+   ],
+   "liquids": [
+    {
+     "liquid": "water",
+     "from": [
+      {
+       "kind": "source",
+       "note": {
+        "ru": "капель и лужи — реки нет"
+       }
+      },
+      {
+       "kind": "corpse",
+       "creature": "kikimora"
+      },
+      {
+       "kind": "corpse",
+       "creature": "drowned"
+      },
+      {
+       "kind": "corpse",
+       "creature": "puffball"
+      },
+      {
+       "kind": "corpse",
+       "creature": "undine"
+      }
+     ]
+    },
+    {
+     "liquid": "lava",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "salamander"
+      },
+      {
+       "kind": "corpse",
+       "creature": "imp"
+      },
+      {
+       "kind": "corpse",
+       "creature": "firefly"
+      },
+      {
+       "kind": "guardian",
+       "creature": "scarecrow"
+      }
+     ]
+    },
+    {
+     "liquid": "aqua-vitae",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "vine"
+      }
+     ]
+    },
+    {
+     "liquid": "acid",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "borer"
+      },
+      {
+       "kind": "corpse",
+       "creature": "toad"
+      },
+      {
+       "kind": "corpse",
+       "creature": "bramble"
+      },
+      {
+       "kind": "corpse",
+       "creature": "nettle"
+      }
+     ]
+    },
+    {
+     "liquid": "poison",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "scolopendra"
+      },
+      {
+       "kind": "corpse",
+       "creature": "amanita"
+      }
+     ]
+    },
+    {
+     "liquid": "blood",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "bat"
+      }
+     ]
+    },
+    {
+     "liquid": "pus",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "drowned"
+      }
+     ]
+    }
+   ],
+   "guardian": "scarecrow",
+   "boss": null,
+   "secrets": [
+    {
+     "name": {
+      "ru": "Подпол мельника"
+     },
+     "note": {
+      "ru": "Гной превращается в Воду, колодец доливает до полной"
+     },
+     "status": "working"
+    },
+    {
+     "name": {
+      "ru": "Сундук"
+     },
+     "note": {
+      "ru": "может оказаться мимиком"
+     },
+     "status": "working"
+    }
+   ],
+   "inside": [
+    {
+     "ru": "решето мельника (снимает Гной; при аффинити Гноя забивается)"
+    },
+    {
+     "ru": "солнечный берег (сушит)"
+    }
+   ],
+   "resetsOnExit": [],
+   "exit": "day",
+   "capacity": {
+    "easy": 13,
+    "normal": 10,
+    "hard": 9
+   },
+   "rooms": 7,
+   "perRoom": {
+    "ru": "E 1 · N 1–3 · H 2–3"
+   },
+   "hunters": {
+    "note": {
+     "ru": "Сложный: охотник входит у выхода на 10-м раунде и идёт к слайму"
+    },
+    "status": "working"
+   },
+   "variants": [
+    {
+     "id": "scarecrow",
+     "name": {
+      "ru": "Пугало",
+      "en": "Scarecrow"
+     },
+     "kind": "guardian",
+     "about": {
+      "ru": "у шлюза мельницы; увидел — гремит жестянками, сбегается село (тревога радиус 6)"
+     },
+     "pass": {
+      "ru": "не попадаться в конус обзора 4; Эктоплазма — морок; обойти −15 %"
+     },
+     "status": "decided"
+    },
+    {
+     "id": "pan",
+     "name": {
+      "ru": "Пан",
+      "en": "Pan"
+     },
+     "kind": "arena",
+     "about": {
+      "ru": "фавн с дудочкой в роще у мельницы; кто слышит дудочку, шагает к нему; арена выпадает не в каждом забеге"
+     },
+     "pass": {
+      "ru": "тайный ход сквозь терновник — теряешь часть объёма"
+     },
+     "status": "decided"
+    },
+    {
+     "id": "hive",
+     "name": {
+      "ru": "Улей",
+      "en": "Hive"
+     },
+     "kind": "arena",
+     "about": {
+      "ru": "сам не нападает, выпускает пчёл по 1 HP; выпадает вместо Пана"
+     },
+     "pass": {
+      "ru": "обойти — теряешь часть объёма"
+     },
+     "status": "decided"
+    }
+   ]
+  },
+  {
+   "id": "level-7",
+   "n": 7,
+   "map": "map-2",
+   "name": {
+    "ru": "Сухое русло, канавы и погреба села"
+   },
+   "kind": "typical",
+   "status": "working",
+   "enemies": [
+    "bat",
+    "undine",
+    "vine",
+    "scolopendra",
+    "borer",
+    "kikimora",
+    "drowned",
+    "toad",
+    "bramble",
+    "nettle",
+    "sunflower",
+    "sylph",
+    "bee",
+    "fairy",
+    "puffball",
+    "amanita",
+    "salamander",
+    "imp",
+    "firefly",
+    "skeleton"
+   ],
+   "liquids": [
+    {
+     "liquid": "water",
+     "from": [
+      {
+       "kind": "source",
+       "note": {
+        "ru": "капель и лужи — реки нет"
+       }
+      },
+      {
+       "kind": "corpse",
+       "creature": "kikimora"
+      },
+      {
+       "kind": "corpse",
+       "creature": "drowned"
+      },
+      {
+       "kind": "corpse",
+       "creature": "puffball"
+      },
+      {
+       "kind": "corpse",
+       "creature": "undine"
+      }
+     ]
+    },
+    {
+     "liquid": "lava",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "salamander"
+      },
+      {
+       "kind": "corpse",
+       "creature": "imp"
+      },
+      {
+       "kind": "corpse",
+       "creature": "firefly"
+      },
+      {
+       "kind": "guardian",
+       "creature": "scarecrow"
+      }
+     ]
+    },
+    {
+     "liquid": "aqua-vitae",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "vine"
+      }
+     ]
+    },
+    {
+     "liquid": "acid",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "borer"
+      },
+      {
+       "kind": "corpse",
+       "creature": "toad"
+      },
+      {
+       "kind": "corpse",
+       "creature": "bramble"
+      },
+      {
+       "kind": "corpse",
+       "creature": "nettle"
+      }
+     ]
+    },
+    {
+     "liquid": "poison",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "scolopendra"
+      },
+      {
+       "kind": "corpse",
+       "creature": "amanita"
+      }
+     ]
+    },
+    {
+     "liquid": "blood",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "bat"
+      }
+     ]
+    },
+    {
+     "liquid": "pus",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "drowned"
+      }
+     ]
+    }
+   ],
+   "guardian": "scarecrow",
+   "boss": null,
+   "secrets": [
+    {
+     "name": {
+      "ru": "Подпол мельника"
+     },
+     "note": {
+      "ru": "Гной превращается в Воду, колодец доливает до полной"
+     },
+     "status": "working"
+    },
+    {
+     "name": {
+      "ru": "Сундук"
+     },
+     "note": {
+      "ru": "может оказаться мимиком"
+     },
+     "status": "working"
+    }
+   ],
+   "inside": [
+    {
+     "ru": "решето мельника (снимает Гной; при аффинити Гноя забивается)"
+    },
+    {
+     "ru": "солнечный берег (сушит)"
+    }
+   ],
+   "resetsOnExit": [],
+   "exit": "day",
+   "capacity": {
+    "easy": 14,
+    "normal": 11,
+    "hard": 10
+   },
+   "rooms": 8,
+   "perRoom": {
+    "ru": "E 1 · N 1–3 · H 2–3"
+   },
+   "hunters": {
+    "note": {
+     "ru": "Сложный: охотник входит у выхода на 10-м раунде и идёт к слайму"
+    },
+    "status": "working"
+   },
+   "variants": [
+    {
+     "id": "scarecrow",
+     "name": {
+      "ru": "Пугало",
+      "en": "Scarecrow"
+     },
+     "kind": "guardian",
+     "about": {
+      "ru": "у шлюза мельницы; увидел — гремит жестянками, сбегается село (тревога радиус 6)"
+     },
+     "pass": {
+      "ru": "не попадаться в конус обзора 4; Эктоплазма — морок; обойти −15 %"
+     },
+     "status": "decided"
+    },
+    {
+     "id": "pan",
+     "name": {
+      "ru": "Пан",
+      "en": "Pan"
+     },
+     "kind": "arena",
+     "about": {
+      "ru": "фавн с дудочкой в роще у мельницы; кто слышит дудочку, шагает к нему; арена выпадает не в каждом забеге"
+     },
+     "pass": {
+      "ru": "тайный ход сквозь терновник — теряешь часть объёма"
+     },
+     "status": "decided"
+    },
+    {
+     "id": "hive",
+     "name": {
+      "ru": "Улей",
+      "en": "Hive"
+     },
+     "kind": "arena",
+     "about": {
+      "ru": "сам не нападает, выпускает пчёл по 1 HP; выпадает вместо Пана"
+     },
+     "pass": {
+      "ru": "обойти — теряешь часть объёма"
+     },
+     "status": "decided"
+    }
+   ]
+  },
+  {
+   "id": "level-8",
+   "n": 8,
+   "map": "map-2",
+   "name": {
+    "ru": "Плотина и водохранилище — островок Лигейи"
+   },
+   "kind": "boss",
+   "status": "working",
+   "enemies": [
+    "bat",
+    "undine",
+    "vine",
+    "scolopendra",
+    "borer",
+    "kikimora",
+    "drowned",
+    "toad",
+    "bramble",
+    "nettle",
+    "sunflower",
+    "sylph",
+    "bee",
+    "fairy",
+    "puffball",
+    "amanita",
+    "salamander",
+    "imp",
+    "firefly",
+    "skeleton"
+   ],
+   "liquids": [
+    {
+     "liquid": "water",
+     "from": [
+      {
+       "kind": "river"
+      },
+      {
+       "kind": "corpse",
+       "creature": "kikimora"
+      },
+      {
+       "kind": "corpse",
+       "creature": "drowned"
+      },
+      {
+       "kind": "corpse",
+       "creature": "puffball"
+      },
+      {
+       "kind": "corpse",
+       "creature": "undine"
+      },
+      {
+       "kind": "source",
+       "note": {
+        "ru": "водохранилище"
+       }
+      }
+     ]
+    },
+    {
+     "liquid": "ichor",
+     "from": [
+      {
+       "kind": "boss",
+       "creature": "ligeia"
+      }
+     ]
+    },
+    {
+     "liquid": "lava",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "salamander"
+      },
+      {
+       "kind": "corpse",
+       "creature": "imp"
+      },
+      {
+       "kind": "corpse",
+       "creature": "firefly"
+      }
+     ]
+    },
+    {
+     "liquid": "aqua-vitae",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "vine"
+      }
+     ]
+    },
+    {
+     "liquid": "acid",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "borer"
+      },
+      {
+       "kind": "corpse",
+       "creature": "toad"
+      },
+      {
+       "kind": "corpse",
+       "creature": "bramble"
+      },
+      {
+       "kind": "corpse",
+       "creature": "nettle"
+      }
+     ]
+    },
+    {
+     "liquid": "poison",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "scolopendra"
+      },
+      {
+       "kind": "corpse",
+       "creature": "amanita"
+      }
+     ]
+    },
+    {
+     "liquid": "blood",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "bat"
+      }
+     ]
+    },
+    {
+     "liquid": "pus",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "drowned"
+      }
+     ]
+    },
+    {
+     "liquid": "aphrodisiac",
+     "from": [
+      {
+       "kind": "boss",
+       "creature": "ligeia"
+      }
+     ]
+    }
+   ],
+   "guardian": null,
+   "boss": "ligeia",
+   "secrets": [],
+   "inside": [],
+   "resetsOnExit": [
+    {
+     "liquid": "water",
+     "becomes": "poison",
+     "where": {
+      "ru": "гнилое озеро за плотиной — подарок, ≤ ½ объёма"
+     }
+    },
+    {
+     "liquid": "aqua-vitae",
+     "becomes": null,
+     "where": {
+      "ru": "испаряется на гребне плотины"
+     }
+    }
+   ],
+   "exit": "day",
+   "capacity": {
+    "easy": 14,
+    "normal": 11,
+    "hard": 10
+   },
+   "rooms": 8,
+   "perRoom": {
+    "ru": "E 1 · N 1–3 · H 2–3"
+   },
+   "hunters": null,
+   "variants": [
+    {
+     "id": "ligeia",
+     "name": {
+      "ru": "Лигейя",
+      "en": "Ligeia"
+     },
+     "kind": "boss",
+     "about": {
+      "ru": "дочь речного бога на островке; песня тянет к ней на клетку; Вода по ней 0, Ртуть +1"
+     },
+     "pass": {
+      "ru": "водослив −20 %"
+     },
+     "status": "decided"
+    }
+   ]
+  },
+  {
+   "id": "level-9",
+   "n": 9,
+   "map": "map-3",
+   "name": {
+    "ru": "Склеп у переправы"
+   },
+   "kind": "unique",
+   "status": "working",
+   "enemies": [
+    "bat",
+    "undine",
+    "scolopendra",
+    "borer",
+    "salamander",
+    "imp",
+    "skeleton",
+    "snail",
+    "ghoul",
+    "crab",
+    "dryad",
+    "shrieker",
+    "ivy",
+    "banshee",
+    "skeleton-archer",
+    "wisp"
+   ],
+   "liquids": [
+    {
+     "liquid": "water",
+     "from": [
+      {
+       "kind": "river"
+      },
+      {
+       "kind": "corpse",
+       "creature": "undine"
+      }
+     ]
+    },
+    {
+     "liquid": "lava",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "salamander"
+      },
+      {
+       "kind": "corpse",
+       "creature": "imp"
+      }
+     ]
+    },
+    {
+     "liquid": "vitriol",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "crab"
+      },
+      {
+       "kind": "guardian",
+       "creature": "bell"
+      }
+     ]
+    },
+    {
+     "liquid": "alkali",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "snail"
+      }
+     ]
+    },
+    {
+     "liquid": "acid",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "borer"
+      },
+      {
+       "kind": "corpse",
+       "creature": "shrieker"
+      }
+     ]
+    },
+    {
+     "liquid": "poison",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "scolopendra"
+      },
+      {
+       "kind": "corpse",
+       "creature": "ghoul"
+      },
+      {
+       "kind": "corpse",
+       "creature": "ivy"
+      }
+     ]
+    },
+    {
+     "liquid": "blood",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "bat"
+      }
+     ]
+    },
+    {
+     "liquid": "pus",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "ghoul"
+      }
+     ]
+    },
+    {
+     "liquid": "resin",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "dryad"
+      }
+     ]
+    },
+    {
+     "liquid": "ectoplasm",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "banshee"
+      },
+      {
+       "kind": "corpse",
+       "creature": "wisp"
+      }
+     ]
+    }
+   ],
+   "guardian": "bell",
+   "boss": null,
+   "secrets": [],
+   "inside": [],
+   "resetsOnExit": [],
+   "exit": "night",
+   "capacity": {
+    "easy": 14,
+    "normal": 11,
+    "hard": 10
+   },
+   "rooms": 9,
+   "perRoom": {
+    "ru": "E 1 · N 1–3 · H 2–3"
+   },
+   "hunters": {
+    "note": {
+     "ru": "Сложный: охотник входит у выхода на 10-м раунде и идёт к слайму"
+    },
+    "status": "working"
+   },
+   "variants": [
+    {
+     "id": "bell",
+     "name": {
+      "ru": "Колокол",
+      "en": "Bell"
+     },
+     "kind": "guardian",
+     "about": {
+      "ru": "на часовне у переправы; звонит, увидев слайма, — встаёт вся нежить в радиусе 6"
+     },
+     "pass": {
+      "ru": "заклеить язык 1 ударом Смолы; Эктоплазма; обойти −15 %"
+     },
+     "status": "decided"
+    }
+   ]
+  },
+  {
+   "id": "level-10",
+   "n": 10,
+   "map": "map-3",
+   "name": {
+    "ru": "Склепы в обрыве над рекой"
+   },
+   "kind": "typical",
+   "status": "working",
+   "enemies": [
+    "bat",
+    "undine",
+    "scolopendra",
+    "borer",
+    "salamander",
+    "imp",
+    "skeleton",
+    "snail",
+    "ghoul",
+    "crab",
+    "dryad",
+    "shrieker",
+    "ivy",
+    "banshee",
+    "skeleton-archer",
+    "wisp"
+   ],
+   "liquids": [
+    {
+     "liquid": "water",
+     "from": [
+      {
+       "kind": "river"
+      },
+      {
+       "kind": "corpse",
+       "creature": "undine"
+      }
+     ]
+    },
+    {
+     "liquid": "lava",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "salamander"
+      },
+      {
+       "kind": "corpse",
+       "creature": "imp"
+      }
+     ]
+    },
+    {
+     "liquid": "vitriol",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "crab"
+      },
+      {
+       "kind": "guardian",
+       "creature": "bell"
+      }
+     ]
+    },
+    {
+     "liquid": "alkali",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "snail"
+      }
+     ]
+    },
+    {
+     "liquid": "acid",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "borer"
+      },
+      {
+       "kind": "corpse",
+       "creature": "shrieker"
+      }
+     ]
+    },
+    {
+     "liquid": "poison",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "scolopendra"
+      },
+      {
+       "kind": "corpse",
+       "creature": "ghoul"
+      },
+      {
+       "kind": "corpse",
+       "creature": "ivy"
+      }
+     ]
+    },
+    {
+     "liquid": "blood",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "bat"
+      }
+     ]
+    },
+    {
+     "liquid": "pus",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "ghoul"
+      }
+     ]
+    },
+    {
+     "liquid": "resin",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "dryad"
+      }
+     ]
+    },
+    {
+     "liquid": "ectoplasm",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "banshee"
+      },
+      {
+       "kind": "corpse",
+       "creature": "wisp"
+      }
+     ]
+    }
+   ],
+   "guardian": "bell",
+   "boss": null,
+   "secrets": [
+    {
+     "name": {
+      "ru": "Склеп без имени"
+     },
+     "note": {
+      "ru": "лужи прошлых слаймов — по единице с каждой"
+     },
+     "status": "working"
+    },
+    {
+     "name": {
+      "ru": "Сундук"
+     },
+     "note": {
+      "ru": "может оказаться мимиком"
+     },
+     "status": "working"
+    }
+   ],
+   "inside": [
+    {
+     "ru": "мыльный водопад с известковых могил (снимает Кислоту)"
+    }
+   ],
+   "resetsOnExit": [],
+   "exit": "night",
+   "capacity": {
+    "easy": 15,
+    "normal": 12,
+    "hard": 11
+   },
+   "rooms": 9,
+   "perRoom": {
+    "ru": "E 1 · N 1–3 · H 2–3"
+   },
+   "hunters": {
+    "note": {
+     "ru": "Сложный: охотник входит у выхода на 10-м раунде и идёт к слайму"
+    },
+    "status": "working"
+   },
+   "variants": [
+    {
+     "id": "bell",
+     "name": {
+      "ru": "Колокол",
+      "en": "Bell"
+     },
+     "kind": "guardian",
+     "about": {
+      "ru": "на часовне у переправы; звонит, увидев слайма, — встаёт вся нежить в радиусе 6"
+     },
+     "pass": {
+      "ru": "заклеить язык 1 ударом Смолы; Эктоплазма; обойти −15 %"
+     },
+     "status": "decided"
+    }
+   ]
+  },
+  {
+   "id": "level-11",
+   "n": 11,
+   "map": "map-3",
+   "name": {
+    "ru": "Склепы в обрыве над рекой"
+   },
+   "kind": "typical",
+   "status": "working",
+   "enemies": [
+    "bat",
+    "undine",
+    "scolopendra",
+    "borer",
+    "salamander",
+    "imp",
+    "skeleton",
+    "snail",
+    "ghoul",
+    "crab",
+    "dryad",
+    "shrieker",
+    "ivy",
+    "banshee",
+    "skeleton-archer",
+    "wisp"
+   ],
+   "liquids": [
+    {
+     "liquid": "water",
+     "from": [
+      {
+       "kind": "river"
+      },
+      {
+       "kind": "corpse",
+       "creature": "undine"
+      }
+     ]
+    },
+    {
+     "liquid": "lava",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "salamander"
+      },
+      {
+       "kind": "corpse",
+       "creature": "imp"
+      }
+     ]
+    },
+    {
+     "liquid": "vitriol",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "crab"
+      },
+      {
+       "kind": "guardian",
+       "creature": "bell"
+      }
+     ]
+    },
+    {
+     "liquid": "alkali",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "snail"
+      }
+     ]
+    },
+    {
+     "liquid": "acid",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "borer"
+      },
+      {
+       "kind": "corpse",
+       "creature": "shrieker"
+      }
+     ]
+    },
+    {
+     "liquid": "poison",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "scolopendra"
+      },
+      {
+       "kind": "corpse",
+       "creature": "ghoul"
+      },
+      {
+       "kind": "corpse",
+       "creature": "ivy"
+      }
+     ]
+    },
+    {
+     "liquid": "blood",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "bat"
+      }
+     ]
+    },
+    {
+     "liquid": "pus",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "ghoul"
+      }
+     ]
+    },
+    {
+     "liquid": "resin",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "dryad"
+      }
+     ]
+    },
+    {
+     "liquid": "ectoplasm",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "banshee"
+      },
+      {
+       "kind": "corpse",
+       "creature": "wisp"
+      }
+     ]
+    }
+   ],
+   "guardian": "bell",
+   "boss": null,
+   "secrets": [
+    {
+     "name": {
+      "ru": "Склеп без имени"
+     },
+     "note": {
+      "ru": "лужи прошлых слаймов — по единице с каждой"
+     },
+     "status": "working"
+    },
+    {
+     "name": {
+      "ru": "Сундук"
+     },
+     "note": {
+      "ru": "может оказаться мимиком"
+     },
+     "status": "working"
+    }
+   ],
+   "inside": [
+    {
+     "ru": "мыльный водопад с известковых могил (снимает Кислоту)"
+    }
+   ],
+   "resetsOnExit": [],
+   "exit": "night",
+   "capacity": {
+    "easy": 16,
+    "normal": 13,
+    "hard": 12
+   },
+   "rooms": 10,
+   "perRoom": {
+    "ru": "E 1 · N 1–3 · H 2–3"
+   },
+   "hunters": {
+    "note": {
+     "ru": "Сложный: охотник входит у выхода на 10-м раунде и идёт к слайму"
+    },
+    "status": "working"
+   },
+   "variants": [
+    {
+     "id": "bell",
+     "name": {
+      "ru": "Колокол",
+      "en": "Bell"
+     },
+     "kind": "guardian",
+     "about": {
+      "ru": "на часовне у переправы; звонит, увидев слайма, — встаёт вся нежить в радиусе 6"
+     },
+     "pass": {
+      "ru": "заклеить язык 1 ударом Смолы; Эктоплазма; обойти −15 %"
+     },
+     "status": "decided"
+    }
+   ]
+  },
+  {
+   "id": "level-12",
+   "n": 12,
+   "map": "map-3",
+   "name": {
+    "ru": "Склеп Стрыги"
+   },
+   "kind": "boss",
+   "status": "working",
+   "enemies": [
+    "bat",
+    "undine",
+    "scolopendra",
+    "borer",
+    "salamander",
+    "imp",
+    "skeleton",
+    "snail",
+    "ghoul",
+    "crab",
+    "dryad",
+    "shrieker",
+    "ivy",
+    "banshee",
+    "skeleton-archer",
+    "wisp"
+   ],
+   "liquids": [
+    {
+     "liquid": "water",
+     "from": [
+      {
+       "kind": "river"
+      },
+      {
+       "kind": "corpse",
+       "creature": "undine"
+      }
+     ]
+    },
+    {
+     "liquid": "ichor",
+     "from": [
+      {
+       "kind": "boss",
+       "creature": "striga"
+      }
+     ]
+    },
+    {
+     "liquid": "lava",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "salamander"
+      },
+      {
+       "kind": "corpse",
+       "creature": "imp"
+      }
+     ]
+    },
+    {
+     "liquid": "vitriol",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "crab"
+      }
+     ]
+    },
+    {
+     "liquid": "alkali",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "snail"
+      }
+     ]
+    },
+    {
+     "liquid": "acid",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "borer"
+      },
+      {
+       "kind": "corpse",
+       "creature": "shrieker"
+      }
+     ]
+    },
+    {
+     "liquid": "poison",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "scolopendra"
+      },
+      {
+       "kind": "corpse",
+       "creature": "ghoul"
+      },
+      {
+       "kind": "corpse",
+       "creature": "ivy"
+      }
+     ]
+    },
+    {
+     "liquid": "blood",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "bat"
+      },
+      {
+       "kind": "boss",
+       "creature": "striga"
+      }
+     ]
+    },
+    {
+     "liquid": "pus",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "ghoul"
+      }
+     ]
+    },
+    {
+     "liquid": "resin",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "dryad"
+      }
+     ]
+    },
+    {
+     "liquid": "ectoplasm",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "banshee"
+      },
+      {
+       "kind": "corpse",
+       "creature": "wisp"
+      }
+     ]
+    }
+   ],
+   "guardian": null,
+   "boss": "striga",
+   "secrets": [],
+   "inside": [],
+   "resetsOnExit": [
+    {
+     "liquid": "ichor",
+     "becomes": null,
+     "where": {
+      "ru": "гаснет в залитом водоводе под городской стеной"
+     }
+    },
+    {
+     "liquid": "alkali",
+     "becomes": "water",
+     "where": {
+      "ru": "сток кожевен в том же водоводе"
+     }
+    }
+   ],
+   "exit": "night",
+   "capacity": {
+    "easy": 16,
+    "normal": 13,
+    "hard": 12
+   },
+   "rooms": 10,
+   "perRoom": {
+    "ru": "E 1 · N 1–3 · H 2–3"
+   },
+   "hunters": null,
+   "variants": [
+    {
+     "id": "striga",
+     "name": {
+      "ru": "Стрыга",
+      "en": "Striga"
+     },
+     "kind": "boss",
+     "about": {
+      "ru": "две фазы: сама (60 %) → огромная летучая мышь (40 %, скорость 2, чует Кровь)"
+     },
+     "pass": {
+      "ru": "драться"
+     },
+     "status": "decided"
+    },
+    {
+     "id": "vampire",
+     "name": {
+      "ru": "Вампир",
+      "en": "Vampire"
+     },
+     "kind": "boss",
+     "about": {
+      "ru": "выпадает вместо Стрыги в части забегов"
+     },
+     "pass": {
+      "ru": "драться"
+     },
+     "status": "decided"
+    }
+   ]
+  },
+  {
+   "id": "level-13",
+   "n": 13,
+   "map": "map-4",
+   "name": {
+    "ru": "Решётка под стеной"
+   },
+   "kind": "unique",
+   "status": "working",
+   "enemies": [
+    "bat",
+    "leech",
+    "mold",
+    "undine",
+    "vine",
+    "scolopendra",
+    "automaton",
+    "toad",
+    "firefly",
+    "skeleton",
+    "snail",
+    "banshee",
+    "wisp",
+    "stinkbug",
+    "woodlouse",
+    "mandrake",
+    "worm"
+   ],
+   "liquids": [
+    {
+     "liquid": "water",
+     "from": [
+      {
+       "kind": "river"
+      },
+      {
+       "kind": "corpse",
+       "creature": "undine"
+      }
+     ]
+    },
+    {
+     "liquid": "lava",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "firefly"
+      },
+      {
+       "kind": "corpse",
+       "creature": "worm"
+      }
+     ]
+    },
+    {
+     "liquid": "mercury",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "automaton"
+      }
+     ]
+    },
+    {
+     "liquid": "aqua-vitae",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "vine"
+      }
+     ]
+    },
+    {
+     "liquid": "vitriol",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "woodlouse"
+      }
+     ]
+    },
+    {
+     "liquid": "alkali",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "snail"
+      },
+      {
+       "kind": "guardian",
+       "creature": "gargoyle"
+      }
+     ]
+    },
+    {
+     "liquid": "acid",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "mold"
+      },
+      {
+       "kind": "corpse",
+       "creature": "toad"
+      }
+     ]
+    },
+    {
+     "liquid": "poison",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "scolopendra"
+      },
+      {
+       "kind": "corpse",
+       "creature": "mandrake"
+      }
+     ]
+    },
+    {
+     "liquid": "blood",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "bat"
+      },
+      {
+       "kind": "corpse",
+       "creature": "leech"
+      }
+     ]
+    },
+    {
+     "liquid": "fat",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "worm"
+      }
+     ]
+    },
+    {
+     "liquid": "sulfur",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "stinkbug"
+      }
+     ]
+    },
+    {
+     "liquid": "ectoplasm",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "banshee"
+      },
+      {
+       "kind": "corpse",
+       "creature": "wisp"
+      }
+     ]
+    }
+   ],
+   "guardian": "gargoyle",
+   "boss": null,
+   "secrets": [],
+   "inside": [],
+   "resetsOnExit": [],
+   "exit": "none",
+   "capacity": {
+    "easy": 16,
+    "normal": 13,
+    "hard": 12
+   },
+   "rooms": 11,
+   "perRoom": {
+    "ru": "E 1 · N 1–3 · H 2–3"
+   },
+   "hunters": {
+    "note": {
+     "ru": "Сложный: охотник входит у выхода на 10-м раунде и идёт к слайму"
+    },
+    "status": "working"
+   },
+   "variants": [
+    {
+     "id": "gargoyle",
+     "name": {
+      "ru": "Горгулья",
+      "en": "Gargoyle"
+     },
+     "kind": "guardian",
+     "about": {
+      "ru": "статуя на арке шлюза: бьёт проходящего под ней раз — укус закона + 2"
+     },
+     "pass": {
+      "ru": "Ртуть на краю — 0; обойти −15 %"
+     },
+     "status": "decided"
+    }
+   ]
+  },
+  {
+   "id": "level-14",
+   "n": 14,
+   "map": "map-4",
+   "name": {
+    "ru": "Кирпичные своды у шлюза"
+   },
+   "kind": "typical",
+   "status": "working",
+   "enemies": [
+    "bat",
+    "leech",
+    "mold",
+    "undine",
+    "vine",
+    "scolopendra",
+    "toad",
+    "firefly",
+    "skeleton",
+    "snail",
+    "banshee",
+    "wisp",
+    "stinkbug",
+    "woodlouse",
+    "mandrake",
+    "ergot",
+    "worm",
+    "pixie"
+   ],
+   "liquids": [
+    {
+     "liquid": "water",
+     "from": [
+      {
+       "kind": "river"
+      },
+      {
+       "kind": "corpse",
+       "creature": "undine"
+      }
+     ]
+    },
+    {
+     "liquid": "lava",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "firefly"
+      },
+      {
+       "kind": "corpse",
+       "creature": "worm"
+      }
+     ]
+    },
+    {
+     "liquid": "aqua-vitae",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "vine"
+      }
+     ]
+    },
+    {
+     "liquid": "vitriol",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "woodlouse"
+      }
+     ]
+    },
+    {
+     "liquid": "alkali",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "snail"
+      },
+      {
+       "kind": "guardian",
+       "creature": "gargoyle"
+      }
+     ]
+    },
+    {
+     "liquid": "acid",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "mold"
+      },
+      {
+       "kind": "corpse",
+       "creature": "toad"
+      }
+     ]
+    },
+    {
+     "liquid": "poison",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "scolopendra"
+      },
+      {
+       "kind": "corpse",
+       "creature": "mandrake"
+      },
+      {
+       "kind": "corpse",
+       "creature": "ergot"
+      }
+     ]
+    },
+    {
+     "liquid": "blood",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "bat"
+      },
+      {
+       "kind": "corpse",
+       "creature": "leech"
+      }
+     ]
+    },
+    {
+     "liquid": "fat",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "worm"
+      }
+     ]
+    },
+    {
+     "liquid": "sulfur",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "stinkbug"
+      }
+     ]
+    },
+    {
+     "liquid": "ectoplasm",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "banshee"
+      },
+      {
+       "kind": "corpse",
+       "creature": "wisp"
+      },
+      {
+       "kind": "corpse",
+       "creature": "pixie"
+      }
+     ]
+    }
+   ],
+   "guardian": "gargoyle",
+   "boss": null,
+   "secrets": [
+    {
+     "name": {
+      "ru": "Подпольная прачечная"
+     },
+     "note": null,
+     "status": "working"
+    },
+    {
+     "name": {
+      "ru": "Сундук"
+     },
+     "note": {
+      "ru": "может оказаться мимиком"
+     },
+     "status": "working"
+    }
+   ],
+   "inside": [
+    {
+     "ru": "магнитный камень в шлюзе (снимает Ртуть)"
+    },
+    {
+     "ru": "мыльный сток прачечной"
+    }
+   ],
+   "resetsOnExit": [],
+   "exit": "none",
+   "capacity": {
+    "easy": 17,
+    "normal": 14,
+    "hard": 13
+   },
+   "rooms": 11,
+   "perRoom": {
+    "ru": "E 1 · N 1–3 · H 2–3"
+   },
+   "hunters": {
+    "note": {
+     "ru": "Сложный: охотник входит у выхода на 10-м раунде и идёт к слайму"
+    },
+    "status": "working"
+   },
+   "variants": [
+    {
+     "id": "gargoyle",
+     "name": {
+      "ru": "Горгулья",
+      "en": "Gargoyle"
+     },
+     "kind": "guardian",
+     "about": {
+      "ru": "статуя на арке шлюза: бьёт проходящего под ней раз — укус закона + 2"
+     },
+     "pass": {
+      "ru": "Ртуть на краю — 0; обойти −15 %"
+     },
+     "status": "decided"
+    }
+   ]
+  },
+  {
+   "id": "level-15",
+   "n": 15,
+   "map": "map-4",
+   "name": {
+    "ru": "Кирпичные своды у шлюза"
+   },
+   "kind": "typical",
+   "status": "working",
+   "enemies": [
+    "bat",
+    "leech",
+    "mold",
+    "undine",
+    "vine",
+    "scolopendra",
+    "toad",
+    "firefly",
+    "skeleton",
+    "snail",
+    "banshee",
+    "wisp",
+    "stinkbug",
+    "woodlouse",
+    "mandrake",
+    "ergot",
+    "worm",
+    "pixie"
+   ],
+   "liquids": [
+    {
+     "liquid": "water",
+     "from": [
+      {
+       "kind": "river"
+      },
+      {
+       "kind": "corpse",
+       "creature": "undine"
+      }
+     ]
+    },
+    {
+     "liquid": "lava",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "firefly"
+      },
+      {
+       "kind": "corpse",
+       "creature": "worm"
+      }
+     ]
+    },
+    {
+     "liquid": "aqua-vitae",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "vine"
+      }
+     ]
+    },
+    {
+     "liquid": "vitriol",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "woodlouse"
+      }
+     ]
+    },
+    {
+     "liquid": "alkali",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "snail"
+      },
+      {
+       "kind": "guardian",
+       "creature": "gargoyle"
+      }
+     ]
+    },
+    {
+     "liquid": "acid",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "mold"
+      },
+      {
+       "kind": "corpse",
+       "creature": "toad"
+      }
+     ]
+    },
+    {
+     "liquid": "poison",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "scolopendra"
+      },
+      {
+       "kind": "corpse",
+       "creature": "mandrake"
+      },
+      {
+       "kind": "corpse",
+       "creature": "ergot"
+      }
+     ]
+    },
+    {
+     "liquid": "blood",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "bat"
+      },
+      {
+       "kind": "corpse",
+       "creature": "leech"
+      }
+     ]
+    },
+    {
+     "liquid": "fat",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "worm"
+      }
+     ]
+    },
+    {
+     "liquid": "sulfur",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "stinkbug"
+      }
+     ]
+    },
+    {
+     "liquid": "ectoplasm",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "banshee"
+      },
+      {
+       "kind": "corpse",
+       "creature": "wisp"
+      },
+      {
+       "kind": "corpse",
+       "creature": "pixie"
+      }
+     ]
+    }
+   ],
+   "guardian": "gargoyle",
+   "boss": null,
+   "secrets": [
+    {
+     "name": {
+      "ru": "Подпольная прачечная"
+     },
+     "note": null,
+     "status": "working"
+    },
+    {
+     "name": {
+      "ru": "Сундук"
+     },
+     "note": {
+      "ru": "может оказаться мимиком"
+     },
+     "status": "working"
+    }
+   ],
+   "inside": [
+    {
+     "ru": "магнитный камень в шлюзе (снимает Ртуть)"
+    },
+    {
+     "ru": "мыльный сток прачечной"
+    }
+   ],
+   "resetsOnExit": [],
+   "exit": "none",
+   "capacity": {
+    "easy": 18,
+    "normal": 15,
+    "hard": 14
+   },
+   "rooms": 12,
+   "perRoom": {
+    "ru": "E 1 · N 1–3 · H 2–3"
+   },
+   "hunters": {
+    "note": {
+     "ru": "Сложный: охотник входит у выхода на 10-м раунде и идёт к слайму"
+    },
+    "status": "working"
+   },
+   "variants": [
+    {
+     "id": "gargoyle",
+     "name": {
+      "ru": "Горгулья",
+      "en": "Gargoyle"
+     },
+     "kind": "guardian",
+     "about": {
+      "ru": "статуя на арке шлюза: бьёт проходящего под ней раз — укус закона + 2"
+     },
+     "pass": {
+      "ru": "Ртуть на краю — 0; обойти −15 %"
+     },
+     "status": "decided"
+    }
+   ]
+  },
+  {
+   "id": "level-16",
+   "n": 16,
+   "map": "map-4",
+   "name": {
+    "ru": "Логово Крысиного короля"
+   },
+   "kind": "boss",
+   "status": "working",
+   "enemies": [
+    "bat",
+    "leech",
+    "mold",
+    "undine",
+    "vine",
+    "scolopendra",
+    "toad",
+    "firefly",
+    "skeleton",
+    "snail",
+    "banshee",
+    "wisp",
+    "stinkbug",
+    "woodlouse",
+    "mandrake",
+    "ergot",
+    "worm",
+    "pixie"
+   ],
+   "liquids": [
+    {
+     "liquid": "water",
+     "from": [
+      {
+       "kind": "river"
+      },
+      {
+       "kind": "corpse",
+       "creature": "undine"
+      }
+     ]
+    },
+    {
+     "liquid": "lava",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "firefly"
+      },
+      {
+       "kind": "corpse",
+       "creature": "worm"
+      }
+     ]
+    },
+    {
+     "liquid": "aqua-vitae",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "vine"
+      }
+     ]
+    },
+    {
+     "liquid": "vitriol",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "woodlouse"
+      }
+     ]
+    },
+    {
+     "liquid": "alkali",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "snail"
+      }
+     ]
+    },
+    {
+     "liquid": "acid",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "mold"
+      },
+      {
+       "kind": "corpse",
+       "creature": "toad"
+      }
+     ]
+    },
+    {
+     "liquid": "poison",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "scolopendra"
+      },
+      {
+       "kind": "corpse",
+       "creature": "mandrake"
+      },
+      {
+       "kind": "corpse",
+       "creature": "ergot"
+      }
+     ]
+    },
+    {
+     "liquid": "blood",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "bat"
+      },
+      {
+       "kind": "corpse",
+       "creature": "leech"
+      },
+      {
+       "kind": "boss",
+       "creature": "rat-king"
+      }
+     ]
+    },
+    {
+     "liquid": "fat",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "worm"
+      }
+     ]
+    },
+    {
+     "liquid": "sulfur",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "stinkbug"
+      }
+     ]
+    },
+    {
+     "liquid": "ectoplasm",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "banshee"
+      },
+      {
+       "kind": "corpse",
+       "creature": "wisp"
+      },
+      {
+       "kind": "corpse",
+       "creature": "pixie"
+      }
+     ]
+    }
+   ],
+   "guardian": null,
+   "boss": "rat-king",
+   "secrets": [],
+   "inside": [],
+   "resetsOnExit": [
+    {
+     "liquid": "fat",
+     "becomes": null,
+     "where": {
+      "ru": "мыльный сток: Жир + Щёлочь"
+     }
+    },
+    {
+     "liquid": "sulfur",
+     "becomes": null,
+     "where": {
+      "ru": "выгорает в дымоходе печи у трубы башни"
+     }
+    }
+   ],
+   "exit": "none",
+   "capacity": {
+    "easy": 18,
+    "normal": 15,
+    "hard": 14
+   },
+   "rooms": 12,
+   "perRoom": {
+    "ru": "E 1 · N 1–3 · H 2–3"
+   },
+   "hunters": null,
+   "variants": [
+    {
+     "id": "rat-king",
+     "name": {
+      "ru": "Крысиный король",
+      "en": "Rat King"
+     },
+     "kind": "boss",
+     "about": {
+      "ru": "в центре; крыса HP 1 раз в 2 раунда, ≤ 4 живых — корм и угроза"
+     },
+     "pass": {
+      "ru": "драться"
+     },
+     "status": "decided"
+    },
+    {
+     "id": "witch",
+     "name": {
+      "ru": "Ведьма",
+      "en": "Witch"
+     },
+     "kind": "boss",
+     "about": {
+      "ru": "запасной вариант вместо Крысиного короля"
+     },
+     "pass": {
+      "ru": "драться"
+     },
+     "status": "proposal"
+    }
+   ]
+  },
+  {
+   "id": "level-17",
+   "n": 17,
+   "map": "map-5",
+   "name": {
+    "ru": "Перегонный подвал — исток Жижи"
+   },
+   "kind": "unique",
+   "status": "working",
+   "enemies": [
+    "bat",
+    "undine",
+    "scolopendra",
+    "amanita",
+    "salamander",
+    "firefly",
+    "skeleton",
+    "snail",
+    "ghoul",
+    "shrieker",
+    "banshee",
+    "skeleton-archer",
+    "wisp",
+    "stinkbug",
+    "woodlouse",
+    "mandrake",
+    "sundew"
+   ],
+   "liquids": [
+    {
+     "liquid": "water",
+     "from": [
+      {
+       "kind": "river"
+      },
+      {
+       "kind": "corpse",
+       "creature": "undine"
+      }
+     ]
+    },
+    {
+     "liquid": "lava",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "salamander"
+      },
+      {
+       "kind": "corpse",
+       "creature": "firefly"
+      },
+      {
+       "kind": "guardian",
+       "creature": "athanor"
+      }
+     ]
+    },
+    {
+     "liquid": "vitriol",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "woodlouse"
+      }
+     ]
+    },
+    {
+     "liquid": "alkali",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "snail"
+      }
+     ]
+    },
+    {
+     "liquid": "acid",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "sundew"
+      },
+      {
+       "kind": "corpse",
+       "creature": "shrieker"
+      }
+     ]
+    },
+    {
+     "liquid": "poison",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "scolopendra"
+      },
+      {
+       "kind": "corpse",
+       "creature": "ghoul"
+      },
+      {
+       "kind": "corpse",
+       "creature": "mandrake"
+      },
+      {
+       "kind": "corpse",
+       "creature": "amanita"
+      }
+     ]
+    },
+    {
+     "liquid": "blood",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "bat"
+      }
+     ]
+    },
+    {
+     "liquid": "pus",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "ghoul"
+      }
+     ]
+    },
+    {
+     "liquid": "sulfur",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "stinkbug"
+      }
+     ]
+    },
+    {
+     "liquid": "ectoplasm",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "banshee"
+      },
+      {
+       "kind": "corpse",
+       "creature": "wisp"
+      }
+     ]
+    }
+   ],
+   "guardian": "athanor",
+   "boss": null,
+   "secrets": [],
+   "inside": [],
+   "resetsOnExit": [],
+   "exit": "none",
+   "capacity": {
+    "easy": 18,
+    "normal": 15,
+    "hard": 14
+   },
+   "rooms": 13,
+   "perRoom": {
+    "ru": "E 1 · N 1–3 · H 2–3"
+   },
+   "hunters": {
+    "note": {
+     "ru": "Сложный: охотник входит у выхода на 10-м раунде и идёт к слайму"
+    },
+    "status": "working"
+   },
+   "variants": [
+    {
+     "id": "athanor",
+     "name": {
+      "ru": "Атанор",
+      "en": "Athanor"
+     },
+     "kind": "guardian",
+     "about": {
+      "ru": "печь алхимика: жар каждые 3 раунда на 3 клетки перед собой"
+     },
+     "pass": {
+      "ru": "Вода на краю гасит; проскочить в паузу; обойти −15 %"
+     },
+     "status": "decided"
+    }
+   ]
+  },
+  {
+   "id": "level-18",
+   "n": 18,
+   "map": "map-5",
+   "name": {
+    "ru": "Подъёмы: пар, змеевик, ведёрный подъёмник"
+   },
+   "kind": "typical",
+   "status": "working",
+   "enemies": [
+    "bat",
+    "undine",
+    "scolopendra",
+    "amanita",
+    "salamander",
+    "firefly",
+    "skeleton",
+    "snail",
+    "ghoul",
+    "shrieker",
+    "banshee",
+    "skeleton-archer",
+    "wisp",
+    "stinkbug",
+    "woodlouse",
+    "mandrake",
+    "sundew"
+   ],
+   "liquids": [
+    {
+     "liquid": "water",
+     "from": [
+      {
+       "kind": "river"
+      },
+      {
+       "kind": "corpse",
+       "creature": "undine"
+      }
+     ]
+    },
+    {
+     "liquid": "lava",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "salamander"
+      },
+      {
+       "kind": "corpse",
+       "creature": "firefly"
+      },
+      {
+       "kind": "guardian",
+       "creature": "athanor"
+      }
+     ]
+    },
+    {
+     "liquid": "vitriol",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "woodlouse"
+      }
+     ]
+    },
+    {
+     "liquid": "alkali",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "snail"
+      }
+     ]
+    },
+    {
+     "liquid": "acid",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "sundew"
+      },
+      {
+       "kind": "corpse",
+       "creature": "shrieker"
+      }
+     ]
+    },
+    {
+     "liquid": "poison",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "scolopendra"
+      },
+      {
+       "kind": "corpse",
+       "creature": "ghoul"
+      },
+      {
+       "kind": "corpse",
+       "creature": "mandrake"
+      },
+      {
+       "kind": "corpse",
+       "creature": "amanita"
+      }
+     ]
+    },
+    {
+     "liquid": "blood",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "bat"
+      }
+     ]
+    },
+    {
+     "liquid": "pus",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "ghoul"
+      }
+     ]
+    },
+    {
+     "liquid": "sulfur",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "stinkbug"
+      }
+     ]
+    },
+    {
+     "liquid": "ectoplasm",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "banshee"
+      },
+      {
+       "kind": "corpse",
+       "creature": "wisp"
+      }
+     ]
+    }
+   ],
+   "guardian": "athanor",
+   "boss": null,
+   "secrets": [
+    {
+     "name": {
+      "ru": "Сундук"
+     },
+     "note": {
+      "ru": "может оказаться мимиком"
+     },
+     "status": "working"
+    }
+   ],
+   "inside": [
+    {
+     "ru": "перегонный куб (снимает летучее)"
+    }
+   ],
+   "resetsOnExit": [],
+   "exit": "none",
+   "capacity": {
+    "easy": 19,
+    "normal": 16,
+    "hard": 15
+   },
+   "rooms": 13,
+   "perRoom": {
+    "ru": "E 1 · N 1–3 · H 2–3"
+   },
+   "hunters": {
+    "note": {
+     "ru": "Сложный: охотник входит у выхода на 10-м раунде и идёт к слайму"
+    },
+    "status": "working"
+   },
+   "variants": [
+    {
+     "id": "athanor",
+     "name": {
+      "ru": "Атанор",
+      "en": "Athanor"
+     },
+     "kind": "guardian",
+     "about": {
+      "ru": "печь алхимика: жар каждые 3 раунда на 3 клетки перед собой"
+     },
+     "pass": {
+      "ru": "Вода на краю гасит; проскочить в паузу; обойти −15 %"
+     },
+     "status": "decided"
+    }
+   ]
+  },
+  {
+   "id": "level-19",
+   "n": 19,
+   "map": "map-5",
+   "name": {
+    "ru": "Подъёмы: пар, змеевик, ведёрный подъёмник"
+   },
+   "kind": "typical",
+   "status": "working",
+   "enemies": [
+    "bat",
+    "undine",
+    "scolopendra",
+    "amanita",
+    "salamander",
+    "firefly",
+    "skeleton",
+    "snail",
+    "ghoul",
+    "shrieker",
+    "banshee",
+    "skeleton-archer",
+    "wisp",
+    "stinkbug",
+    "woodlouse",
+    "mandrake",
+    "sundew"
+   ],
+   "liquids": [
+    {
+     "liquid": "water",
+     "from": [
+      {
+       "kind": "river"
+      },
+      {
+       "kind": "corpse",
+       "creature": "undine"
+      }
+     ]
+    },
+    {
+     "liquid": "lava",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "salamander"
+      },
+      {
+       "kind": "corpse",
+       "creature": "firefly"
+      },
+      {
+       "kind": "guardian",
+       "creature": "athanor"
+      }
+     ]
+    },
+    {
+     "liquid": "vitriol",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "woodlouse"
+      }
+     ]
+    },
+    {
+     "liquid": "alkali",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "snail"
+      }
+     ]
+    },
+    {
+     "liquid": "acid",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "sundew"
+      },
+      {
+       "kind": "corpse",
+       "creature": "shrieker"
+      }
+     ]
+    },
+    {
+     "liquid": "poison",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "scolopendra"
+      },
+      {
+       "kind": "corpse",
+       "creature": "ghoul"
+      },
+      {
+       "kind": "corpse",
+       "creature": "mandrake"
+      },
+      {
+       "kind": "corpse",
+       "creature": "amanita"
+      }
+     ]
+    },
+    {
+     "liquid": "blood",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "bat"
+      }
+     ]
+    },
+    {
+     "liquid": "pus",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "ghoul"
+      }
+     ]
+    },
+    {
+     "liquid": "sulfur",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "stinkbug"
+      }
+     ]
+    },
+    {
+     "liquid": "ectoplasm",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "banshee"
+      },
+      {
+       "kind": "corpse",
+       "creature": "wisp"
+      }
+     ]
+    }
+   ],
+   "guardian": "athanor",
+   "boss": null,
+   "secrets": [
+    {
+     "name": {
+      "ru": "Сундук"
+     },
+     "note": {
+      "ru": "может оказаться мимиком"
+     },
+     "status": "working"
+    }
+   ],
+   "inside": [
+    {
+     "ru": "перегонный куб (снимает летучее)"
+    }
+   ],
+   "resetsOnExit": [],
+   "exit": "none",
+   "capacity": {
+    "easy": 20,
+    "normal": 17,
+    "hard": 16
+   },
+   "rooms": 14,
+   "perRoom": {
+    "ru": "E 1 · N 1–3 · H 2–3"
+   },
+   "hunters": {
+    "note": {
+     "ru": "Сложный: охотник входит у выхода на 10-м раунде и идёт к слайму"
+    },
+    "status": "working"
+   },
+   "variants": [
+    {
+     "id": "athanor",
+     "name": {
+      "ru": "Атанор",
+      "en": "Athanor"
+     },
+     "kind": "guardian",
+     "about": {
+      "ru": "печь алхимика: жар каждые 3 раунда на 3 клетки перед собой"
+     },
+     "pass": {
+      "ru": "Вода на краю гасит; проскочить в паузу; обойти −15 %"
+     },
+     "status": "decided"
+    }
+   ]
+  },
+  {
+   "id": "level-20",
+   "n": 20,
+   "map": "map-5",
+   "name": {
+    "ru": "Вершина башни"
+   },
+   "kind": "boss",
+   "status": "working",
+   "enemies": [
+    "bat",
+    "undine",
+    "scolopendra",
+    "amanita",
+    "salamander",
+    "firefly",
+    "skeleton",
+    "snail",
+    "ghoul",
+    "shrieker",
+    "banshee",
+    "skeleton-archer",
+    "wisp",
+    "stinkbug",
+    "woodlouse",
+    "mandrake",
+    "sundew"
+   ],
+   "liquids": [
+    {
+     "liquid": "water",
+     "from": [
+      {
+       "kind": "river"
+      },
+      {
+       "kind": "corpse",
+       "creature": "undine"
+      }
+     ]
+    },
+    {
+     "liquid": "lava",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "salamander"
+      },
+      {
+       "kind": "corpse",
+       "creature": "firefly"
+      }
+     ]
+    },
+    {
+     "liquid": "vitriol",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "woodlouse"
+      }
+     ]
+    },
+    {
+     "liquid": "alkali",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "snail"
+      }
+     ]
+    },
+    {
+     "liquid": "acid",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "sundew"
+      },
+      {
+       "kind": "corpse",
+       "creature": "shrieker"
+      }
+     ]
+    },
+    {
+     "liquid": "poison",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "scolopendra"
+      },
+      {
+       "kind": "corpse",
+       "creature": "ghoul"
+      },
+      {
+       "kind": "corpse",
+       "creature": "mandrake"
+      },
+      {
+       "kind": "corpse",
+       "creature": "amanita"
+      }
+     ]
+    },
+    {
+     "liquid": "blood",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "bat"
+      }
+     ]
+    },
+    {
+     "liquid": "pus",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "ghoul"
+      }
+     ]
+    },
+    {
+     "liquid": "sulfur",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "stinkbug"
+      }
+     ]
+    },
+    {
+     "liquid": "ectoplasm",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "banshee"
+      },
+      {
+       "kind": "corpse",
+       "creature": "wisp"
+      }
+     ]
+    }
+   ],
+   "guardian": null,
+   "boss": "final",
+   "secrets": [],
+   "inside": [],
+   "resetsOnExit": [],
+   "exit": "night",
+   "capacity": {
+    "easy": 20,
+    "normal": 17,
+    "hard": 16
+   },
+   "rooms": 14,
+   "perRoom": {
+    "ru": "E 1 · N 1–3 · H 2–3"
+   },
+   "hunters": null,
+   "variants": [
+    {
+     "id": "final",
+     "name": {
+      "ru": "Финальный бой",
+      "en": "Final fight"
+     },
+     "kind": "boss",
+     "about": {
+      "ru": "финальный бой на вершине башни"
+     },
+     "pass": {
+      "ru": "драться"
+     },
+     "status": "decided"
+    }
+   ]
+  }
+ ],
+ "bosses": [
+  {
+   "id": "ballista",
+   "kind": "guardian",
+   "name": {
+    "ru": "Баллиста",
+    "en": "Ballista"
+   },
+   "map": "map-1",
+   "level": "level-3",
+   "levels": [
+    "level-3"
+   ],
+   "does": {
+    "ru": "болт по линии ≤ 4 клеток, 2 с края (Easy 1)"
+   },
+   "pass": {
+    "ru": "Ртуть на краю — не пробивает; Эктоплазма — насквозь; обойти −15 % тела"
+   },
+   "break": {
+    "ru": "1 Ртуть"
+   },
+   "deal": null,
+   "loot": {
+    "ru": "1 Ртуть"
+   },
+   "status": "decided"
+  },
+  {
+   "id": "sentinel",
+   "kind": "boss",
+   "name": {
+    "ru": "Страж гномов",
+    "en": "Sentinel"
+   },
+   "map": "map-1",
+   "level": "level-4",
+   "levels": [
+    "level-4"
+   ],
+   "does": {
+    "ru": "бронзовый, одна жила ихора (как Талос); броня 1, Ихор давит его"
+   },
+   "pass": {
+    "ru": "драться или узкая штольня (−20 %); договора нет"
+   },
+   "break": null,
+   "deal": null,
+   "loot": {
+    "ru": "3 Ихора + 2 Ртути"
+   },
+   "status": "decided"
+  },
+  {
+   "id": "scarecrow",
+   "kind": "guardian",
+   "name": {
+    "ru": "Пугало",
+    "en": "Scarecrow"
+   },
+   "map": "map-2",
+   "level": "level-5",
+   "levels": [
+    "level-5",
+    "level-6",
+    "level-7"
+   ],
+   "does": {
+    "ru": "у шлюза мельницы; увидел — гремит жестянками, сбегается село (тревога радиус 6)"
+   },
+   "pass": {
+    "ru": "не попадаться в конус обзора 4; Эктоплазма — морок; обойти −15 %"
+   },
+   "break": {
+    "ru": "солома: Лава сжигает за 2–3 удара; 3 Лавы"
+   },
+   "deal": null,
+   "loot": {
+    "ru": "3 Лавы"
+   },
+   "status": "decided"
+  },
+  {
+   "id": "ligeia",
+   "kind": "boss",
+   "name": {
+    "ru": "Лигейя",
+    "en": "Ligeia"
+   },
+   "map": "map-2",
+   "level": "level-8",
+   "levels": [
+    "level-8"
+   ],
+   "does": {
+    "ru": "дочь речного бога на островке; песня тянет к ней на клетку; Вода по ней 0, Ртуть +1"
+   },
+   "pass": {
+    "ru": "водослив −20 %"
+   },
+   "break": null,
+   "deal": {
+    "ru": "принести янтарь (Смола + Лава у неё на островке) — откроет затвор плотины без боя"
+   },
+   "loot": {
+    "ru": "3 Ихора + Афродизиак"
+   },
+   "status": "decided"
+  },
+  {
+   "id": "bell",
+   "kind": "guardian",
+   "name": {
+    "ru": "Колокол",
+    "en": "Bell"
+   },
+   "map": "map-3",
+   "level": "level-9",
+   "levels": [
+    "level-9",
+    "level-10",
+    "level-11"
+   ],
+   "does": {
+    "ru": "на часовне у переправы; звонит, увидев слайма, — встаёт вся нежить в радиусе 6"
+   },
+   "pass": {
+    "ru": "заклеить язык 1 ударом Смолы; Эктоплазма; обойти −15 %"
+   },
+   "break": {
+    "ru": "3 Купороса (позеленевшая бронза)"
+   },
+   "deal": null,
+   "loot": {
+    "ru": "3 Купороса (позеленевшая бронза)"
+   },
+   "status": "decided"
+  },
+  {
+   "id": "striga",
+   "kind": "boss",
+   "name": {
+    "ru": "Стрыга",
+    "en": "Striga"
+   },
+   "map": "map-3",
+   "level": "level-12",
+   "levels": [
+    "level-12"
+   ],
+   "does": {
+    "ru": "две фазы: сама (60 %) → огромная летучая мышь (40 %, скорость 2, чует Кровь)"
+   },
+   "pass": {
+    "ru": "драться"
+   },
+   "break": null,
+   "deal": null,
+   "loot": {
+    "ru": "3 Крови + 2 Ихора; кровь стриги"
+   },
+   "status": "decided"
+  },
+  {
+   "id": "gargoyle",
+   "kind": "guardian",
+   "name": {
+    "ru": "Горгулья",
+    "en": "Gargoyle"
+   },
+   "map": "map-4",
+   "level": "level-13",
+   "levels": [
+    "level-13",
+    "level-14",
+    "level-15"
+   ],
+   "does": {
+    "ru": "статуя на арке шлюза: бьёт проходящего под ней раз — укус закона + 2"
+   },
+   "pass": {
+    "ru": "Ртуть на краю — 0; обойти −15 %"
+   },
+   "break": {
+    "ru": "3 Щёлочи (известь)"
+   },
+   "deal": null,
+   "loot": {
+    "ru": "3 Щёлочи (известь)"
+   },
+   "status": "decided"
+  },
+  {
+   "id": "rat-king",
+   "kind": "boss",
+   "name": {
+    "ru": "Крысиный король",
+    "en": "Rat King"
+   },
+   "map": "map-4",
+   "level": "level-16",
+   "levels": [
+    "level-16"
+   ],
+   "does": {
+    "ru": "в центре; крыса HP 1 раз в 2 раунда, ≤ 4 живых — корм и угроза"
+   },
+   "pass": {
+    "ru": "драться"
+   },
+   "break": null,
+   "deal": null,
+   "loot": {
+    "ru": "4 Крови"
+   },
+   "status": "decided"
+  },
+  {
+   "id": "athanor",
+   "kind": "guardian",
+   "name": {
+    "ru": "Атанор",
+    "en": "Athanor"
+   },
+   "map": "map-5",
+   "level": "level-17",
+   "levels": [
+    "level-17",
+    "level-18",
+    "level-19"
+   ],
+   "does": {
+    "ru": "печь алхимика: жар каждые 3 раунда на 3 клетки перед собой"
+   },
+   "pass": {
+    "ru": "Вода на краю гасит; проскочить в паузу; обойти −15 %"
+   },
+   "break": {
+    "ru": "4 Лавы"
+   },
+   "deal": null,
+   "loot": {
+    "ru": "4 Лавы"
+   },
+   "status": "decided"
+  },
+  {
+   "id": "final",
+   "kind": "boss",
+   "name": {
+    "ru": "Финальный бой",
+    "en": "Final fight"
+   },
+   "map": "map-5",
+   "level": "level-20",
+   "levels": [
+    "level-20"
+   ],
+   "does": {
+    "ru": "финальный бой на вершине башни"
+   },
+   "pass": {
+    "ru": "драться"
+   },
+   "break": null,
+   "deal": null,
+   "loot": null,
+   "status": "decided"
+  },
+  {
+   "id": "pan",
+   "kind": "arena",
+   "name": {
+    "ru": "Пан",
+    "en": "Pan"
+   },
+   "map": "map-2",
+   "level": "level-6",
+   "levels": [
+    "level-6",
+    "level-7"
+   ],
+   "does": {
+    "ru": "фавн с дудочкой в роще у мельницы; кто слышит дудочку, шагает к нему; арена выпадает не в каждом забеге"
+   },
+   "pass": {
+    "ru": "тайный ход сквозь терновник — теряешь часть объёма"
+   },
+   "break": null,
+   "deal": {
+    "ru": "гномий эль → Ртуть из его тайника"
+   },
+   "loot": {
+    "ru": "2 Ихора + пасека"
+   },
+   "status": "decided"
+  },
+  {
+   "id": "hive",
+   "kind": "arena",
+   "name": {
+    "ru": "Улей",
+    "en": "Hive"
+   },
+   "map": "map-2",
+   "level": "level-6",
+   "levels": [
+    "level-6",
+    "level-7"
+   ],
+   "does": {
+    "ru": "сам не нападает, выпускает пчёл по 1 HP; выпадает вместо Пана"
+   },
+   "pass": {
+    "ru": "обойти — теряешь часть объёма"
+   },
+   "break": null,
+   "deal": null,
+   "loot": {
+    "ru": "мёд (одиночка)"
+   },
+   "status": "decided"
+  }
+ ],
+ "creatures": [
+  {
+   "id": "bat",
+   "name": {
+    "ru": "Летучая мышь",
+    "en": "Bat"
+   },
+   "type": {
+    "ru": "Живые"
+   },
+   "element": "alkali",
+   "does": {
+    "ru": "быстрая, мало здоровья"
+   },
+   "levels": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+   ],
+   "loot": [
+    {
+     "liquid": "blood",
+     "levels": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+     ]
+    }
+   ],
+   "weakTo": [
+    "poison"
+   ],
+   "immuneTo": [
+    "alkali"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "leech",
+   "name": {
+    "ru": "Пиявка",
+    "en": "Leech"
+   },
+   "type": {
+    "ru": "Живые"
+   },
+   "element": "alkali",
+   "does": {
+    "ru": "пассивная, много Крови"
+   },
+   "levels": [
+    1,
+    2,
+    3,
+    4,
+    13,
+    14,
+    15,
+    16
+   ],
+   "loot": [
+    {
+     "liquid": "blood",
+     "levels": [
+      1,
+      2,
+      3,
+      4,
+      13,
+      14,
+      15,
+      16
+     ]
+    }
+   ],
+   "weakTo": [
+    "poison"
+   ],
+   "immuneTo": [
+    "alkali"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "mold",
+   "name": {
+    "ru": "Плесень",
+    "en": "Mold"
+   },
+   "type": {
+    "ru": "Грибы"
+   },
+   "element": "aqua-vitae",
+   "does": {
+    "ru": "медленный тренажёр; труп — Вода (сырость)"
+   },
+   "levels": [
+    1,
+    2,
+    13,
+    14,
+    15,
+    16
+   ],
+   "loot": [
+    {
+     "liquid": "water",
+     "levels": [
+      1,
+      2
+     ]
+    },
+    {
+     "liquid": "acid",
+     "levels": [
+      13,
+      14,
+      15,
+      16
+     ]
+    }
+   ],
+   "weakTo": [
+    "lava"
+   ],
+   "immuneTo": [
+    "aqua-vitae"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "undine",
+   "name": {
+    "ru": "Ундина",
+    "en": "Undine"
+   },
+   "type": {
+    "ru": "Водяные"
+   },
+   "element": "water",
+   "does": {
+    "ru": "водный дух отстойника: видит далеко, будит соседей"
+   },
+   "levels": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+   ],
+   "loot": [
+    {
+     "liquid": "water",
+     "levels": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+     ]
+    }
+   ],
+   "weakTo": [
+    "mercury"
+   ],
+   "immuneTo": [
+    "water"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "vine",
+   "name": {
+    "ru": "Лоза",
+    "en": "Vine"
+   },
+   "type": {
+    "ru": "Растения"
+   },
+   "element": "ambrosia",
+   "does": {
+    "ru": "корни сквозь свод штольни, хватает"
+   },
+   "levels": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    13,
+    14,
+    15,
+    16
+   ],
+   "loot": [
+    {
+     "liquid": "water",
+     "levels": [
+      2,
+      3,
+      4
+     ]
+    },
+    {
+     "liquid": "aqua-vitae",
+     "levels": [
+      5,
+      6,
+      7,
+      8,
+      13,
+      14,
+      15,
+      16
+     ]
+    }
+   ],
+   "weakTo": [
+    "vitriol"
+   ],
+   "immuneTo": [
+    "ambrosia"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "scolopendra",
+   "name": {
+    "ru": "Сколопендра",
+    "en": "Scolopendra"
+   },
+   "type": {
+    "ru": "Насекомые"
+   },
+   "element": "poison",
+   "does": {
+    "ru": "укус портит Кровь в Гной; Яд с ур. 2 — для гнойного билда"
+   },
+   "levels": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+   ],
+   "loot": [
+    {
+     "liquid": "poison",
+     "levels": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+     ]
+    }
+   ],
+   "weakTo": [
+    "ambrosia"
+   ],
+   "immuneTo": [
+    "poison"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "borer",
+   "name": {
+    "ru": "Точильщик",
+    "en": "Borer"
+   },
+   "type": {
+    "ru": "Едкие жуки"
+   },
+   "element": "acid",
+   "does": {
+    "ru": "грызёт породу кислотой — немного Кислоты на карте 1"
+   },
+   "levels": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "loot": [
+    {
+     "liquid": "acid",
+     "levels": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ]
+    }
+   ],
+   "weakTo": [
+    "alkali"
+   ],
+   "immuneTo": [
+    "acid"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "toadstool",
+   "name": {
+    "ru": "Поганка",
+    "en": "Toadstool"
+   },
+   "type": {
+    "ru": "Грибы"
+   },
+   "element": "aqua-vitae",
+   "does": {
+    "ru": "растёт на гнилой крепи; ядовитая — окно Яда карты 1"
+   },
+   "levels": [
+    3,
+    4
+   ],
+   "loot": [
+    {
+     "liquid": "poison",
+     "levels": [
+      3,
+      4
+     ]
+    }
+   ],
+   "weakTo": [
+    "lava"
+   ],
+   "immuneTo": [
+    "aqua-vitae"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "automaton",
+   "name": {
+    "ru": "Автоматон",
+    "en": "Automaton"
+   },
+   "type": {
+    "ru": "Механизмы гномов"
+   },
+   "element": "mercury",
+   "does": {
+    "ru": "гномий сторож штолен"
+   },
+   "levels": [
+    3,
+    4,
+    13
+   ],
+   "loot": [
+    {
+     "liquid": "mercury",
+     "levels": [
+      3,
+      4,
+      13
+     ]
+    }
+   ],
+   "weakTo": [
+    "ichor"
+   ],
+   "immuneTo": [
+    "mercury"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "scarab",
+   "name": {
+    "ru": "Скарабей",
+    "en": "Scarab"
+   },
+   "type": {
+    "ru": "Механизмы гномов"
+   },
+   "element": "mercury",
+   "does": {
+    "ru": "катается, таранит"
+   },
+   "levels": [
+    4
+   ],
+   "loot": [
+    {
+     "liquid": "mercury",
+     "levels": [
+      4
+     ]
+    }
+   ],
+   "weakTo": [
+    "ichor"
+   ],
+   "immuneTo": [
+    "mercury"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "kikimora",
+   "name": {
+    "ru": "Кикимора",
+    "en": "Kikimora"
+   },
+   "type": {
+    "ru": "Волшебные"
+   },
+   "element": "alkali",
+   "does": {
+    "ru": "в камышах, засада"
+   },
+   "levels": [
+    5,
+    6,
+    7,
+    8
+   ],
+   "loot": [
+    {
+     "liquid": "water",
+     "levels": [
+      5,
+      6,
+      7,
+      8
+     ]
+    }
+   ],
+   "weakTo": [
+    "poison"
+   ],
+   "immuneTo": [
+    "alkali"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "drowned",
+   "name": {
+    "ru": "Утопленник",
+    "en": "Drowned"
+   },
+   "type": {
+    "ru": "Нежить: трупы"
+   },
+   "element": "poison",
+   "does": {
+    "ru": "раздутый, лопается облаком"
+   },
+   "levels": [
+    6,
+    7,
+    8
+   ],
+   "loot": [
+    {
+     "liquid": "water",
+     "levels": [
+      6,
+      7,
+      8
+     ]
+    },
+    {
+     "liquid": "pus",
+     "levels": [
+      6,
+      7,
+      8
+     ]
+    }
+   ],
+   "weakTo": [
+    "ambrosia"
+   ],
+   "immuneTo": [
+    "poison"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "toad",
+   "name": {
+    "ru": "Жаба",
+    "en": "Toad"
+   },
+   "type": {
+    "ru": "Едкие жуки"
+   },
+   "element": "acid",
+   "does": {
+    "ru": "кислотная жаба у мельничного пруда: плюётся кислотой на 2–3 клетки"
+   },
+   "levels": [
+    5,
+    6,
+    7,
+    8,
+    13,
+    14,
+    15,
+    16
+   ],
+   "loot": [
+    {
+     "liquid": "acid",
+     "levels": [
+      5,
+      6,
+      7,
+      8,
+      13,
+      14,
+      15,
+      16
+     ]
+    }
+   ],
+   "weakTo": [
+    "alkali"
+   ],
+   "immuneTo": [
+    "acid"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "bramble",
+   "name": {
+    "ru": "Терновник",
+    "en": "Bramble"
+   },
+   "type": {
+    "ru": "Растения"
+   },
+   "element": "ambrosia",
+   "does": {
+    "ru": "колючие заросли у мельницы, оплетают проход"
+   },
+   "levels": [
+    5,
+    6,
+    7,
+    8
+   ],
+   "loot": [
+    {
+     "liquid": "acid",
+     "levels": [
+      5,
+      6,
+      7,
+      8
+     ]
+    }
+   ],
+   "weakTo": [
+    "vitriol"
+   ],
+   "immuneTo": [
+    "ambrosia"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "nettle",
+   "name": {
+    "ru": "Крапива",
+    "en": "Nettle"
+   },
+   "type": {
+    "ru": "Растения"
+   },
+   "element": "ambrosia",
+   "does": {
+    "ru": "жжётся — в ней кислота"
+   },
+   "levels": [
+    5,
+    6,
+    7,
+    8
+   ],
+   "loot": [
+    {
+     "liquid": "acid",
+     "levels": [
+      5,
+      6,
+      7,
+      8
+     ]
+    }
+   ],
+   "weakTo": [
+    "vitriol"
+   ],
+   "immuneTo": [
+    "ambrosia"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "sunflower",
+   "name": {
+    "ru": "Подсолнух",
+    "en": "Sunflower"
+   },
+   "type": {
+    "ru": "Растения"
+   },
+   "element": "ambrosia",
+   "does": {
+    "ru": "видит через огород, будит село"
+   },
+   "levels": [
+    6,
+    7,
+    8
+   ],
+   "loot": [],
+   "weakTo": [
+    "vitriol"
+   ],
+   "immuneTo": [
+    "ambrosia"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "sylph",
+   "name": {
+    "ru": "Сильф",
+    "en": "Sylph"
+   },
+   "type": {
+    "ru": "Волшебные"
+   },
+   "element": "lava",
+   "does": {
+    "ru": "дух ветра и зноя в полях у мельницы; днём — слайм видит его редко"
+   },
+   "levels": [
+    5,
+    6,
+    7,
+    8
+   ],
+   "loot": [],
+   "weakTo": [
+    "water"
+   ],
+   "immuneTo": [
+    "lava"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "bee",
+   "name": {
+    "ru": "Пчела",
+    "en": "Bee"
+   },
+   "type": {
+    "ru": "Насекомые"
+   },
+   "element": "poison",
+   "does": {
+    "ru": "миньон Улья, 1 HP"
+   },
+   "levels": [
+    6,
+    7,
+    8
+   ],
+   "loot": [],
+   "weakTo": [
+    "ambrosia"
+   ],
+   "immuneTo": [
+    "poison"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "fairy",
+   "name": {
+    "ru": "Фея",
+    "en": "Fairy"
+   },
+   "type": {
+    "ru": "Волшебные"
+   },
+   "element": "ambrosia",
+   "does": {
+    "ru": "ночью на пасеке и в огородах"
+   },
+   "levels": [
+    6,
+    7,
+    8
+   ],
+   "loot": [],
+   "weakTo": [
+    "vitriol"
+   ],
+   "immuneTo": [
+    "ambrosia"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "puffball",
+   "name": {
+    "ru": "Дождевик",
+    "en": "Puffball"
+   },
+   "type": {
+    "ru": "Грибы"
+   },
+   "element": "aqua-vitae",
+   "does": {
+    "ru": "топнешь рядом — пыхнет облаком спор, обзор закрыт"
+   },
+   "levels": [
+    5,
+    6,
+    7,
+    8
+   ],
+   "loot": [
+    {
+     "liquid": "water",
+     "levels": [
+      5,
+      6,
+      7,
+      8
+     ]
+    }
+   ],
+   "weakTo": [
+    "lava"
+   ],
+   "immuneTo": [
+    "aqua-vitae"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "amanita",
+   "name": {
+    "ru": "Мухомор",
+    "en": "Amanita"
+   },
+   "type": {
+    "ru": "Грибы"
+   },
+   "element": "aqua-vitae",
+   "does": {
+    "ru": "на лугу у мельницы: споры дурманят — кто рядом, «пляшет» и не может уйти, пока не сорвёт гриб"
+   },
+   "levels": [
+    5,
+    6,
+    7,
+    8,
+    17,
+    18,
+    19,
+    20
+   ],
+   "loot": [
+    {
+     "liquid": "poison",
+     "levels": [
+      5,
+      6,
+      7,
+      8,
+      17,
+      18,
+      19,
+      20
+     ]
+    }
+   ],
+   "weakTo": [
+    "lava"
+   ],
+   "immuneTo": [
+    "aqua-vitae"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "salamander",
+   "name": {
+    "ru": "Саламандра",
+    "en": "Salamander"
+   },
+   "type": {
+    "ru": "Огненные"
+   },
+   "element": "lava",
+   "does": {
+    "ru": "из горнов; носитель Лавы"
+   },
+   "levels": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    17,
+    18,
+    19,
+    20
+   ],
+   "loot": [
+    {
+     "liquid": "lava",
+     "levels": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      17,
+      18,
+      19,
+      20
+     ]
+    }
+   ],
+   "weakTo": [
+    "water"
+   ],
+   "immuneTo": [
+    "lava"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "imp",
+   "name": {
+    "ru": "Бесёнок",
+    "en": "Imp"
+   },
+   "type": {
+    "ru": "Огненные"
+   },
+   "element": "lava",
+   "does": {
+    "ru": "огненный бес из сушильни, поджигает солому"
+   },
+   "levels": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "loot": [
+    {
+     "liquid": "lava",
+     "levels": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ]
+    }
+   ],
+   "weakTo": [
+    "water"
+   ],
+   "immuneTo": [
+    "lava"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "firefly",
+   "name": {
+    "ru": "Светлячок",
+    "en": "Firefly"
+   },
+   "type": {
+    "ru": "Огненные"
+   },
+   "element": "lava",
+   "does": {
+    "ru": "огненный жук, прыгает искрой"
+   },
+   "levels": [
+    6,
+    7,
+    8,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+   ],
+   "loot": [
+    {
+     "liquid": "lava",
+     "levels": [
+      6,
+      7,
+      8,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+     ]
+    }
+   ],
+   "weakTo": [
+    "water"
+   ],
+   "immuneTo": [
+    "lava"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "skeleton",
+   "name": {
+    "ru": "Скелет",
+    "en": "Skeleton"
+   },
+   "type": {
+    "ru": "Нежить: кости"
+   },
+   "element": "ichor",
+   "does": {
+    "ru": "старый мельник из-под жерновов"
+   },
+   "levels": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+   ],
+   "loot": [],
+   "weakTo": [
+    "aqua-vitae"
+   ],
+   "immuneTo": [
+    "ichor"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "snail",
+   "name": {
+    "ru": "Улитка",
+    "en": "Snail"
+   },
+   "type": {
+    "ru": "Живые"
+   },
+   "element": "alkali",
+   "does": {
+    "ru": "носитель Щёлочи (выбор гробовщика)"
+   },
+   "levels": [
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+   ],
+   "loot": [
+    {
+     "liquid": "alkali",
+     "levels": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+     ]
+    }
+   ],
+   "weakTo": [
+    "poison"
+   ],
+   "immuneTo": [
+    "alkali"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "ghoul",
+   "name": {
+    "ru": "Гуль",
+    "en": "Ghoul"
+   },
+   "type": {
+    "ru": "Нежить: трупы"
+   },
+   "element": "poison",
+   "does": {
+    "ru": "лопается облаком"
+   },
+   "levels": [
+    9,
+    10,
+    11,
+    12,
+    17,
+    18,
+    19,
+    20
+   ],
+   "loot": [
+    {
+     "liquid": "poison",
+     "levels": [
+      9,
+      10,
+      11,
+      12,
+      17,
+      18,
+      19,
+      20
+     ]
+    },
+    {
+     "liquid": "pus",
+     "levels": [
+      9,
+      10,
+      11,
+      12,
+      17,
+      18,
+      19,
+      20
+     ]
+    }
+   ],
+   "weakTo": [
+    "ambrosia"
+   ],
+   "immuneTo": [
+    "poison"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "crab",
+   "name": {
+    "ru": "Краб",
+    "en": "Crab"
+   },
+   "type": {
+    "ru": "Ракообразные"
+   },
+   "element": "vitriol",
+   "does": {
+    "ru": "в реке под обрывом"
+   },
+   "levels": [
+    9,
+    10,
+    11,
+    12
+   ],
+   "loot": [
+    {
+     "liquid": "vitriol",
+     "levels": [
+      9,
+      10,
+      11,
+      12
+     ]
+    }
+   ],
+   "weakTo": [
+    "acid"
+   ],
+   "immuneTo": [
+    "vitriol"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "dryad",
+   "name": {
+    "ru": "Дриада",
+    "en": "Dryad"
+   },
+   "type": {
+    "ru": "Растения"
+   },
+   "element": "ambrosia",
+   "does": {
+    "ru": "дух сосен над кладбищем; берёшь Смолу"
+   },
+   "levels": [
+    9,
+    10,
+    11,
+    12
+   ],
+   "loot": [
+    {
+     "liquid": "resin",
+     "levels": [
+      9,
+      10,
+      11,
+      12
+     ]
+    }
+   ],
+   "weakTo": [
+    "vitriol"
+   ],
+   "immuneTo": [
+    "ambrosia"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "shrieker",
+   "name": {
+    "ru": "Визгун",
+    "en": "Shrieker"
+   },
+   "type": {
+    "ru": "Грибы"
+   },
+   "element": "aqua-vitae",
+   "does": {
+    "ru": "визжит, как только видит слайма, — будит всех вокруг"
+   },
+   "levels": [
+    9,
+    10,
+    11,
+    12,
+    17,
+    18,
+    19,
+    20
+   ],
+   "loot": [
+    {
+     "liquid": "acid",
+     "levels": [
+      9,
+      10,
+      11,
+      12,
+      17,
+      18,
+      19,
+      20
+     ]
+    }
+   ],
+   "weakTo": [
+    "lava"
+   ],
+   "immuneTo": [
+    "aqua-vitae"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "ivy",
+   "name": {
+    "ru": "Плющ",
+    "en": "Ivy"
+   },
+   "type": {
+    "ru": "Растения"
+   },
+   "element": "ambrosia",
+   "does": {
+    "ru": "затягивает проходы"
+   },
+   "levels": [
+    9,
+    10,
+    11,
+    12
+   ],
+   "loot": [
+    {
+     "liquid": "poison",
+     "levels": [
+      9,
+      10,
+      11,
+      12
+     ]
+    }
+   ],
+   "weakTo": [
+    "vitriol"
+   ],
+   "immuneTo": [
+    "ambrosia"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "banshee",
+   "name": {
+    "ru": "Банши",
+    "en": "Banshee"
+   },
+   "type": {
+    "ru": "Водяные"
+   },
+   "element": "water",
+   "does": {
+    "ru": "над могилами"
+   },
+   "levels": [
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+   ],
+   "loot": [
+    {
+     "liquid": "ectoplasm",
+     "levels": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+     ]
+    }
+   ],
+   "weakTo": [
+    "mercury"
+   ],
+   "immuneTo": [
+    "water"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "skeleton-archer",
+   "name": {
+    "ru": "Скелет-лучник",
+    "en": "Skeleton Archer"
+   },
+   "type": {
+    "ru": "Нежить: кости"
+   },
+   "element": "ichor",
+   "does": {
+    "ru": "классика: стреляет из лука издали, держится за надгробиями"
+   },
+   "levels": [
+    9,
+    10,
+    11,
+    12,
+    17,
+    18,
+    19,
+    20
+   ],
+   "loot": [],
+   "weakTo": [
+    "aqua-vitae"
+   ],
+   "immuneTo": [
+    "ichor"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "wisp",
+   "name": {
+    "ru": "Огонёк",
+    "en": "Wisp"
+   },
+   "type": {
+    "ru": "Волшебные"
+   },
+   "element": "ichor",
+   "does": {
+    "ru": "болотный огонь над могилами; носитель Ихора"
+   },
+   "levels": [
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+   ],
+   "loot": [
+    {
+     "liquid": "ectoplasm",
+     "levels": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+     ]
+    }
+   ],
+   "weakTo": [
+    "aqua-vitae"
+   ],
+   "immuneTo": [
+    "ichor"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "stinkbug",
+   "name": {
+    "ru": "Вонючка",
+    "en": "Stinkbug"
+   },
+   "type": {
+    "ru": "Едкие жуки"
+   },
+   "element": "acid",
+   "does": {
+    "ru": "носитель Серы"
+   },
+   "levels": [
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+   ],
+   "loot": [
+    {
+     "liquid": "sulfur",
+     "levels": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+     ]
+    }
+   ],
+   "weakTo": [
+    "alkali"
+   ],
+   "immuneTo": [
+    "acid"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "woodlouse",
+   "name": {
+    "ru": "Мокрица",
+    "en": "Woodlouse"
+   },
+   "type": {
+    "ru": "Ракообразные"
+   },
+   "element": "vitriol",
+   "does": {
+    "ru": "шар-панцирь; носитель Купороса"
+   },
+   "levels": [
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+   ],
+   "loot": [
+    {
+     "liquid": "vitriol",
+     "levels": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+     ]
+    }
+   ],
+   "weakTo": [
+    "acid"
+   ],
+   "immuneTo": [
+    "vitriol"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "mandrake",
+   "name": {
+    "ru": "Мандрагора",
+    "en": "Mandrake"
+   },
+   "type": {
+    "ru": "Растения"
+   },
+   "element": "ambrosia",
+   "does": {
+    "ru": "сидит в земле; тронешь — визжит: всё рядом оглушено на ход (и слайм, если вплотную), вся комната просыпается; корень ядовит"
+   },
+   "levels": [
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+   ],
+   "loot": [
+    {
+     "liquid": "poison",
+     "levels": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+     ]
+    }
+   ],
+   "weakTo": [
+    "vitriol"
+   ],
+   "immuneTo": [
+    "ambrosia"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "ergot",
+   "name": {
+    "ru": "Спорынья",
+    "en": "Ergot"
+   },
+   "type": {
+    "ru": "Грибы"
+   },
+   "element": "aqua-vitae",
+   "does": {
+    "ru": "с хлебных стоков пекарен; кто надышался — «Антонов огонь»: пляшет и бьёт соседей"
+   },
+   "levels": [
+    14,
+    15,
+    16
+   ],
+   "loot": [
+    {
+     "liquid": "poison",
+     "levels": [
+      14,
+      15,
+      16
+     ]
+    }
+   ],
+   "weakTo": [
+    "lava"
+   ],
+   "immuneTo": [
+    "aqua-vitae"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "worm",
+   "name": {
+    "ru": "Червь",
+    "en": "Worm"
+   },
+   "type": {
+    "ru": "Огненные"
+   },
+   "element": "lava",
+   "does": {
+    "ru": "огненный червь печных труб"
+   },
+   "levels": [
+    13,
+    14,
+    15,
+    16
+   ],
+   "loot": [
+    {
+     "liquid": "lava",
+     "levels": [
+      13,
+      14,
+      15,
+      16
+     ]
+    },
+    {
+     "liquid": "fat",
+     "levels": [
+      13,
+      14,
+      15,
+      16
+     ]
+    }
+   ],
+   "weakTo": [
+    "water"
+   ],
+   "immuneTo": [
+    "lava"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "pixie",
+   "name": {
+    "ru": "Пикси",
+    "en": "Pixie"
+   },
+   "type": {
+    "ru": "Волшебные"
+   },
+   "element": "ambrosia",
+   "does": {
+    "ru": "из аптечного садика, сыплет волшебную пыльцу"
+   },
+   "levels": [
+    14,
+    15,
+    16
+   ],
+   "loot": [
+    {
+     "liquid": "ectoplasm",
+     "levels": [
+      14,
+      15,
+      16
+     ]
+    }
+   ],
+   "weakTo": [
+    "vitriol"
+   ],
+   "immuneTo": [
+    "ambrosia"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "sundew",
+   "name": {
+    "ru": "Росянка",
+    "en": "Sundew"
+   },
+   "type": {
+    "ru": "Растения"
+   },
+   "element": "ambrosia",
+   "does": {
+    "ru": "из оранжереи алхимика, липнет"
+   },
+   "levels": [
+    17,
+    18,
+    19,
+    20
+   ],
+   "loot": [
+    {
+     "liquid": "acid",
+     "levels": [
+      17,
+      18,
+      19,
+      20
+     ]
+    }
+   ],
+   "weakTo": [
+    "vitriol"
+   ],
+   "immuneTo": [
+    "ambrosia"
+   ],
+   "status": "decided"
+  }
+ ],
+ "liquids": [
+  {
+   "id": "water",
+   "name": {
+    "ru": "Вода",
+    "en": "Water"
+   },
+   "group": "circle-1",
+   "hold": {
+    "ru": "огнеупорность"
+   },
+   "strike": {
+    "ru": "мокрый: гасит горение"
+   },
+   "hit": {
+    "ru": "укусивший мокнет — огненный гаснет"
+   },
+   "spit": {
+    "ru": "струя: отталкивает на клетку"
+   },
+   "puddle": {
+    "ru": "тушит, мокрая клетка"
+   },
+   "status": "decided"
+  },
+  {
+   "id": "ichor",
+   "name": {
+    "ru": "Ихор",
+    "en": "Ichor"
+   },
+   "group": "circle-1",
+   "hold": {
+    "ru": "видит всех врагов уровня"
+   },
+   "strike": {
+    "ru": "холодный огонь (жжёт 8 стихий)"
+   },
+   "hit": {
+    "ru": "вспышка ослепляет укусившего"
+   },
+   "spit": {
+    "ru": "ослепляющая вспышка издали"
+   },
+   "puddle": {
+    "ru": "светится, освещает клетки"
+   },
+   "status": "decided"
+  },
+  {
+   "id": "lava",
+   "name": {
+    "ru": "Лава",
+    "en": "Lava"
+   },
+   "group": "circle-1",
+   "hold": {
+    "ru": "не горит, лава не вредит"
+   },
+   "strike": {
+    "ru": "горение"
+   },
+   "hit": {
+    "ru": "укусивший обжигается"
+   },
+   "spit": {
+    "ru": "поджигает клетку издали"
+   },
+   "puddle": {
+    "ru": "горящая клетка"
+   },
+   "status": "decided"
+  },
+  {
+   "id": "mercury",
+   "name": {
+    "ru": "Ртуть",
+    "en": "Mercury"
+   },
+   "group": "circle-1",
+   "hold": {
+    "ru": "защитная: укусы вдвое слабее, первыми выбиваются другие единицы, слайма не сдвинуть; запасное — невидимость"
+   },
+   "strike": {
+    "ru": "дробящий: сильнее"
+   },
+   "hit": {
+    "ru": "тяжёлая: укус её не выбивает"
+   },
+   "spit": {
+    "ru": "тяжёлая капля сбивает с ног (оглушение)"
+   },
+   "puddle": {
+    "ru": "тяжёлая: замедляет"
+   },
+   "status": "working"
+  },
+  {
+   "id": "aqua-vitae",
+   "name": {
+    "ru": "Аквавита",
+    "en": "Aqua vitae"
+   },
+   "group": "circle-1",
+   "hold": {
+    "ru": "гной не образуется"
+   },
+   "strike": {
+    "ru": "прижигание: враг не лечится"
+   },
+   "hit": {
+    "ru": "рядом огонь — укусивший вспыхивает синим"
+   },
+   "spit": {
+    "ru": "облако паров: в нём никто не лечится"
+   },
+   "puddle": {
+    "ru": "пары горят от огня"
+   },
+   "status": "proposal"
+  },
+  {
+   "id": "vitriol",
+   "name": {
+    "ru": "Купорос",
+    "en": "Vitriol"
+   },
+   "group": "circle-2",
+   "hold": {
+    "ru": "грибы и растения не вредят"
+   },
+   "strike": {
+    "ru": "медная отрава (+растениям)"
+   },
+   "hit": {
+    "ru": "укусивший позеленел — отравлен медью"
+   },
+   "spit": {
+    "ru": "синее пятно: растение сохнет"
+   },
+   "puddle": {
+    "ru": "растения и грибы не заходят"
+   },
+   "status": "proposal"
+  },
+  {
+   "id": "alkali",
+   "name": {
+    "ru": "Щёлочь",
+    "en": "Alkali"
+   },
+   "group": "circle-2",
+   "hold": {
+    "ru": "гной и плесень не держатся"
+   },
+   "strike": {
+    "ru": "щёлочь, скользко"
+   },
+   "hit": {
+    "ru": "кислотный укус гаснет (Кислота врага не действует)"
+   },
+   "spit": {
+    "ru": "мыльная пена — скользкие клетки"
+   },
+   "puddle": {
+    "ru": "скользкая"
+   },
+   "status": "proposal"
+  },
+  {
+   "id": "ambrosia",
+   "name": {
+    "ru": "Амброзия",
+    "en": "Ambrosia"
+   },
+   "group": "circle-2",
+   "hold": {
+    "ru": "раз за уровень спасает от смерти"
+   },
+   "strike": {
+    "ru": "свет жизни: нежить ранит, живых лечит"
+   },
+   "hit": {
+    "ru": "укус лечит слайма на 1 — слабо"
+   },
+   "spit": {
+    "ru": "метко лечит / ранит нежить издали"
+   },
+   "puddle": {
+    "ru": "лечит любого живого на ней"
+   },
+   "status": "proposal"
+  },
+  {
+   "id": "acid",
+   "name": {
+    "ru": "Кислота",
+    "en": "Acid"
+   },
+   "group": "circle-2",
+   "hold": {
+    "ru": "не разъедается"
+   },
+   "strike": {
+    "ru": "разъедание: снимает броню"
+   },
+   "hit": {
+    "ru": "укусивший теряет броню"
+   },
+   "spit": {
+    "ru": "прожигает преграды издали: паутину, решётку, засов"
+   },
+   "puddle": {
+    "ru": "разъедание"
+   },
+   "status": "proposal"
+  },
+  {
+   "id": "poison",
+   "name": {
+    "ru": "Яд",
+    "en": "Poison"
+   },
+   "group": "circle-2",
+   "hold": {
+    "ru": "невосприимчив к ядам"
+   },
+   "strike": {
+    "ru": "отравление"
+   },
+   "hit": {
+    "ru": "укусивший отравлен"
+   },
+   "spit": {
+    "ru": "то же, что удар, только издали"
+   },
+   "puddle": {
+    "ru": "отравляет наступившего"
+   },
+   "status": "decided"
+  },
+  {
+   "id": "blood",
+   "name": {
+    "ru": "Кровь",
+    "en": "Blood"
+   },
+   "group": "status",
+   "hold": {
+    "ru": "регенерация"
+   },
+   "strike": {
+    "ru": "слабый: метка — враг становится целью кровососов"
+   },
+   "hit": {
+    "ru": "кровососы бросаются на укусившего"
+   },
+   "spit": {
+    "ru": "метка издали — то же"
+   },
+   "puddle": {
+    "ru": "приманка кровососов"
+   },
+   "status": "working"
+  },
+  {
+   "id": "pus",
+   "name": {
+    "ru": "Гной",
+    "en": "Pus"
+   },
+   "group": "status",
+   "hold": {
+    "ru": "плохая (единственная)"
+   },
+   "strike": {
+    "ru": "заражение (после гробовщика)"
+   },
+   "hit": {
+    "ru": "укусивший заражается"
+   },
+   "spit": {
+    "ru": "то же, что удар, только издали"
+   },
+   "puddle": {
+    "ru": "заражённая клетка"
+   },
+   "status": "working"
+  },
+  {
+   "id": "fat",
+   "name": {
+    "ru": "Жир",
+    "en": "Fat"
+   },
+   "group": "status",
+   "hold": {
+    "ru": "жировая броня: первый удар за ход слабее"
+   },
+   "strike": {
+    "ru": "неустойчивость: медленнее; враг «в жиру» горит дольше"
+   },
+   "hit": {
+    "ru": "укусивший соскальзывает — промах"
+   },
+   "spit": {
+    "ru": "смазывает пол — скользко и горючее"
+   },
+   "puddle": {
+    "ru": "скользкая; от огня горит долго и ровно (тлеющая лужа)"
+   },
+   "status": "decided"
+  },
+  {
+   "id": "resin",
+   "name": {
+    "ru": "Смола",
+    "en": "Resin"
+   },
+   "group": "status",
+   "hold": {
+    "ru": "не сдвинуть"
+   },
+   "strike": {
+    "ru": "приклеен"
+   },
+   "hit": {
+    "ru": "укусивший прилипает зубами — пропускает ход"
+   },
+   "spit": {
+    "ru": "клеевая сеть: приклеивает издали"
+   },
+   "puddle": {
+    "ru": "клейкая клетка; с Лавой → янтарь"
+   },
+   "status": "decided"
+  },
+  {
+   "id": "sulfur",
+   "name": {
+    "ru": "Сера",
+    "en": "Sulfur"
+   },
+   "group": "status",
+   "hold": {
+    "ru": "огневой: каждый удар слайма добавляет горение"
+   },
+   "strike": {
+    "ru": "горючесть: огонь по врагу сильнее"
+   },
+   "hit": {
+    "ru": "укусивший становится горючим"
+   },
+   "spit": {
+    "ru": "серная вспышка: поджигает от любого огня рядом"
+   },
+   "puddle": {
+    "ru": "синий огонь-ловушка, если поджечь"
+   },
+   "status": "decided"
+  },
+  {
+   "id": "ectoplasm",
+   "name": {
+    "ru": "Эктоплазма",
+    "en": "Ectoplasm"
+   },
+   "group": "status",
+   "hold": {
+    "ru": "призрачный: физический урон проходит насквозь, волшебный бьёт сильнее"
+   },
+   "strike": {
+    "ru": "морок: враг теряет слайма"
+   },
+   "hit": {
+    "ru": "физический укус — насквозь (промах)"
+   },
+   "spit": {
+    "ru": "светящаяся метка: враг виден сквозь стены"
+   },
+   "puddle": {
+    "ru": "светится, подсвечивает тайники и мимиков"
+   },
+   "status": "decided"
+  },
+  {
+   "id": "aphrodisiac",
+   "name": {
+    "ru": "Афродизиак",
+    "en": "Aphrodisiac"
+   },
+   "group": "single",
+   "hold": {
+    "ru": "нет — 1–2 единицы за игру"
+   },
+   "strike": null,
+   "hit": null,
+   "spit": {
+    "ru": "очаровать живого не-босса: идёт рядом, не нападает до конца уровня"
+   },
+   "puddle": null,
+   "status": "decided"
+  }
+ ],
+ "stops": [
+  {
+   "id": "smith",
+   "name": {
+    "ru": "Дом кузнеца-гнома",
+    "en": "Dwarf smith's house"
+   },
+   "afterMap": "map-1",
+   "where": {
+    "ru": "река выносит через закалочную бадью"
+   },
+   "offers": [
+    "lava",
+    "acid",
+    "vitriol"
+   ],
+   "fixed": "mercury",
+   "single": {
+    "ru": "гномий эль"
+   },
+   "wants": {
+    "ru": "платит Лавой (бегает к горну — фактически бесплатно)"
+   },
+   "also": {
+    "ru": "умение, сундук, лавка; горн кузнеца перестраивает тело в Лаву"
+   },
+   "status": "proposal"
+  },
+  {
+   "id": "undertaker",
+   "name": {
+    "ru": "Дом гробовщика",
+    "en": "Undertaker's house"
+   },
+   "afterMap": "map-2",
+   "where": {
+    "ru": "от реки — деревянные ступени, вход через бочку"
+   },
+   "offers": [
+    "ectoplasm",
+    "alkali",
+    "resin"
+   ],
+   "fixed": "fat",
+   "single": {
+    "ru": "слеза банши"
+   },
+   "wants": {
+    "ru": "платит Ихором (Смола, Кровь — хуже)"
+   },
+   "also": {
+    "ru": "умение, сундук, лавка; после него Гной бьёт — заражает"
+   },
+   "status": "proposal"
+  },
+  {
+   "id": "apothecary",
+   "name": {
+    "ru": "Аптека",
+    "en": "Apothecary"
+   },
+   "afterMap": "map-3",
+   "where": {
+    "ru": "водовод под стеной → погреб аптеки"
+   },
+   "offers": [
+    "sulfur",
+    "ambrosia",
+    "aqua-vitae"
+   ],
+   "fixed": null,
+   "single": null,
+   "wants": {
+    "ru": "платит редким (Ртуть)"
+   },
+   "also": {
+    "ru": "умение, сундук, лавка"
+   },
+   "status": "proposal"
+  },
+  {
+   "id": "cell",
+   "name": {
+    "ru": "Келья ученика",
+    "en": "Apprentice's cell"
+   },
+   "afterMap": "map-4",
+   "where": {
+    "ru": "начало главной трубы башни"
+   },
+   "offers": [],
+   "fixed": null,
+   "single": null,
+   "wants": {
+    "ru": "любые жидкости"
+   },
+   "also": {
+    "ru": "умение, сундук, лавка; новой жидкости нет"
+   },
+   "status": "decided"
+  }
+ ]
+}

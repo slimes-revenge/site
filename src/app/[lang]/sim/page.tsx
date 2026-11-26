@@ -1,7 +1,7 @@
 import { Alert, Container, Link, Typography } from "@mui/material";
 
-import { loadReport, REPORT_URL } from "../data/report";
-import { BuildMatrix } from "./components/BuildMatrix";
+import { loadReport, REPORT_URL } from "../../../data/report";
+import { BuildMatrix } from "../../components/BuildMatrix";
 
 // Prerendered at build time even though the report fetch uses `no-store` (see src/data/report.ts).
 export const dynamic = "force-static";
