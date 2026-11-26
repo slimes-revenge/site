@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Breadcrumbs, Container, Paper, Stack, Typography } from "@mui/material";
 
-import { findBoss, getCreature, getLevel, getLiquid, getMap, wiki } from "../../../../data/wiki";
+import { getBossPage, getCreature, getLevel, getLiquid, getMap, wiki } from "../../../../data/wiki";
 import { getIntl, tr } from "../../../../i18n";
 import { BossCard } from "../../../components/BossCard";
 import { StatusMark } from "../../../components/StatusMark";
@@ -80,13 +80,7 @@ export default async function LevelPage({ params }: IProps) {
             {t("level.bosses")}
           </Typography>
           {level.variants.map(variant => (
-            <BossCard
-              key={variant.id}
-              // The full record when there is one; a pool alternative has only the variant's own text.
-              boss={findBoss(variant.id) ?? { ...variant, does: variant.about }}
-              lang={lang}
-              intl={intl}
-            />
+            <BossCard key={variant.id} boss={getBossPage(variant.id)} lang={lang} intl={intl} />
           ))}
         </Stack>
       ) : null}

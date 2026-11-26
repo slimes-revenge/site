@@ -13,11 +13,12 @@ The site is the game wiki, in Russian first (`/` opens `/ru`). Each item carries
 - `/ru/levels/<level>` — **a level** (done): enemies, which liquids you can absorb and from what, the possible guardians and bosses, the possible secret rooms, what resets on exit, rooms and capacity.
 - `/ru/bestiary` and `/ru/bestiary/<creature>` — **bestiary** (done): every creature with its picture (from the game where it exists, an empty slot otherwise), type, element, what you take from its corpse, weak and immune, where it lives.
 - `/ru/liquids` and `/ru/liquids/<liquid>` — **liquids** (done): holding, strike, being hit, spit, puddle; where it is found, which traders offer it.
+- `/ru/bosses` and `/ru/bosses/<boss>` — **guardians and bosses** (done): what each does, how to pass, break or make a deal, the loot, where it stands; pool alternatives included.
+- `/ru/stops` and `/ru/stops/<stop>` — **traders** (done): the liquid choice, what is always given, what you pay with, what else is there.
 - `/ru/sim` — **build matrix** (done): the simulator report. Rows are slime builds, columns are enemies; a cell is coloured by win rate and opens the fight summary. Switches pick the action points per round and the simulated slime's policy.
 
 Planned, not built yet:
 
-- **Bosses and guardians**, **stops** — a page each.
 - **What shifted** and **design rules** for the simulator report.
 
 ## Run
