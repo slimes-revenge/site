@@ -15,7 +15,7 @@ The site is the game wiki, in Russian first (`/` opens `/ru`). Each item carries
 - `/ru/liquids` and `/ru/liquids/<liquid>` — **liquids** (done): holding, strike, being hit, spit, puddle; where it is found, which traders offer it.
 - `/ru/bosses` and `/ru/bosses/<boss>` — **guardians and bosses** (done): what each does, how to pass, break or make a deal, the loot, where it stands; pool alternatives included.
 - `/ru/stops` and `/ru/stops/<stop>` — **traders** (done): the liquid choice, what is always given, what you pay with, what else is there.
-- `/ru/sim` — **build matrix** (done): the simulator report. Rows are slime builds, columns are enemies; a cell is coloured by win rate and opens the fight summary.
+- `/ru/sim` — **build matrix** (done): the simulator report. Rows are slime builds, columns are enemies; a cell is coloured by win rate and opens the fight summary. Switches pick the action points per round and the simulated slime's policy.
 
 Planned, not built yet:
 
@@ -47,7 +47,7 @@ For the build matrix, every `next build` downloads the simulator report (never f
 
 `https://github.com/slimes-revenge/simulator/releases/download/latest/design-guard.json`
 
-The format is defined in the simulator repository, `docs/report-format.md`; `src/data/schema.ts` validates it with zod. When the download fails or the file does not match the schema, the build does not fail: it uses the committed `data/sample-design-guard.json` (a snapshot of a real report: simulator commit a2f83f6, 2026-11-25) and the page shows a yellow **Sample data** banner with the reason. The build log says so too (`design-guard.json: … using data/sample-design-guard.json`).
+The format is defined in the simulator repository, `docs/report-format.md`; `src/data/schema.ts` validates it with zod. When the download fails or the file does not match the schema, the build does not fail: it uses the committed `data/sample-design-guard.json` (a snapshot of a real report: simulator commit 8a37dec, 2026-11-26) and the page shows a yellow **Sample data** banner with the reason. The build log says so too (`design-guard.json: … using data/sample-design-guard.json`).
 
 The data is read at build time only: the simulator publishes a new report on every push to its `dev`, and `npm run build` (or a reload in `npm run dev`) picks it up.
 

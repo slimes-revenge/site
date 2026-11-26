@@ -52,7 +52,7 @@ src/data/
   report.ts               loadReport(): download at build time, fall back to the sample
 public/creatures/         creature pictures cut from the game's sprite sheets (docs/wiki-data.md)
 data/wiki.json            wiki content from the lore session (copied as is, not formatted by Prettier)
-data/sample-design-guard.json   snapshot of a real report (a2f83f6, 2026-11-25), used when the download fails
+data/sample-design-guard.json   snapshot of a real report (8a37dec, 2026-11-26), used when the download fails
 docs/                     knowledge notes, index in docs/README.md
 ```
 

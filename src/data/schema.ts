@@ -66,12 +66,18 @@ export const reportSchema = z
     });
   });
 
-// The file is an array of reports, one per actionsPerRound value.
+// The file is an array of reports, one per actionsPerRound × policy: every pair once, none missing.
 export const reportsSchema = z
   .array(reportSchema)
   .min(1)
-  .refine(reports => new Set(reports.map(report => report.actionsPerRound)).size === reports.length, {
-    message: "two reports share actionsPerRound",
+  .superRefine((reports, ctx) => {
+    const keys = new Set(reports.map(report => `${report.actionsPerRound}/${report.policy}`));
+    if (keys.size !== reports.length)
+      ctx.addIssue({ code: "custom", message: "two reports share actionsPerRound and policy" });
+    const aps = new Set(reports.map(report => report.actionsPerRound));
+    const policies = new Set(reports.map(report => report.policy));
+    if (keys.size !== aps.size * policies.size)
+      ctx.addIssue({ code: "custom", message: "some actionsPerRound × policy pair has no report" });
   });
 
 export type Build = z.infer<typeof buildSchema>;
