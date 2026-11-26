@@ -1,6 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Only Russian is published for now; `/` opens it.
+  async redirects() {
+    return Promise.resolve([{ source: "/", destination: "/ru", permanent: false }]);
+  },
   async headers() {
     return Promise.resolve([
       {

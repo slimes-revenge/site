@@ -1,18 +1,24 @@
 # site
 
-The Slime's Revenge design site. The [simulator](https://github.com/slimes-revenge/simulator) plays fights by the design rules; this site draws its report, so a change to the design shows at a glance which slime builds now win or lose against which enemies. Later the same data becomes a player wiki.
+The Slime's Revenge game wiki. The [simulator](https://github.com/slimes-revenge/simulator) plays fights by the design rules; this site draws its report, so a change to the design shows at a glance which slime builds now win or lose against which enemies. Later the same data becomes a player wiki.
 
 Stack: Next.js (App Router) + React + Material UI, TypeScript. It runs locally only for now; hosting (Vercel) comes later, closer to the game's first version.
 
 ## Pages
 
-- `/` — **build matrix** (done): rows are slime builds, column groups are enemy kinds, sub-columns are 1, 2 and 3 enemies. A switch picks the report for 1 or 2 action points per round (the simulator publishes one report per value). A cell is coloured by win rate (red → yellow → green) and shows the win rate and the average units of body left; a click opens the fight summary (the build's liquids, rounds, body spent, body left, the most common loss cause and every loss cause with its count). The line above the matrix names the policy, action points, seeds, simulator commit and generation time; hovering a build name shows its liquids.
+The site is the game wiki, in Russian first (`/` opens `/ru`). Each item carries a small status dot: decided, working, proposal.
+
+- `/ru` — **the route** (done): five maps of four levels, the stop at a trader after each map.
+- `/ru/maps/<map>` — **a map** (done): what blocks the river, the levels, the location guardian, the map boss, who lives there.
+- `/ru/levels/<level>` — **a level** (done): enemies, which liquids you can absorb and from what, the possible guardians and bosses, the possible secret rooms, what resets on exit, rooms and capacity.
+- `/ru/sim` — **build matrix** (done): the simulator report. Rows are slime builds, columns are enemies; a cell is coloured by win rate and opens the fight summary.
 
 Planned, not built yet:
 
-- **What shifted** — the matrix diffed against the previous simulator release: which cells got better or worse after a change.
-- **Design rules** — the design's expectations (for example "a starter slime beats one rat") shown green when the report meets them and red when it does not.
-- **Player wiki** — creatures, substances and builds for players, from the same data.
+- **Bestiary** — a page per creature with its picture: type, element, what you take from it, weak and immune.
+- **Liquids** — a page per liquid: strike, being hit, spit, puddle, holding it; where it is found.
+- **Bosses and guardians**, **stops** — a page each.
+- **What shifted** and **design rules** for the simulator report.
 
 ## Run
 
@@ -26,7 +32,7 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:3000. Checks, the same as CI:
+Open http://localhost:3000 (it redirects to `/ru`). Checks, the same as CI:
 
 ```bash
 npx eslint . && npx prettier --check . && npx tsc --noEmit && npm run build
@@ -34,7 +40,9 @@ npx eslint . && npx prettier --check . && npx tsc --noEmit && npm run build
 
 ## Data
 
-Every `next build` downloads the simulator report (never from a cache) and prerenders the page with it:
+The wiki content is `data/wiki.json`, exported by the lore session and copied in; `src/data/wiki.ts` validates it and every id reference at build time (`docs/wiki-data.md`).
+
+For the build matrix, every `next build` downloads the simulator report (never from a cache) and prerenders `/ru/sim` with it:
 
 `https://github.com/slimes-revenge/simulator/releases/download/latest/design-guard.json`
 
