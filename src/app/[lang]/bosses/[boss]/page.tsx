@@ -41,7 +41,6 @@ export default async function BossPage({ params }: IProps) {
       </Typography>
       <Typography sx={{ color: "text.secondary", mb: 2 }}>
         {boss.name.en} · {t(`boss.kind.${boss.kind}`)}
-        {boss.alternative ? ` · ${t("boss.alternative")}` : null}
       </Typography>
       <Stack spacing={0.75}>
         <Typography component="div">

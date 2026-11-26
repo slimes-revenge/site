@@ -56,7 +56,7 @@ export default async function CreaturePage({ params }: IProps) {
             <StatusMark status={creature.status} intl={intl} />
           </Typography>
           <Typography sx={{ color: "text.secondary" }}>{creature.name.en}</Typography>
-          {creature.does ? <Typography sx={{ mt: 1 }}>{tr(creature.does, lang)}</Typography> : null}
+          <Typography sx={{ mt: 1 }}>{tr(creature.does, lang)}</Typography>
         </Box>
       </Stack>
 

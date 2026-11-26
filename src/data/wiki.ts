@@ -89,7 +89,7 @@ const creatureSchema = z.strictObject({
   name,
   type: text,
   element: z.string(),
-  does: text.nullable(),
+  does: text,
   levels: z.array(z.number().int()),
   // `levels`: where this corpse gives this liquid (loot can differ by map).
   loot: z.array(
@@ -237,17 +237,15 @@ function byId<T extends { id: string }>(items: T[]) {
 export const getMap = byId(wiki.maps);
 export const getLevel = byId(wiki.levels);
 export const getBoss = byId(wiki.bosses);
-export const findBoss = (id: string) => wiki.bosses.find(boss => boss.id === id);
-
 // Every guardian, boss and arena boss with its own page: the `bosses` records plus the pool alternatives that exist
 // only as level `variants` (described by their `about` and `pass`), with the levels each can stand on.
 export const bossPages = [
-  ...wiki.bosses.map(boss => ({ ...boss, alternative: false })),
+  ...wiki.bosses,
   ...Object.values(
     Object.fromEntries(
       wiki.levels
         .flatMap(level => level.variants.map(variant => ({ variant, level })))
-        .filter(({ variant }) => !findBoss(variant.id))
+        .filter(({ variant }) => !wiki.bosses.some(boss => boss.id === variant.id))
         .map(({ variant, level }) => [variant.id, { variant, level }]),
     ),
   ).map(({ variant, level }) => ({
@@ -263,7 +261,6 @@ export const bossPages = [
     deal: null,
     loot: null,
     status: variant.status,
-    alternative: true,
   })),
 ];
 export const getBossPage = byId(bossPages);
