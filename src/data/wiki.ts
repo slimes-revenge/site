@@ -53,6 +53,11 @@ const levelSchema = z.object({
   rooms: z.number().int(),
   perRoom: text,
   hunters: z.object({ note: text, status }).nullable(),
+  // Every guardian, boss or arena that can stand on this level; a pool lists each alternative.
+  // An id may be missing from `bosses` (a pool alternative described only here).
+  variants: z.array(
+    z.object({ id: z.string(), name, kind: z.enum(["guardian", "boss", "arena"]), about: text, pass: text, status }),
+  ),
 });
 
 const bossSchema = z.object({
@@ -78,7 +83,8 @@ const creatureSchema = z.object({
   element: z.string(),
   does: text,
   levels: z.array(z.number().int()),
-  loot: z.array(z.object({ liquid: z.string(), note: text.optional() })),
+  // `levels`: where this corpse gives this liquid (loot can differ by map).
+  loot: z.array(z.object({ liquid: z.string(), levels: z.array(z.number().int()).optional(), note: text.optional() })),
   weakTo: z.array(z.string()),
   immuneTo: z.array(z.string()),
   status,
@@ -197,6 +203,7 @@ function byId<T extends { id: string }>(items: T[]) {
 export const getMap = byId(wiki.maps);
 export const getLevel = byId(wiki.levels);
 export const getBoss = byId(wiki.bosses);
+export const findBoss = (id: string) => wiki.bosses.find(boss => boss.id === id);
 export const getCreature = byId(wiki.creatures);
 export const getLiquid = byId(wiki.liquids);
 export const getStop = byId(wiki.stops);

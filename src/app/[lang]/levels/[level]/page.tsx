@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Breadcrumbs, Chip, Container, Paper, Stack, Typography } from "@mui/material";
 
-import { getBoss, getCreature, getLevel, getLiquid, getMap, wiki } from "../../../../data/wiki";
+import { findBoss, getBoss, getCreature, getLevel, getLiquid, getMap, wiki } from "../../../../data/wiki";
 import { getIntl, tr } from "../../../../i18n";
 import { BossCard } from "../../../components/BossCard";
 import { StatusMark } from "../../../components/StatusMark";
@@ -31,8 +31,6 @@ export default async function LevelPage({ params }: IProps) {
   const index = wiki.levels.indexOf(level);
   const prev = wiki.levels[index - 1];
   const next = wiki.levels[index + 1];
-  // Every guardian, boss and arena that can stand on this level (a pool gives several).
-  const bosses = wiki.bosses.filter(boss => boss.levels.includes(level.id));
   const liquidName = (id: string) => tr(getLiquid(id).name, lang);
 
   return (
@@ -81,13 +79,19 @@ export default async function LevelPage({ params }: IProps) {
         ))}
       </Stack>
 
-      {bosses.length ? (
+      {level.variants.length ? (
         <Stack spacing={1} sx={{ mb: 2 }}>
           <Typography variant="h6" component="h2">
             {t("level.bosses")}
           </Typography>
-          {bosses.map(boss => (
-            <BossCard key={boss.id} boss={boss} lang={lang} intl={intl} />
+          {level.variants.map(variant => (
+            <BossCard
+              key={variant.id}
+              // The full record when there is one; a pool alternative has only the variant's own text.
+              boss={findBoss(variant.id) ?? { ...variant, does: variant.about }}
+              lang={lang}
+              intl={intl}
+            />
           ))}
         </Stack>
       ) : null}

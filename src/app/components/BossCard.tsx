@@ -1,14 +1,17 @@
 import { Paper, Typography } from "@mui/material";
 import type { IntlShape } from "react-intl";
 
-import type { Wiki } from "../../data/wiki";
+import type { Text, Wiki } from "../../data/wiki";
 import { tr } from "../../i18n";
 import { StatusMark } from "./StatusMark";
 
 const fields = ["does", "pass", "break", "deal", "loot"] as const;
 
+type Boss = Pick<Wiki["bosses"][number], "name" | "kind" | "status"> &
+  Partial<Record<(typeof fields)[number], Text | null>>;
+
 // A guardian, map boss or arena boss: what it does and the ways past it.
-export function BossCard({ boss, lang, intl }: { boss: Wiki["bosses"][number]; lang: string; intl: IntlShape }) {
+export function BossCard({ boss, lang, intl }: { boss: Boss; lang: string; intl: IntlShape }) {
   return (
     <Paper variant="outlined" sx={{ p: 1.5 }}>
       <Typography variant="subtitle1" component="h3" sx={{ fontWeight: 500 }}>

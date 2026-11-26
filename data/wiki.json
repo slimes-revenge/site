@@ -4322,7 +4322,29 @@
    ],
    "loot": [
     {
-     "liquid": "blood"
+     "liquid": "blood",
+     "levels": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+     ]
     }
    ],
    "weakTo": [
@@ -4358,7 +4380,17 @@
    ],
    "loot": [
     {
-     "liquid": "blood"
+     "liquid": "blood",
+     "levels": [
+      1,
+      2,
+      3,
+      4,
+      13,
+      14,
+      15,
+      16
+     ]
     }
    ],
    "weakTo": [
@@ -4392,10 +4424,20 @@
    ],
    "loot": [
     {
-     "liquid": "water"
+     "liquid": "water",
+     "levels": [
+      1,
+      2
+     ]
     },
     {
-     "liquid": "acid"
+     "liquid": "acid",
+     "levels": [
+      13,
+      14,
+      15,
+      16
+     ]
     }
    ],
    "weakTo": [
@@ -4443,7 +4485,29 @@
    ],
    "loot": [
     {
-     "liquid": "water"
+     "liquid": "water",
+     "levels": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+     ]
     }
    ],
    "weakTo": [
@@ -4482,10 +4546,25 @@
    ],
    "loot": [
     {
-     "liquid": "water"
+     "liquid": "water",
+     "levels": [
+      2,
+      3,
+      4
+     ]
     },
     {
-     "liquid": "aqua-vitae"
+     "liquid": "aqua-vitae",
+     "levels": [
+      5,
+      6,
+      7,
+      8,
+      13,
+      14,
+      15,
+      16
+     ]
     }
    ],
    "weakTo": [
@@ -4532,7 +4611,28 @@
    ],
    "loot": [
     {
-     "liquid": "poison"
+     "liquid": "poison",
+     "levels": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+     ]
     }
    ],
    "weakTo": [
@@ -4570,7 +4670,19 @@
    ],
    "loot": [
     {
-     "liquid": "acid"
+     "liquid": "acid",
+     "levels": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ]
     }
    ],
    "weakTo": [
@@ -4600,7 +4712,11 @@
    ],
    "loot": [
     {
-     "liquid": "poison"
+     "liquid": "poison",
+     "levels": [
+      3,
+      4
+     ]
     }
    ],
    "weakTo": [
@@ -4631,7 +4747,12 @@
    ],
    "loot": [
     {
-     "liquid": "mercury"
+     "liquid": "mercury",
+     "levels": [
+      3,
+      4,
+      13
+     ]
     }
    ],
    "weakTo": [
@@ -4660,7 +4781,10 @@
    ],
    "loot": [
     {
-     "liquid": "mercury"
+     "liquid": "mercury",
+     "levels": [
+      4
+     ]
     }
    ],
    "weakTo": [
@@ -4692,7 +4816,13 @@
    ],
    "loot": [
     {
-     "liquid": "water"
+     "liquid": "water",
+     "levels": [
+      5,
+      6,
+      7,
+      8
+     ]
     }
    ],
    "weakTo": [
@@ -4723,10 +4853,20 @@
    ],
    "loot": [
     {
-     "liquid": "water"
+     "liquid": "water",
+     "levels": [
+      6,
+      7,
+      8
+     ]
     },
     {
-     "liquid": "pus"
+     "liquid": "pus",
+     "levels": [
+      6,
+      7,
+      8
+     ]
     }
    ],
    "weakTo": [
@@ -4762,7 +4902,17 @@
    ],
    "loot": [
     {
-     "liquid": "acid"
+     "liquid": "acid",
+     "levels": [
+      5,
+      6,
+      7,
+      8,
+      13,
+      14,
+      15,
+      16
+     ]
     }
    ],
    "weakTo": [
@@ -4794,7 +4944,13 @@
    ],
    "loot": [
     {
-     "liquid": "acid"
+     "liquid": "acid",
+     "levels": [
+      5,
+      6,
+      7,
+      8
+     ]
     }
    ],
    "weakTo": [
@@ -4826,7 +4982,13 @@
    ],
    "loot": [
     {
-     "liquid": "acid"
+     "liquid": "acid",
+     "levels": [
+      5,
+      6,
+      7,
+      8
+     ]
     }
    ],
    "weakTo": [
@@ -4967,7 +5129,13 @@
    ],
    "loot": [
     {
-     "liquid": "water"
+     "liquid": "water",
+     "levels": [
+      5,
+      6,
+      7,
+      8
+     ]
     }
    ],
    "weakTo": [
@@ -5003,7 +5171,17 @@
    ],
    "loot": [
     {
-     "liquid": "poison"
+     "liquid": "poison",
+     "levels": [
+      5,
+      6,
+      7,
+      8,
+      17,
+      18,
+      19,
+      20
+     ]
     }
    ],
    "weakTo": [
@@ -5043,7 +5221,21 @@
    ],
    "loot": [
     {
-     "liquid": "lava"
+     "liquid": "lava",
+     "levels": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      17,
+      18,
+      19,
+      20
+     ]
     }
    ],
    "weakTo": [
@@ -5079,7 +5271,17 @@
    ],
    "loot": [
     {
-     "liquid": "lava"
+     "liquid": "lava",
+     "levels": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ]
     }
    ],
    "weakTo": [
@@ -5118,7 +5320,20 @@
    ],
    "loot": [
     {
-     "liquid": "lava"
+     "liquid": "lava",
+     "levels": [
+      6,
+      7,
+      8,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+     ]
     }
    ],
    "weakTo": [
@@ -5197,7 +5412,21 @@
    ],
    "loot": [
     {
-     "liquid": "alkali"
+     "liquid": "alkali",
+     "levels": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+     ]
     }
    ],
    "weakTo": [
@@ -5233,10 +5462,30 @@
    ],
    "loot": [
     {
-     "liquid": "poison"
+     "liquid": "poison",
+     "levels": [
+      9,
+      10,
+      11,
+      12,
+      17,
+      18,
+      19,
+      20
+     ]
     },
     {
-     "liquid": "pus"
+     "liquid": "pus",
+     "levels": [
+      9,
+      10,
+      11,
+      12,
+      17,
+      18,
+      19,
+      20
+     ]
     }
    ],
    "weakTo": [
@@ -5268,7 +5517,13 @@
    ],
    "loot": [
     {
-     "liquid": "vitriol"
+     "liquid": "vitriol",
+     "levels": [
+      9,
+      10,
+      11,
+      12
+     ]
     }
    ],
    "weakTo": [
@@ -5300,7 +5555,13 @@
    ],
    "loot": [
     {
-     "liquid": "resin"
+     "liquid": "resin",
+     "levels": [
+      9,
+      10,
+      11,
+      12
+     ]
     }
    ],
    "weakTo": [
@@ -5336,7 +5597,17 @@
    ],
    "loot": [
     {
-     "liquid": "acid"
+     "liquid": "acid",
+     "levels": [
+      9,
+      10,
+      11,
+      12,
+      17,
+      18,
+      19,
+      20
+     ]
     }
    ],
    "weakTo": [
@@ -5368,7 +5639,13 @@
    ],
    "loot": [
     {
-     "liquid": "poison"
+     "liquid": "poison",
+     "levels": [
+      9,
+      10,
+      11,
+      12
+     ]
     }
    ],
    "weakTo": [
@@ -5408,7 +5685,21 @@
    ],
    "loot": [
     {
-     "liquid": "ectoplasm"
+     "liquid": "ectoplasm",
+     "levels": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+     ]
     }
    ],
    "weakTo": [
@@ -5480,7 +5771,21 @@
    ],
    "loot": [
     {
-     "liquid": "ectoplasm"
+     "liquid": "ectoplasm",
+     "levels": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+     ]
     }
    ],
    "weakTo": [
@@ -5516,7 +5821,17 @@
    ],
    "loot": [
     {
-     "liquid": "sulfur"
+     "liquid": "sulfur",
+     "levels": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+     ]
     }
    ],
    "weakTo": [
@@ -5552,7 +5867,17 @@
    ],
    "loot": [
     {
-     "liquid": "vitriol"
+     "liquid": "vitriol",
+     "levels": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+     ]
     }
    ],
    "weakTo": [
@@ -5588,7 +5913,17 @@
    ],
    "loot": [
     {
-     "liquid": "poison"
+     "liquid": "poison",
+     "levels": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+     ]
     }
    ],
    "weakTo": [
@@ -5619,7 +5954,12 @@
    ],
    "loot": [
     {
-     "liquid": "poison"
+     "liquid": "poison",
+     "levels": [
+      14,
+      15,
+      16
+     ]
     }
    ],
    "weakTo": [
@@ -5651,10 +5991,22 @@
    ],
    "loot": [
     {
-     "liquid": "lava"
+     "liquid": "lava",
+     "levels": [
+      13,
+      14,
+      15,
+      16
+     ]
     },
     {
-     "liquid": "fat"
+     "liquid": "fat",
+     "levels": [
+      13,
+      14,
+      15,
+      16
+     ]
     }
    ],
    "weakTo": [
@@ -5685,7 +6037,12 @@
    ],
    "loot": [
     {
-     "liquid": "ectoplasm"
+     "liquid": "ectoplasm",
+     "levels": [
+      14,
+      15,
+      16
+     ]
     }
    ],
    "weakTo": [
@@ -5717,7 +6074,13 @@
    ],
    "loot": [
     {
-     "liquid": "acid"
+     "liquid": "acid",
+     "levels": [
+      17,
+      18,
+      19,
+      20
+     ]
     }
    ],
    "weakTo": [
