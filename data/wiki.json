@@ -137,7 +137,7 @@
     "bat",
     "leech",
     "mold",
-    "undine"
+    "nixie"
    ],
    "liquids": [
     {
@@ -152,7 +152,7 @@
       },
       {
        "kind": "corpse",
-       "creature": "undine"
+       "creature": "nixie"
       }
      ]
     },
@@ -201,8 +201,8 @@
     "bat",
     "leech",
     "mold",
-    "undine",
-    "vine",
+    "nixie",
+    "root",
     "scolopendra"
    ],
    "liquids": [
@@ -218,11 +218,11 @@
       },
       {
        "kind": "corpse",
-       "creature": "undine"
+       "creature": "nixie"
       },
       {
        "kind": "corpse",
-       "creature": "vine"
+       "creature": "root"
       }
      ]
     },
@@ -323,8 +323,8 @@
    "enemies": [
     "bat",
     "leech",
-    "undine",
-    "vine",
+    "nixie",
+    "root",
     "scolopendra",
     "borer",
     "toadstool",
@@ -339,11 +339,11 @@
       },
       {
        "kind": "corpse",
-       "creature": "undine"
+       "creature": "nixie"
       },
       {
        "kind": "corpse",
-       "creature": "vine"
+       "creature": "root"
       }
      ]
     },
@@ -491,8 +491,8 @@
    "enemies": [
     "bat",
     "leech",
-    "undine",
-    "vine",
+    "nixie",
+    "root",
     "scolopendra",
     "borer",
     "toadstool",
@@ -508,11 +508,11 @@
       },
       {
        "kind": "corpse",
-       "creature": "undine"
+       "creature": "nixie"
       },
       {
        "kind": "corpse",
-       "creature": "vine"
+       "creature": "root"
       }
      ]
     },
@@ -644,20 +644,20 @@
    "kind": "unique",
    "status": "working",
    "enemies": [
-    "bat",
-    "undine",
-    "vine",
-    "scolopendra",
-    "borer",
+    "goose",
     "kikimora",
+    "hornet",
+    "bombardier",
     "toad",
+    "vine",
     "bramble",
     "nettle",
     "sylph",
     "puffball",
     "amanita",
-    "salamander",
-    "imp"
+    "firebird",
+    "firefly",
+    "undine"
    ],
    "liquids": [
     {
@@ -685,11 +685,11 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "salamander"
+       "creature": "firebird"
       },
       {
        "kind": "corpse",
-       "creature": "imp"
+       "creature": "firefly"
       },
       {
        "kind": "guardian",
@@ -711,7 +711,7 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "borer"
+       "creature": "bombardier"
       },
       {
        "kind": "corpse",
@@ -732,7 +732,7 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "scolopendra"
+       "creature": "hornet"
       },
       {
        "kind": "corpse",
@@ -745,7 +745,7 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "bat"
+       "creature": "goose"
       }
      ]
     }
@@ -799,14 +799,13 @@
    "kind": "typical",
    "status": "working",
    "enemies": [
-    "bat",
-    "undine",
-    "vine",
-    "scolopendra",
-    "borer",
+    "goose",
     "kikimora",
+    "hornet",
     "drowned",
+    "bombardier",
     "toad",
+    "vine",
     "bramble",
     "nettle",
     "sunflower",
@@ -815,10 +814,9 @@
     "fairy",
     "puffball",
     "amanita",
-    "salamander",
-    "imp",
+    "firebird",
     "firefly",
-    "skeleton"
+    "undine"
    ],
    "liquids": [
     {
@@ -853,11 +851,7 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "salamander"
-      },
-      {
-       "kind": "corpse",
-       "creature": "imp"
+       "creature": "firebird"
       },
       {
        "kind": "corpse",
@@ -883,7 +877,7 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "borer"
+       "creature": "bombardier"
       },
       {
        "kind": "corpse",
@@ -904,7 +898,7 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "scolopendra"
+       "creature": "hornet"
       },
       {
        "kind": "corpse",
@@ -917,7 +911,7 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "bat"
+       "creature": "goose"
       }
      ]
     },
@@ -1036,14 +1030,13 @@
    "kind": "typical",
    "status": "working",
    "enemies": [
-    "bat",
-    "undine",
-    "vine",
-    "scolopendra",
-    "borer",
+    "goose",
     "kikimora",
+    "hornet",
     "drowned",
+    "bombardier",
     "toad",
+    "vine",
     "bramble",
     "nettle",
     "sunflower",
@@ -1052,10 +1045,9 @@
     "fairy",
     "puffball",
     "amanita",
-    "salamander",
-    "imp",
+    "firebird",
     "firefly",
-    "skeleton"
+    "undine"
    ],
    "liquids": [
     {
@@ -1090,11 +1082,7 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "salamander"
-      },
-      {
-       "kind": "corpse",
-       "creature": "imp"
+       "creature": "firebird"
       },
       {
        "kind": "corpse",
@@ -1120,7 +1108,7 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "borer"
+       "creature": "bombardier"
       },
       {
        "kind": "corpse",
@@ -1141,7 +1129,7 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "scolopendra"
+       "creature": "hornet"
       },
       {
        "kind": "corpse",
@@ -1154,7 +1142,7 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "bat"
+       "creature": "goose"
       }
      ]
     },
@@ -1273,14 +1261,13 @@
    "kind": "boss",
    "status": "working",
    "enemies": [
-    "bat",
-    "undine",
-    "vine",
-    "scolopendra",
-    "borer",
+    "goose",
     "kikimora",
+    "hornet",
     "drowned",
+    "bombardier",
     "toad",
+    "vine",
     "bramble",
     "nettle",
     "sunflower",
@@ -1289,10 +1276,9 @@
     "fairy",
     "puffball",
     "amanita",
-    "salamander",
-    "imp",
+    "firebird",
     "firefly",
-    "skeleton"
+    "undine"
    ],
    "liquids": [
     {
@@ -1339,11 +1325,7 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "salamander"
-      },
-      {
-       "kind": "corpse",
-       "creature": "imp"
+       "creature": "firebird"
       },
       {
        "kind": "corpse",
@@ -1365,7 +1347,7 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "borer"
+       "creature": "bombardier"
       },
       {
        "kind": "corpse",
@@ -1386,7 +1368,7 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "scolopendra"
+       "creature": "hornet"
       },
       {
        "kind": "corpse",
@@ -1399,7 +1381,7 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "bat"
+       "creature": "goose"
       }
      ]
     },
@@ -1481,20 +1463,19 @@
    "kind": "unique",
    "status": "working",
    "enemies": [
-    "bat",
-    "undine",
-    "scolopendra",
-    "borer",
-    "salamander",
-    "imp",
-    "skeleton",
+    "raven",
     "snail",
-    "ghoul",
+    "spider",
+    "zombie",
+    "ant",
     "crab",
     "dryad",
     "shrieker",
     "ivy",
+    "imp",
+    "rusalka",
     "banshee",
+    "skeleton",
     "skeleton-archer",
     "wisp"
    ],
@@ -1507,17 +1488,13 @@
       },
       {
        "kind": "corpse",
-       "creature": "undine"
+       "creature": "rusalka"
       }
      ]
     },
     {
      "liquid": "lava",
      "from": [
-      {
-       "kind": "corpse",
-       "creature": "salamander"
-      },
       {
        "kind": "corpse",
        "creature": "imp"
@@ -1551,7 +1528,7 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "borer"
+       "creature": "ant"
       },
       {
        "kind": "corpse",
@@ -1564,11 +1541,11 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "scolopendra"
+       "creature": "spider"
       },
       {
        "kind": "corpse",
-       "creature": "ghoul"
+       "creature": "zombie"
       },
       {
        "kind": "corpse",
@@ -1581,7 +1558,7 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "bat"
+       "creature": "raven"
       }
      ]
     },
@@ -1590,7 +1567,7 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "ghoul"
+       "creature": "zombie"
       }
      ]
     },
@@ -1666,20 +1643,19 @@
    "kind": "typical",
    "status": "working",
    "enemies": [
-    "bat",
-    "undine",
-    "scolopendra",
-    "borer",
-    "salamander",
-    "imp",
-    "skeleton",
+    "raven",
     "snail",
-    "ghoul",
+    "spider",
+    "zombie",
+    "ant",
     "crab",
     "dryad",
     "shrieker",
     "ivy",
+    "imp",
+    "rusalka",
     "banshee",
+    "skeleton",
     "skeleton-archer",
     "wisp"
    ],
@@ -1692,17 +1668,13 @@
       },
       {
        "kind": "corpse",
-       "creature": "undine"
+       "creature": "rusalka"
       }
      ]
     },
     {
      "liquid": "lava",
      "from": [
-      {
-       "kind": "corpse",
-       "creature": "salamander"
-      },
       {
        "kind": "corpse",
        "creature": "imp"
@@ -1736,7 +1708,7 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "borer"
+       "creature": "ant"
       },
       {
        "kind": "corpse",
@@ -1749,11 +1721,11 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "scolopendra"
+       "creature": "spider"
       },
       {
        "kind": "corpse",
-       "creature": "ghoul"
+       "creature": "zombie"
       },
       {
        "kind": "corpse",
@@ -1766,7 +1738,7 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "bat"
+       "creature": "raven"
       }
      ]
     },
@@ -1775,7 +1747,7 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "ghoul"
+       "creature": "zombie"
       }
      ]
     },
@@ -1874,20 +1846,19 @@
    "kind": "typical",
    "status": "working",
    "enemies": [
-    "bat",
-    "undine",
-    "scolopendra",
-    "borer",
-    "salamander",
-    "imp",
-    "skeleton",
+    "raven",
     "snail",
-    "ghoul",
+    "spider",
+    "zombie",
+    "ant",
     "crab",
     "dryad",
     "shrieker",
     "ivy",
+    "imp",
+    "rusalka",
     "banshee",
+    "skeleton",
     "skeleton-archer",
     "wisp"
    ],
@@ -1900,17 +1871,13 @@
       },
       {
        "kind": "corpse",
-       "creature": "undine"
+       "creature": "rusalka"
       }
      ]
     },
     {
      "liquid": "lava",
      "from": [
-      {
-       "kind": "corpse",
-       "creature": "salamander"
-      },
       {
        "kind": "corpse",
        "creature": "imp"
@@ -1944,7 +1911,7 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "borer"
+       "creature": "ant"
       },
       {
        "kind": "corpse",
@@ -1957,11 +1924,11 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "scolopendra"
+       "creature": "spider"
       },
       {
        "kind": "corpse",
-       "creature": "ghoul"
+       "creature": "zombie"
       },
       {
        "kind": "corpse",
@@ -1974,7 +1941,7 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "bat"
+       "creature": "raven"
       }
      ]
     },
@@ -1983,7 +1950,7 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "ghoul"
+       "creature": "zombie"
       }
      ]
     },
@@ -2082,20 +2049,19 @@
    "kind": "boss",
    "status": "working",
    "enemies": [
-    "bat",
-    "undine",
-    "scolopendra",
-    "borer",
-    "salamander",
-    "imp",
-    "skeleton",
+    "raven",
     "snail",
-    "ghoul",
+    "spider",
+    "zombie",
+    "ant",
     "crab",
     "dryad",
     "shrieker",
     "ivy",
+    "imp",
+    "rusalka",
     "banshee",
+    "skeleton",
     "skeleton-archer",
     "wisp"
    ],
@@ -2108,7 +2074,7 @@
       },
       {
        "kind": "corpse",
-       "creature": "undine"
+       "creature": "rusalka"
       }
      ]
     },
@@ -2124,10 +2090,6 @@
     {
      "liquid": "lava",
      "from": [
-      {
-       "kind": "corpse",
-       "creature": "salamander"
-      },
       {
        "kind": "corpse",
        "creature": "imp"
@@ -2157,7 +2119,7 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "borer"
+       "creature": "ant"
       },
       {
        "kind": "corpse",
@@ -2170,11 +2132,11 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "scolopendra"
+       "creature": "spider"
       },
       {
        "kind": "corpse",
-       "creature": "ghoul"
+       "creature": "zombie"
       },
       {
        "kind": "corpse",
@@ -2187,7 +2149,7 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "bat"
+       "creature": "raven"
       },
       {
        "kind": "boss",
@@ -2200,7 +2162,7 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "ghoul"
+       "creature": "zombie"
       }
      ]
     },
@@ -2301,23 +2263,19 @@
    "kind": "unique",
    "status": "working",
    "enemies": [
-    "bat",
-    "leech",
-    "mold",
-    "undine",
-    "vine",
-    "scolopendra",
-    "automaton",
-    "toad",
-    "firefly",
-    "skeleton",
-    "snail",
-    "banshee",
-    "wisp",
+    "rat",
+    "lamprey",
+    "tick",
     "stinkbug",
     "woodlouse",
     "mandrake",
-    "worm"
+    "lichen",
+    "hop",
+    "worm",
+    "kelpie",
+    "sentry",
+    "revenant",
+    "pixie"
    ],
    "liquids": [
     {
@@ -2328,17 +2286,13 @@
       },
       {
        "kind": "corpse",
-       "creature": "undine"
+       "creature": "kelpie"
       }
      ]
     },
     {
      "liquid": "lava",
      "from": [
-      {
-       "kind": "corpse",
-       "creature": "firefly"
-      },
       {
        "kind": "corpse",
        "creature": "worm"
@@ -2350,7 +2304,7 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "automaton"
+       "creature": "sentry"
       }
      ]
     },
@@ -2359,7 +2313,7 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "vine"
+       "creature": "hop"
       }
      ]
     },
@@ -2376,10 +2330,6 @@
      "liquid": "alkali",
      "from": [
       {
-       "kind": "corpse",
-       "creature": "snail"
-      },
-      {
        "kind": "guardian",
        "creature": "gargoyle"
       }
@@ -2390,11 +2340,7 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "mold"
-      },
-      {
-       "kind": "corpse",
-       "creature": "toad"
+       "creature": "lichen"
       }
      ]
     },
@@ -2403,11 +2349,15 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "scolopendra"
+       "creature": "tick"
       },
       {
        "kind": "corpse",
        "creature": "mandrake"
+      },
+      {
+       "kind": "corpse",
+       "creature": "revenant"
       }
      ]
     },
@@ -2416,11 +2366,20 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "bat"
+       "creature": "rat"
       },
       {
        "kind": "corpse",
-       "creature": "leech"
+       "creature": "lamprey"
+      }
+     ]
+    },
+    {
+     "liquid": "pus",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "revenant"
       }
      ]
     },
@@ -2447,11 +2406,7 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "banshee"
-      },
-      {
-       "kind": "corpse",
-       "creature": "wisp"
+       "creature": "pixie"
       }
      ]
     }
@@ -2505,23 +2460,18 @@
    "kind": "typical",
    "status": "working",
    "enemies": [
-    "bat",
-    "leech",
-    "mold",
-    "undine",
-    "vine",
-    "scolopendra",
-    "toad",
-    "firefly",
-    "skeleton",
-    "snail",
-    "banshee",
-    "wisp",
+    "rat",
+    "lamprey",
+    "tick",
     "stinkbug",
     "woodlouse",
     "mandrake",
+    "lichen",
     "ergot",
+    "hop",
     "worm",
+    "kelpie",
+    "revenant",
     "pixie"
    ],
    "liquids": [
@@ -2533,17 +2483,13 @@
       },
       {
        "kind": "corpse",
-       "creature": "undine"
+       "creature": "kelpie"
       }
      ]
     },
     {
      "liquid": "lava",
      "from": [
-      {
-       "kind": "corpse",
-       "creature": "firefly"
-      },
       {
        "kind": "corpse",
        "creature": "worm"
@@ -2555,7 +2501,7 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "vine"
+       "creature": "hop"
       }
      ]
     },
@@ -2572,10 +2518,6 @@
      "liquid": "alkali",
      "from": [
       {
-       "kind": "corpse",
-       "creature": "snail"
-      },
-      {
        "kind": "guardian",
        "creature": "gargoyle"
       }
@@ -2586,11 +2528,7 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "mold"
-      },
-      {
-       "kind": "corpse",
-       "creature": "toad"
+       "creature": "lichen"
       }
      ]
     },
@@ -2599,7 +2537,7 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "scolopendra"
+       "creature": "tick"
       },
       {
        "kind": "corpse",
@@ -2608,6 +2546,10 @@
       {
        "kind": "corpse",
        "creature": "ergot"
+      },
+      {
+       "kind": "corpse",
+       "creature": "revenant"
       }
      ]
     },
@@ -2616,11 +2558,20 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "bat"
+       "creature": "rat"
       },
       {
        "kind": "corpse",
-       "creature": "leech"
+       "creature": "lamprey"
+      }
+     ]
+    },
+    {
+     "liquid": "pus",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "revenant"
       }
      ]
     },
@@ -2645,14 +2596,6 @@
     {
      "liquid": "ectoplasm",
      "from": [
-      {
-       "kind": "corpse",
-       "creature": "banshee"
-      },
-      {
-       "kind": "corpse",
-       "creature": "wisp"
-      },
       {
        "kind": "corpse",
        "creature": "pixie"
@@ -2733,23 +2676,18 @@
    "kind": "typical",
    "status": "working",
    "enemies": [
-    "bat",
-    "leech",
-    "mold",
-    "undine",
-    "vine",
-    "scolopendra",
-    "toad",
-    "firefly",
-    "skeleton",
-    "snail",
-    "banshee",
-    "wisp",
+    "rat",
+    "lamprey",
+    "tick",
     "stinkbug",
     "woodlouse",
     "mandrake",
+    "lichen",
     "ergot",
+    "hop",
     "worm",
+    "kelpie",
+    "revenant",
     "pixie"
    ],
    "liquids": [
@@ -2761,17 +2699,13 @@
       },
       {
        "kind": "corpse",
-       "creature": "undine"
+       "creature": "kelpie"
       }
      ]
     },
     {
      "liquid": "lava",
      "from": [
-      {
-       "kind": "corpse",
-       "creature": "firefly"
-      },
       {
        "kind": "corpse",
        "creature": "worm"
@@ -2783,7 +2717,7 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "vine"
+       "creature": "hop"
       }
      ]
     },
@@ -2800,10 +2734,6 @@
      "liquid": "alkali",
      "from": [
       {
-       "kind": "corpse",
-       "creature": "snail"
-      },
-      {
        "kind": "guardian",
        "creature": "gargoyle"
       }
@@ -2814,11 +2744,7 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "mold"
-      },
-      {
-       "kind": "corpse",
-       "creature": "toad"
+       "creature": "lichen"
       }
      ]
     },
@@ -2827,7 +2753,7 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "scolopendra"
+       "creature": "tick"
       },
       {
        "kind": "corpse",
@@ -2836,6 +2762,10 @@
       {
        "kind": "corpse",
        "creature": "ergot"
+      },
+      {
+       "kind": "corpse",
+       "creature": "revenant"
       }
      ]
     },
@@ -2844,11 +2774,20 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "bat"
+       "creature": "rat"
       },
       {
        "kind": "corpse",
-       "creature": "leech"
+       "creature": "lamprey"
+      }
+     ]
+    },
+    {
+     "liquid": "pus",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "revenant"
       }
      ]
     },
@@ -2873,14 +2812,6 @@
     {
      "liquid": "ectoplasm",
      "from": [
-      {
-       "kind": "corpse",
-       "creature": "banshee"
-      },
-      {
-       "kind": "corpse",
-       "creature": "wisp"
-      },
       {
        "kind": "corpse",
        "creature": "pixie"
@@ -2961,23 +2892,18 @@
    "kind": "boss",
    "status": "working",
    "enemies": [
-    "bat",
-    "leech",
-    "mold",
-    "undine",
-    "vine",
-    "scolopendra",
-    "toad",
-    "firefly",
-    "skeleton",
-    "snail",
-    "banshee",
-    "wisp",
+    "rat",
+    "lamprey",
+    "tick",
     "stinkbug",
     "woodlouse",
     "mandrake",
+    "lichen",
     "ergot",
+    "hop",
     "worm",
+    "kelpie",
+    "revenant",
     "pixie"
    ],
    "liquids": [
@@ -2989,17 +2915,13 @@
       },
       {
        "kind": "corpse",
-       "creature": "undine"
+       "creature": "kelpie"
       }
      ]
     },
     {
      "liquid": "lava",
      "from": [
-      {
-       "kind": "corpse",
-       "creature": "firefly"
-      },
       {
        "kind": "corpse",
        "creature": "worm"
@@ -3011,7 +2933,7 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "vine"
+       "creature": "hop"
       }
      ]
     },
@@ -3025,24 +2947,11 @@
      ]
     },
     {
-     "liquid": "alkali",
-     "from": [
-      {
-       "kind": "corpse",
-       "creature": "snail"
-      }
-     ]
-    },
-    {
      "liquid": "acid",
      "from": [
       {
        "kind": "corpse",
-       "creature": "mold"
-      },
-      {
-       "kind": "corpse",
-       "creature": "toad"
+       "creature": "lichen"
       }
      ]
     },
@@ -3051,7 +2960,7 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "scolopendra"
+       "creature": "tick"
       },
       {
        "kind": "corpse",
@@ -3060,6 +2969,10 @@
       {
        "kind": "corpse",
        "creature": "ergot"
+      },
+      {
+       "kind": "corpse",
+       "creature": "revenant"
       }
      ]
     },
@@ -3068,15 +2981,24 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "bat"
+       "creature": "rat"
       },
       {
        "kind": "corpse",
-       "creature": "leech"
+       "creature": "lamprey"
       },
       {
        "kind": "boss",
        "creature": "rat-king"
+      }
+     ]
+    },
+    {
+     "liquid": "pus",
+     "from": [
+      {
+       "kind": "corpse",
+       "creature": "revenant"
       }
      ]
     },
@@ -3101,14 +3023,6 @@
     {
      "liquid": "ectoplasm",
      "from": [
-      {
-       "kind": "corpse",
-       "creature": "banshee"
-      },
-      {
-       "kind": "corpse",
-       "creature": "wisp"
-      },
       {
        "kind": "corpse",
        "creature": "pixie"
@@ -3190,23 +3104,16 @@
    "kind": "unique",
    "status": "working",
    "enemies": [
-    "bat",
-    "undine",
-    "scolopendra",
-    "amanita",
-    "salamander",
-    "firefly",
-    "skeleton",
-    "snail",
+    "owl",
+    "scorpion",
     "ghoul",
-    "shrieker",
-    "banshee",
-    "skeleton-archer",
-    "wisp",
-    "stinkbug",
-    "woodlouse",
-    "mandrake",
-    "sundew"
+    "termite",
+    "shrimp",
+    "sundew",
+    "truffle",
+    "salamander",
+    "jellyfish",
+    "wraith"
    ],
    "liquids": [
     {
@@ -3217,7 +3124,7 @@
       },
       {
        "kind": "corpse",
-       "creature": "undine"
+       "creature": "jellyfish"
       }
      ]
     },
@@ -3227,10 +3134,6 @@
       {
        "kind": "corpse",
        "creature": "salamander"
-      },
-      {
-       "kind": "corpse",
-       "creature": "firefly"
       },
       {
        "kind": "guardian",
@@ -3243,16 +3146,7 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "woodlouse"
-      }
-     ]
-    },
-    {
-     "liquid": "alkali",
-     "from": [
-      {
-       "kind": "corpse",
-       "creature": "snail"
+       "creature": "shrimp"
       }
      ]
     },
@@ -3261,11 +3155,11 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "sundew"
+       "creature": "termite"
       },
       {
        "kind": "corpse",
-       "creature": "shrieker"
+       "creature": "sundew"
       }
      ]
     },
@@ -3274,7 +3168,7 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "scolopendra"
+       "creature": "scorpion"
       },
       {
        "kind": "corpse",
@@ -3282,11 +3176,7 @@
       },
       {
        "kind": "corpse",
-       "creature": "mandrake"
-      },
-      {
-       "kind": "corpse",
-       "creature": "amanita"
+       "creature": "truffle"
       }
      ]
     },
@@ -3295,7 +3185,7 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "bat"
+       "creature": "owl"
       }
      ]
     },
@@ -3309,24 +3199,11 @@
      ]
     },
     {
-     "liquid": "sulfur",
-     "from": [
-      {
-       "kind": "corpse",
-       "creature": "stinkbug"
-      }
-     ]
-    },
-    {
      "liquid": "ectoplasm",
      "from": [
       {
        "kind": "corpse",
-       "creature": "banshee"
-      },
-      {
-       "kind": "corpse",
-       "creature": "wisp"
+       "creature": "wraith"
       }
      ]
     }
@@ -3380,23 +3257,16 @@
    "kind": "typical",
    "status": "working",
    "enemies": [
-    "bat",
-    "undine",
-    "scolopendra",
-    "amanita",
-    "salamander",
-    "firefly",
-    "skeleton",
-    "snail",
+    "owl",
+    "scorpion",
     "ghoul",
-    "shrieker",
-    "banshee",
-    "skeleton-archer",
-    "wisp",
-    "stinkbug",
-    "woodlouse",
-    "mandrake",
-    "sundew"
+    "termite",
+    "shrimp",
+    "sundew",
+    "truffle",
+    "salamander",
+    "jellyfish",
+    "wraith"
    ],
    "liquids": [
     {
@@ -3407,7 +3277,7 @@
       },
       {
        "kind": "corpse",
-       "creature": "undine"
+       "creature": "jellyfish"
       }
      ]
     },
@@ -3417,10 +3287,6 @@
       {
        "kind": "corpse",
        "creature": "salamander"
-      },
-      {
-       "kind": "corpse",
-       "creature": "firefly"
       },
       {
        "kind": "guardian",
@@ -3433,16 +3299,7 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "woodlouse"
-      }
-     ]
-    },
-    {
-     "liquid": "alkali",
-     "from": [
-      {
-       "kind": "corpse",
-       "creature": "snail"
+       "creature": "shrimp"
       }
      ]
     },
@@ -3451,11 +3308,11 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "sundew"
+       "creature": "termite"
       },
       {
        "kind": "corpse",
-       "creature": "shrieker"
+       "creature": "sundew"
       }
      ]
     },
@@ -3464,7 +3321,7 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "scolopendra"
+       "creature": "scorpion"
       },
       {
        "kind": "corpse",
@@ -3472,11 +3329,7 @@
       },
       {
        "kind": "corpse",
-       "creature": "mandrake"
-      },
-      {
-       "kind": "corpse",
-       "creature": "amanita"
+       "creature": "truffle"
       }
      ]
     },
@@ -3485,7 +3338,7 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "bat"
+       "creature": "owl"
       }
      ]
     },
@@ -3499,24 +3352,11 @@
      ]
     },
     {
-     "liquid": "sulfur",
-     "from": [
-      {
-       "kind": "corpse",
-       "creature": "stinkbug"
-      }
-     ]
-    },
-    {
      "liquid": "ectoplasm",
      "from": [
       {
        "kind": "corpse",
-       "creature": "banshee"
-      },
-      {
-       "kind": "corpse",
-       "creature": "wisp"
+       "creature": "wraith"
       }
      ]
     }
@@ -3584,23 +3424,16 @@
    "kind": "typical",
    "status": "working",
    "enemies": [
-    "bat",
-    "undine",
-    "scolopendra",
-    "amanita",
-    "salamander",
-    "firefly",
-    "skeleton",
-    "snail",
+    "owl",
+    "scorpion",
     "ghoul",
-    "shrieker",
-    "banshee",
-    "skeleton-archer",
-    "wisp",
-    "stinkbug",
-    "woodlouse",
-    "mandrake",
-    "sundew"
+    "termite",
+    "shrimp",
+    "sundew",
+    "truffle",
+    "salamander",
+    "jellyfish",
+    "wraith"
    ],
    "liquids": [
     {
@@ -3611,7 +3444,7 @@
       },
       {
        "kind": "corpse",
-       "creature": "undine"
+       "creature": "jellyfish"
       }
      ]
     },
@@ -3621,10 +3454,6 @@
       {
        "kind": "corpse",
        "creature": "salamander"
-      },
-      {
-       "kind": "corpse",
-       "creature": "firefly"
       },
       {
        "kind": "guardian",
@@ -3637,16 +3466,7 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "woodlouse"
-      }
-     ]
-    },
-    {
-     "liquid": "alkali",
-     "from": [
-      {
-       "kind": "corpse",
-       "creature": "snail"
+       "creature": "shrimp"
       }
      ]
     },
@@ -3655,11 +3475,11 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "sundew"
+       "creature": "termite"
       },
       {
        "kind": "corpse",
-       "creature": "shrieker"
+       "creature": "sundew"
       }
      ]
     },
@@ -3668,7 +3488,7 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "scolopendra"
+       "creature": "scorpion"
       },
       {
        "kind": "corpse",
@@ -3676,11 +3496,7 @@
       },
       {
        "kind": "corpse",
-       "creature": "mandrake"
-      },
-      {
-       "kind": "corpse",
-       "creature": "amanita"
+       "creature": "truffle"
       }
      ]
     },
@@ -3689,7 +3505,7 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "bat"
+       "creature": "owl"
       }
      ]
     },
@@ -3703,24 +3519,11 @@
      ]
     },
     {
-     "liquid": "sulfur",
-     "from": [
-      {
-       "kind": "corpse",
-       "creature": "stinkbug"
-      }
-     ]
-    },
-    {
      "liquid": "ectoplasm",
      "from": [
       {
        "kind": "corpse",
-       "creature": "banshee"
-      },
-      {
-       "kind": "corpse",
-       "creature": "wisp"
+       "creature": "wraith"
       }
      ]
     }
@@ -3788,23 +3591,16 @@
    "kind": "boss",
    "status": "working",
    "enemies": [
-    "bat",
-    "undine",
-    "scolopendra",
-    "amanita",
-    "salamander",
-    "firefly",
-    "skeleton",
-    "snail",
+    "owl",
+    "scorpion",
     "ghoul",
-    "shrieker",
-    "banshee",
-    "skeleton-archer",
-    "wisp",
-    "stinkbug",
-    "woodlouse",
-    "mandrake",
-    "sundew"
+    "termite",
+    "shrimp",
+    "sundew",
+    "truffle",
+    "salamander",
+    "jellyfish",
+    "wraith"
    ],
    "liquids": [
     {
@@ -3815,7 +3611,7 @@
       },
       {
        "kind": "corpse",
-       "creature": "undine"
+       "creature": "jellyfish"
       }
      ]
     },
@@ -3825,10 +3621,6 @@
       {
        "kind": "corpse",
        "creature": "salamander"
-      },
-      {
-       "kind": "corpse",
-       "creature": "firefly"
       }
      ]
     },
@@ -3837,16 +3629,7 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "woodlouse"
-      }
-     ]
-    },
-    {
-     "liquid": "alkali",
-     "from": [
-      {
-       "kind": "corpse",
-       "creature": "snail"
+       "creature": "shrimp"
       }
      ]
     },
@@ -3855,11 +3638,11 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "sundew"
+       "creature": "termite"
       },
       {
        "kind": "corpse",
-       "creature": "shrieker"
+       "creature": "sundew"
       }
      ]
     },
@@ -3868,7 +3651,7 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "scolopendra"
+       "creature": "scorpion"
       },
       {
        "kind": "corpse",
@@ -3876,11 +3659,7 @@
       },
       {
        "kind": "corpse",
-       "creature": "mandrake"
-      },
-      {
-       "kind": "corpse",
-       "creature": "amanita"
+       "creature": "truffle"
       }
      ]
     },
@@ -3889,7 +3668,7 @@
      "from": [
       {
        "kind": "corpse",
-       "creature": "bat"
+       "creature": "owl"
       }
      ]
     },
@@ -3903,24 +3682,11 @@
      ]
     },
     {
-     "liquid": "sulfur",
-     "from": [
-      {
-       "kind": "corpse",
-       "creature": "stinkbug"
-      }
-     ]
-    },
-    {
      "liquid": "ectoplasm",
      "from": [
       {
        "kind": "corpse",
-       "creature": "banshee"
-      },
-      {
-       "kind": "corpse",
-       "creature": "wisp"
+       "creature": "wraith"
       }
      ]
     }
@@ -4302,23 +4068,7 @@
     1,
     2,
     3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10,
-    11,
-    12,
-    13,
-    14,
-    15,
-    16,
-    17,
-    18,
-    19,
-    20
+    4
    ],
    "loot": [
     {
@@ -4327,23 +4077,7 @@
       1,
       2,
       3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-      12,
-      13,
-      14,
-      15,
-      16,
-      17,
-      18,
-      19,
-      20
+      4
      ]
     }
    ],
@@ -4372,11 +4106,7 @@
     1,
     2,
     3,
-    4,
-    13,
-    14,
-    15,
-    16
+    4
    ],
    "loot": [
     {
@@ -4385,11 +4115,7 @@
       1,
       2,
       3,
-      4,
-      13,
-      14,
-      15,
-      16
+      4
      ]
     }
    ],
@@ -4416,11 +4142,7 @@
    },
    "levels": [
     1,
-    2,
-    13,
-    14,
-    15,
-    16
+    2
    ],
    "loot": [
     {
@@ -4428,15 +4150,6 @@
      "levels": [
       1,
       2
-     ]
-    },
-    {
-     "liquid": "acid",
-     "levels": [
-      13,
-      14,
-      15,
-      16
      ]
     }
    ],
@@ -4449,39 +4162,23 @@
    "status": "decided"
   },
   {
-   "id": "undine",
+   "id": "nixie",
    "name": {
-    "ru": "Ундина",
-    "en": "Undine"
+    "ru": "Никса",
+    "en": "Nixie"
    },
    "type": {
     "ru": "Водяные"
    },
    "element": "water",
    "does": {
-    "ru": "водный дух отстойника: видит далеко, будит соседей"
+    "ru": "прячется в лужах и реке: видна, только когда рядом вода; выныривает у слайма и бьёт первой"
    },
    "levels": [
     1,
     2,
     3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10,
-    11,
-    12,
-    13,
-    14,
-    15,
-    16,
-    17,
-    18,
-    19,
-    20
+    4
    ],
    "loot": [
     {
@@ -4490,23 +4187,7 @@
       1,
       2,
       3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-      12,
-      13,
-      14,
-      15,
-      16,
-      17,
-      18,
-      19,
-      20
+      4
      ]
     }
    ],
@@ -4519,30 +4200,22 @@
    "status": "decided"
   },
   {
-   "id": "vine",
+   "id": "root",
    "name": {
-    "ru": "Лоза",
-    "en": "Vine"
+    "ru": "Корень",
+    "en": "Root"
    },
    "type": {
     "ru": "Растения"
    },
    "element": "ambrosia",
    "does": {
-    "ru": "корни сквозь свод штольни, хватает"
+    "ru": "не ходит: хватает соседнюю клетку — слайм не может уйти, пока не ударит его"
    },
    "levels": [
     2,
     3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    13,
-    14,
-    15,
-    16
+    4
    ],
    "loot": [
     {
@@ -4551,19 +4224,6 @@
       2,
       3,
       4
-     ]
-    },
-    {
-     "liquid": "aqua-vitae",
-     "levels": [
-      5,
-      6,
-      7,
-      8,
-      13,
-      14,
-      15,
-      16
      ]
     }
    ],
@@ -4591,23 +4251,7 @@
    "levels": [
     2,
     3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10,
-    11,
-    12,
-    13,
-    14,
-    15,
-    16,
-    17,
-    18,
-    19,
-    20
+    4
    ],
    "loot": [
     {
@@ -4615,23 +4259,7 @@
      "levels": [
       2,
       3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-      12,
-      13,
-      14,
-      15,
-      16,
-      17,
-      18,
-      19,
-      20
+      4
      ]
     }
    ],
@@ -4658,30 +4286,14 @@
    },
    "levels": [
     3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10,
-    11,
-    12
+    4
    ],
    "loot": [
     {
      "liquid": "acid",
      "levels": [
       3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-      12
+      4
      ]
     }
    ],
@@ -4742,16 +4354,14 @@
    },
    "levels": [
     3,
-    4,
-    13
+    4
    ],
    "loot": [
     {
      "liquid": "mercury",
      "levels": [
       3,
-      4,
-      13
+      4
      ]
     }
    ],
@@ -4796,6 +4406,44 @@
    "status": "decided"
   },
   {
+   "id": "goose",
+   "name": {
+    "ru": "Гусь",
+    "en": "Goose"
+   },
+   "type": {
+    "ru": "Живые"
+   },
+   "element": "alkali",
+   "does": {
+    "ru": "быстрый, гогот будит соседей; щипок срывает единицу с края и роняет её лужей рядом"
+   },
+   "levels": [
+    5,
+    6,
+    7,
+    8
+   ],
+   "loot": [
+    {
+     "liquid": "blood",
+     "levels": [
+      5,
+      6,
+      7,
+      8
+     ]
+    }
+   ],
+   "weakTo": [
+    "poison"
+   ],
+   "immuneTo": [
+    "alkali"
+   ],
+   "status": "decided"
+  },
+  {
    "id": "kikimora",
    "name": {
     "ru": "Кикимора",
@@ -4830,6 +4478,44 @@
    ],
    "immuneTo": [
     "alkali"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "hornet",
+   "name": {
+    "ru": "Шершень",
+    "en": "Hornet"
+   },
+   "type": {
+    "ru": "Насекомые"
+   },
+   "element": "poison",
+   "does": {
+    "ru": "летит над лужами и Камнем; ужалил — отлетает на 2 клетки"
+   },
+   "levels": [
+    5,
+    6,
+    7,
+    8
+   ],
+   "loot": [
+    {
+     "liquid": "poison",
+     "levels": [
+      5,
+      6,
+      7,
+      8
+     ]
+    }
+   ],
+   "weakTo": [
+    "ambrosia"
+   ],
+   "immuneTo": [
+    "poison"
    ],
    "status": "decided"
   },
@@ -4878,6 +4564,44 @@
    "status": "decided"
   },
   {
+   "id": "bombardier",
+   "name": {
+    "ru": "Бомбардир",
+    "en": "Bombardier"
+   },
+   "type": {
+    "ru": "Едкие жуки"
+   },
+   "element": "acid",
+   "does": {
+    "ru": "ударишь в лоб — отвечает едкой струёй; сзади безопасен"
+   },
+   "levels": [
+    5,
+    6,
+    7,
+    8
+   ],
+   "loot": [
+    {
+     "liquid": "acid",
+     "levels": [
+      5,
+      6,
+      7,
+      8
+     ]
+    }
+   ],
+   "weakTo": [
+    "alkali"
+   ],
+   "immuneTo": [
+    "acid"
+   ],
+   "status": "decided"
+  },
+  {
    "id": "toad",
    "name": {
     "ru": "Жаба",
@@ -4894,11 +4618,7 @@
     5,
     6,
     7,
-    8,
-    13,
-    14,
-    15,
-    16
+    8
    ],
    "loot": [
     {
@@ -4907,11 +4627,7 @@
       5,
       6,
       7,
-      8,
-      13,
-      14,
-      15,
-      16
+      8
      ]
     }
    ],
@@ -4920,6 +4636,42 @@
    ],
    "immuneTo": [
     "acid"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "vine",
+   "name": {
+    "ru": "Лоза",
+    "en": "Vine"
+   },
+   "type": {
+    "ru": "Растения"
+   },
+   "element": "ambrosia",
+   "does": null,
+   "levels": [
+    5,
+    6,
+    7,
+    8
+   ],
+   "loot": [
+    {
+     "liquid": "aqua-vitae",
+     "levels": [
+      5,
+      6,
+      7,
+      8
+     ]
+    }
+   ],
+   "weakTo": [
+    "vitriol"
+   ],
+   "immuneTo": [
+    "ambrosia"
    ],
    "status": "decided"
   },
@@ -5163,11 +4915,7 @@
     5,
     6,
     7,
-    8,
-    17,
-    18,
-    19,
-    20
+    8
    ],
    "loot": [
     {
@@ -5176,11 +4924,7 @@
       5,
       6,
       7,
-      8,
-      17,
-      18,
-      19,
-      20
+      8
      ]
     }
    ],
@@ -5193,31 +4937,23 @@
    "status": "decided"
   },
   {
-   "id": "salamander",
+   "id": "firebird",
    "name": {
-    "ru": "Саламандра",
-    "en": "Salamander"
+    "ru": "Жар-птица",
+    "en": "Firebird"
    },
    "type": {
     "ru": "Огненные"
    },
    "element": "lava",
    "does": {
-    "ru": "из горнов; носитель Лавы"
+    "ru": "где пролетит — тлеет клетка (горит 2 раунда); к Воде на краю не подлетает"
    },
    "levels": [
     5,
     6,
     7,
-    8,
-    9,
-    10,
-    11,
-    12,
-    17,
-    18,
-    19,
-    20
+    8
    ],
    "loot": [
     {
@@ -5226,61 +4962,7 @@
       5,
       6,
       7,
-      8,
-      9,
-      10,
-      11,
-      12,
-      17,
-      18,
-      19,
-      20
-     ]
-    }
-   ],
-   "weakTo": [
-    "water"
-   ],
-   "immuneTo": [
-    "lava"
-   ],
-   "status": "decided"
-  },
-  {
-   "id": "imp",
-   "name": {
-    "ru": "Бесёнок",
-    "en": "Imp"
-   },
-   "type": {
-    "ru": "Огненные"
-   },
-   "element": "lava",
-   "does": {
-    "ru": "огненный бес из сушильни, поджигает солому"
-   },
-   "levels": [
-    5,
-    6,
-    7,
-    8,
-    9,
-    10,
-    11,
-    12
-   ],
-   "loot": [
-    {
-     "liquid": "lava",
-     "levels": [
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-      12
+      8
      ]
     }
    ],
@@ -5306,33 +4988,19 @@
     "ru": "огненный жук, прыгает искрой"
    },
    "levels": [
+    5,
     6,
     7,
-    8,
-    13,
-    14,
-    15,
-    16,
-    17,
-    18,
-    19,
-    20
+    8
    ],
    "loot": [
     {
      "liquid": "lava",
      "levels": [
+      5,
       6,
       7,
-      8,
-      13,
-      14,
-      15,
-      16,
-      17,
-      18,
-      19,
-      20
+      8
      ]
     }
    ],
@@ -5345,41 +5013,78 @@
    "status": "decided"
   },
   {
-   "id": "skeleton",
+   "id": "undine",
    "name": {
-    "ru": "Скелет",
-    "en": "Skeleton"
+    "ru": "Ундина",
+    "en": "Undine"
    },
    "type": {
-    "ru": "Нежить: кости"
+    "ru": "Водяные"
    },
-   "element": "ichor",
+   "element": "water",
    "does": {
-    "ru": "старый мельник из-под жерновов"
+    "ru": "водный дух мельничного пруда"
    },
    "levels": [
+    5,
     6,
     7,
-    8,
+    8
+   ],
+   "loot": [
+    {
+     "liquid": "water",
+     "levels": [
+      5,
+      6,
+      7,
+      8
+     ]
+    }
+   ],
+   "weakTo": [
+    "mercury"
+   ],
+   "immuneTo": [
+    "water"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "raven",
+   "name": {
+    "ru": "Ворон",
+    "en": "Raven"
+   },
+   "type": {
+    "ru": "Живые"
+   },
+   "element": "alkali",
+   "does": {
+    "ru": "кружит в 2 клетках, каркает — зовёт нежить; нападает, только когда слайм меньше половины"
+   },
+   "levels": [
     9,
     10,
     11,
-    12,
-    13,
-    14,
-    15,
-    16,
-    17,
-    18,
-    19,
-    20
+    12
    ],
-   "loot": [],
+   "loot": [
+    {
+     "liquid": "blood",
+     "levels": [
+      9,
+      10,
+      11,
+      12
+     ]
+    }
+   ],
    "weakTo": [
-    "aqua-vitae"
+    "poison"
    ],
    "immuneTo": [
-    "ichor"
+    "alkali"
    ],
    "status": "decided"
   },
@@ -5400,15 +5105,7 @@
     9,
     10,
     11,
-    12,
-    13,
-    14,
-    15,
-    16,
-    17,
-    18,
-    19,
-    20
+    12
    ],
    "loot": [
     {
@@ -5417,15 +5114,7 @@
       9,
       10,
       11,
-      12,
-      13,
-      14,
-      15,
-      16,
-      17,
-      18,
-      19,
-      20
+      12
      ]
     }
    ],
@@ -5438,27 +5127,23 @@
    "status": "decided"
   },
   {
-   "id": "ghoul",
+   "id": "spider",
    "name": {
-    "ru": "Гуль",
-    "en": "Ghoul"
+    "ru": "Паук",
+    "en": "Spider"
    },
    "type": {
-    "ru": "Нежить: трупы"
+    "ru": "Насекомые"
    },
    "element": "poison",
    "does": {
-    "ru": "лопается облаком"
+    "ru": "плетёт паутину в проходах (наступил — приклеен на ход) и ждёт в углу"
    },
    "levels": [
     9,
     10,
     11,
-    12,
-    17,
-    18,
-    19,
-    20
+    12
    ],
    "loot": [
     {
@@ -5467,24 +5152,7 @@
       9,
       10,
       11,
-      12,
-      17,
-      18,
-      19,
-      20
-     ]
-    },
-    {
-     "liquid": "pus",
-     "levels": [
-      9,
-      10,
-      11,
-      12,
-      17,
-      18,
-      19,
-      20
+      12
      ]
     }
    ],
@@ -5493,6 +5161,91 @@
    ],
    "immuneTo": [
     "poison"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "zombie",
+   "name": {
+    "ru": "Зомби",
+    "en": "Zombie"
+   },
+   "type": {
+    "ru": "Нежить: трупы"
+   },
+   "element": "poison",
+   "does": {
+    "ru": "медленный; убит — встаёт ещё раз с половиной здоровья, если труп не съеден сразу"
+   },
+   "levels": [
+    9,
+    10,
+    11,
+    12
+   ],
+   "loot": [
+    {
+     "liquid": "poison",
+     "levels": [
+      9,
+      10,
+      11,
+      12
+     ]
+    },
+    {
+     "liquid": "pus",
+     "levels": [
+      9,
+      10,
+      11,
+      12
+     ]
+    }
+   ],
+   "weakTo": [
+    "ambrosia"
+   ],
+   "immuneTo": [
+    "poison"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "ant",
+   "name": {
+    "ru": "Муравей",
+    "en": "Ant"
+   },
+   "type": {
+    "ru": "Едкие жуки"
+   },
+   "element": "acid",
+   "does": {
+    "ru": "ходят парой; убьёшь одного — второй кусает сильнее"
+   },
+   "levels": [
+    9,
+    10,
+    11,
+    12
+   ],
+   "loot": [
+    {
+     "liquid": "acid",
+     "levels": [
+      9,
+      10,
+      11,
+      12
+     ]
+    }
+   ],
+   "weakTo": [
+    "alkali"
+   ],
+   "immuneTo": [
+    "acid"
    ],
    "status": "decided"
   },
@@ -5589,11 +5342,7 @@
     9,
     10,
     11,
-    12,
-    17,
-    18,
-    19,
-    20
+    12
    ],
    "loot": [
     {
@@ -5602,11 +5351,7 @@
       9,
       10,
       11,
-      12,
-      17,
-      18,
-      19,
-      20
+      12
      ]
     }
    ],
@@ -5657,6 +5402,82 @@
    "status": "decided"
   },
   {
+   "id": "imp",
+   "name": {
+    "ru": "Бесёнок",
+    "en": "Imp"
+   },
+   "type": {
+    "ru": "Огненные"
+   },
+   "element": "lava",
+   "does": {
+    "ru": "бес из склепных свечей"
+   },
+   "levels": [
+    9,
+    10,
+    11,
+    12
+   ],
+   "loot": [
+    {
+     "liquid": "lava",
+     "levels": [
+      9,
+      10,
+      11,
+      12
+     ]
+    }
+   ],
+   "weakTo": [
+    "water"
+   ],
+   "immuneTo": [
+    "lava"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "rusalka",
+   "name": {
+    "ru": "Русалка",
+    "en": "Rusalka"
+   },
+   "type": {
+    "ru": "Водяные"
+   },
+   "element": "water",
+   "does": {
+    "ru": "поёт — тянет слайма на клетку к реке; в воде лечится"
+   },
+   "levels": [
+    9,
+    10,
+    11,
+    12
+   ],
+   "loot": [
+    {
+     "liquid": "water",
+     "levels": [
+      9,
+      10,
+      11,
+      12
+     ]
+    }
+   ],
+   "weakTo": [
+    "mercury"
+   ],
+   "immuneTo": [
+    "water"
+   ],
+   "status": "decided"
+  },
+  {
    "id": "banshee",
    "name": {
     "ru": "Банши",
@@ -5673,15 +5494,7 @@
     9,
     10,
     11,
-    12,
-    13,
-    14,
-    15,
-    16,
-    17,
-    18,
-    19,
-    20
+    12
    ],
    "loot": [
     {
@@ -5690,15 +5503,7 @@
       9,
       10,
       11,
-      12,
-      13,
-      14,
-      15,
-      16,
-      17,
-      18,
-      19,
-      20
+      12
      ]
     }
    ],
@@ -5707,6 +5512,32 @@
    ],
    "immuneTo": [
     "water"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "skeleton",
+   "name": {
+    "ru": "Скелет",
+    "en": "Skeleton"
+   },
+   "type": {
+    "ru": "Нежить: кости"
+   },
+   "element": "ichor",
+   "does": null,
+   "levels": [
+    9,
+    10,
+    11,
+    12
+   ],
+   "loot": [],
+   "weakTo": [
+    "aqua-vitae"
+   ],
+   "immuneTo": [
+    "ichor"
    ],
    "status": "decided"
   },
@@ -5727,11 +5558,7 @@
     9,
     10,
     11,
-    12,
-    17,
-    18,
-    19,
-    20
+    12
    ],
    "loot": [],
    "weakTo": [
@@ -5759,15 +5586,7 @@
     9,
     10,
     11,
-    12,
-    13,
-    14,
-    15,
-    16,
-    17,
-    18,
-    19,
-    20
+    12
    ],
    "loot": [
     {
@@ -5776,15 +5595,7 @@
       9,
       10,
       11,
-      12,
-      13,
-      14,
-      15,
-      16,
-      17,
-      18,
-      19,
-      20
+      12
      ]
     }
    ],
@@ -5793,6 +5604,120 @@
    ],
    "immuneTo": [
     "ichor"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "rat",
+   "name": {
+    "ru": "Крыса",
+    "en": "Rat"
+   },
+   "type": {
+    "ru": "Живые"
+   },
+   "element": "alkali",
+   "does": {
+    "ru": "стайкой по 2–3, слабые; раненая убегает и зовёт других"
+   },
+   "levels": [
+    13,
+    14,
+    15,
+    16
+   ],
+   "loot": [
+    {
+     "liquid": "blood",
+     "levels": [
+      13,
+      14,
+      15,
+      16
+     ]
+    }
+   ],
+   "weakTo": [
+    "poison"
+   ],
+   "immuneTo": [
+    "alkali"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "lamprey",
+   "name": {
+    "ru": "Минога",
+    "en": "Lamprey"
+   },
+   "type": {
+    "ru": "Живые"
+   },
+   "element": "alkali",
+   "does": {
+    "ru": "присасывается — каждый ход тянет единицу, пока не оторвёшь ударом; в канале не видна"
+   },
+   "levels": [
+    13,
+    14,
+    15,
+    16
+   ],
+   "loot": [
+    {
+     "liquid": "blood",
+     "levels": [
+      13,
+      14,
+      15,
+      16
+     ]
+    }
+   ],
+   "weakTo": [
+    "poison"
+   ],
+   "immuneTo": [
+    "alkali"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "tick",
+   "name": {
+    "ru": "Клещ",
+    "en": "Tick"
+   },
+   "type": {
+    "ru": "Насекомые"
+   },
+   "element": "poison",
+   "does": {
+    "ru": "сидит невидимым на своде и падает, когда слайм под ним; присосался — пьёт Кровь с края"
+   },
+   "levels": [
+    13,
+    14,
+    15,
+    16
+   ],
+   "loot": [
+    {
+     "liquid": "poison",
+     "levels": [
+      13,
+      14,
+      15,
+      16
+     ]
+    }
+   ],
+   "weakTo": [
+    "ambrosia"
+   ],
+   "immuneTo": [
+    "poison"
    ],
    "status": "decided"
   },
@@ -5813,11 +5738,7 @@
     13,
     14,
     15,
-    16,
-    17,
-    18,
-    19,
-    20
+    16
    ],
    "loot": [
     {
@@ -5826,11 +5747,7 @@
       13,
       14,
       15,
-      16,
-      17,
-      18,
-      19,
-      20
+      16
      ]
     }
    ],
@@ -5859,11 +5776,7 @@
     13,
     14,
     15,
-    16,
-    17,
-    18,
-    19,
-    20
+    16
    ],
    "loot": [
     {
@@ -5872,11 +5785,7 @@
       13,
       14,
       15,
-      16,
-      17,
-      18,
-      19,
-      20
+      16
      ]
     }
    ],
@@ -5905,11 +5814,7 @@
     13,
     14,
     15,
-    16,
-    17,
-    18,
-    19,
-    20
+    16
    ],
    "loot": [
     {
@@ -5918,11 +5823,7 @@
       13,
       14,
       15,
-      16,
-      17,
-      18,
-      19,
-      20
+      16
      ]
     }
    ],
@@ -5931,6 +5832,44 @@
    ],
    "immuneTo": [
     "ambrosia"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "lichen",
+   "name": {
+    "ru": "Лишайник",
+    "en": "Lichen"
+   },
+   "type": {
+    "ru": "Грибы"
+   },
+   "element": "aqua-vitae",
+   "does": {
+    "ru": "не двигается: покрывает клетки скользким налётом (наступил — проехал клетку), разрастается на клетку раз в 3 раунда"
+   },
+   "levels": [
+    13,
+    14,
+    15,
+    16
+   ],
+   "loot": [
+    {
+     "liquid": "acid",
+     "levels": [
+      13,
+      14,
+      15,
+      16
+     ]
+    }
+   ],
+   "weakTo": [
+    "lava"
+   ],
+   "immuneTo": [
+    "aqua-vitae"
    ],
    "status": "decided"
   },
@@ -5967,6 +5906,44 @@
    ],
    "immuneTo": [
     "aqua-vitae"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "hop",
+   "name": {
+    "ru": "Хмель",
+    "en": "Hop"
+   },
+   "type": {
+    "ru": "Растения"
+   },
+   "element": "ambrosia",
+   "does": {
+    "ru": "оплетает дверной проём, пока его не срежут; враги в его парах хмелеют и бьют ближайшего"
+   },
+   "levels": [
+    13,
+    14,
+    15,
+    16
+   ],
+   "loot": [
+    {
+     "liquid": "aqua-vitae",
+     "levels": [
+      13,
+      14,
+      15,
+      16
+     ]
+    }
+   ],
+   "weakTo": [
+    "vitriol"
+   ],
+   "immuneTo": [
+    "ambrosia"
    ],
    "status": "decided"
   },
@@ -6018,6 +5995,123 @@
    "status": "decided"
   },
   {
+   "id": "kelpie",
+   "name": {
+    "ru": "Келпи",
+    "en": "Kelpie"
+   },
+   "type": {
+    "ru": "Водяные"
+   },
+   "element": "water",
+   "does": {
+    "ru": "если слайм у воды — хватает и утаскивает на 2 клетки вдоль канала"
+   },
+   "levels": [
+    13,
+    14,
+    15,
+    16
+   ],
+   "loot": [
+    {
+     "liquid": "water",
+     "levels": [
+      13,
+      14,
+      15,
+      16
+     ]
+    }
+   ],
+   "weakTo": [
+    "mercury"
+   ],
+   "immuneTo": [
+    "water"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "sentry",
+   "name": {
+    "ru": "Часовой",
+    "en": "Sentry"
+   },
+   "type": {
+    "ru": "Механизмы гномов"
+   },
+   "element": "mercury",
+   "does": {
+    "ru": "ходит по маршруту и не отвлекается; увидел — свисток, двери шлюза закрываются"
+   },
+   "levels": [
+    13
+   ],
+   "loot": [
+    {
+     "liquid": "mercury",
+     "levels": [
+      13
+     ]
+    }
+   ],
+   "weakTo": [
+    "ichor"
+   ],
+   "immuneTo": [
+    "mercury"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "revenant",
+   "name": {
+    "ru": "Ревенант",
+    "en": "Revenant"
+   },
+   "type": {
+    "ru": "Нежить: трупы"
+   },
+   "element": "poison",
+   "does": {
+    "ru": "всегда знает, где слайм, и идёт по следу; медленный"
+   },
+   "levels": [
+    13,
+    14,
+    15,
+    16
+   ],
+   "loot": [
+    {
+     "liquid": "poison",
+     "levels": [
+      13,
+      14,
+      15,
+      16
+     ]
+    },
+    {
+     "liquid": "pus",
+     "levels": [
+      13,
+      14,
+      15,
+      16
+     ]
+    }
+   ],
+   "weakTo": [
+    "ambrosia"
+   ],
+   "immuneTo": [
+    "poison"
+   ],
+   "status": "decided"
+  },
+  {
    "id": "pixie",
    "name": {
     "ru": "Пикси",
@@ -6031,6 +6125,7 @@
     "ru": "из аптечного садика, сыплет волшебную пыльцу"
    },
    "levels": [
+    13,
     14,
     15,
     16
@@ -6039,6 +6134,7 @@
     {
      "liquid": "ectoplasm",
      "levels": [
+      13,
       14,
       15,
       16
@@ -6050,6 +6146,205 @@
    ],
    "immuneTo": [
     "ambrosia"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "owl",
+   "name": {
+    "ru": "Сова",
+    "en": "Owl"
+   },
+   "type": {
+    "ru": "Живые"
+   },
+   "element": "alkali",
+   "does": {
+    "ru": "видит в темноте и в тени, нападает бесшумно — без предупреждения"
+   },
+   "levels": [
+    17,
+    18,
+    19,
+    20
+   ],
+   "loot": [
+    {
+     "liquid": "blood",
+     "levels": [
+      17,
+      18,
+      19,
+      20
+     ]
+    }
+   ],
+   "weakTo": [
+    "poison"
+   ],
+   "immuneTo": [
+    "alkali"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "scorpion",
+   "name": {
+    "ru": "Скорпион",
+    "en": "Scorpion"
+   },
+   "type": {
+    "ru": "Насекомые"
+   },
+   "element": "poison",
+   "does": {
+    "ru": "хвост бьёт через клетку по прямой (не стрелок — просто длинный)"
+   },
+   "levels": [
+    17,
+    18,
+    19,
+    20
+   ],
+   "loot": [
+    {
+     "liquid": "poison",
+     "levels": [
+      17,
+      18,
+      19,
+      20
+     ]
+    }
+   ],
+   "weakTo": [
+    "ambrosia"
+   ],
+   "immuneTo": [
+    "poison"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "ghoul",
+   "name": {
+    "ru": "Гуль",
+    "en": "Ghoul"
+   },
+   "type": {
+    "ru": "Нежить: трупы"
+   },
+   "element": "poison",
+   "does": {
+    "ru": "тело для опытов алхимика по анатомии"
+   },
+   "levels": [
+    17,
+    18,
+    19,
+    20
+   ],
+   "loot": [
+    {
+     "liquid": "poison",
+     "levels": [
+      17,
+      18,
+      19,
+      20
+     ]
+    },
+    {
+     "liquid": "pus",
+     "levels": [
+      17,
+      18,
+      19,
+      20
+     ]
+    }
+   ],
+   "weakTo": [
+    "ambrosia"
+   ],
+   "immuneTo": [
+    "poison"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "termite",
+   "name": {
+    "ru": "Термит",
+    "en": "Termite"
+   },
+   "type": {
+    "ru": "Едкие жуки"
+   },
+   "element": "acid",
+   "does": {
+    "ru": "прогрызает деревянные стены и полки — открывает новые проходы"
+   },
+   "levels": [
+    17,
+    18,
+    19,
+    20
+   ],
+   "loot": [
+    {
+     "liquid": "acid",
+     "levels": [
+      17,
+      18,
+      19,
+      20
+     ]
+    }
+   ],
+   "weakTo": [
+    "alkali"
+   ],
+   "immuneTo": [
+    "acid"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "shrimp",
+   "name": {
+    "ru": "Креветка",
+    "en": "Shrimp"
+   },
+   "type": {
+    "ru": "Ракообразные"
+   },
+   "element": "vitriol",
+   "does": {
+    "ru": "после удара отпрыгивает назад; панцирь гасит первый удар на 1"
+   },
+   "levels": [
+    17,
+    18,
+    19,
+    20
+   ],
+   "loot": [
+    {
+     "liquid": "vitriol",
+     "levels": [
+      17,
+      18,
+      19,
+      20
+     ]
+    }
+   ],
+   "weakTo": [
+    "acid"
+   ],
+   "immuneTo": [
+    "vitriol"
    ],
    "status": "decided"
   },
@@ -6088,6 +6383,158 @@
    ],
    "immuneTo": [
     "ambrosia"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "truffle",
+   "name": {
+    "ru": "Трюфель",
+    "en": "Truffle"
+   },
+   "type": {
+    "ru": "Грибы"
+   },
+   "element": "aqua-vitae",
+   "does": {
+    "ru": "сидит в земле, виден только вплотную; сладкий запах тянет к нему других врагов"
+   },
+   "levels": [
+    17,
+    18,
+    19,
+    20
+   ],
+   "loot": [
+    {
+     "liquid": "poison",
+     "levels": [
+      17,
+      18,
+      19,
+      20
+     ]
+    }
+   ],
+   "weakTo": [
+    "lava"
+   ],
+   "immuneTo": [
+    "aqua-vitae"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "salamander",
+   "name": {
+    "ru": "Саламандра",
+    "en": "Salamander"
+   },
+   "type": {
+    "ru": "Огненные"
+   },
+   "element": "lava",
+   "does": {
+    "ru": "из печи-атанора"
+   },
+   "levels": [
+    17,
+    18,
+    19,
+    20
+   ],
+   "loot": [
+    {
+     "liquid": "lava",
+     "levels": [
+      17,
+      18,
+      19,
+      20
+     ]
+    }
+   ],
+   "weakTo": [
+    "water"
+   ],
+   "immuneTo": [
+    "lava"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "jellyfish",
+   "name": {
+    "ru": "Медуза",
+    "en": "Jellyfish"
+   },
+   "type": {
+    "ru": "Водяные"
+   },
+   "element": "water",
+   "does": {
+    "ru": "прозрачная — видна за 2 клетки; бьёшь вплотную — обжигаешься на 1"
+   },
+   "levels": [
+    17,
+    18,
+    19,
+    20
+   ],
+   "loot": [
+    {
+     "liquid": "water",
+     "levels": [
+      17,
+      18,
+      19,
+      20
+     ]
+    }
+   ],
+   "weakTo": [
+    "mercury"
+   ],
+   "immuneTo": [
+    "water"
+   ],
+   "status": "decided"
+  },
+  {
+   "id": "wraith",
+   "name": {
+    "ru": "Призрак",
+    "en": "Wraith"
+   },
+   "type": {
+    "ru": "Волшебные"
+   },
+   "element": "ichor",
+   "does": {
+    "ru": "проходит сквозь стены; физический удар проходит насквозь — берут только волшебные жидкости"
+   },
+   "levels": [
+    17,
+    18,
+    19,
+    20
+   ],
+   "loot": [
+    {
+     "liquid": "ectoplasm",
+     "levels": [
+      17,
+      18,
+      19,
+      20
+     ]
+    }
+   ],
+   "weakTo": [
+    "aqua-vitae"
+   ],
+   "immuneTo": [
+    "ichor"
    ],
    "status": "decided"
   }

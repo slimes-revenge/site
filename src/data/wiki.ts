@@ -89,7 +89,7 @@ const creatureSchema = z.strictObject({
   name,
   type: text,
   element: z.string(),
-  does: text,
+  does: text.nullable(),
   levels: z.array(z.number().int()),
   // `levels`: where this corpse gives this liquid (loot can differ by map).
   loot: z.array(
