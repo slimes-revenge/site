@@ -45,7 +45,8 @@ export function BuildMatrix({ reports }: { reports: Report[] }) {
   const [ap, setAp] = useState(aps[0]);
   const [policy, setPolicy] = useState(policies[0]);
   const [selected, setSelected] = useState<{ build: Build; cell: Cell } | null>(null);
-  const report = reports.find(r => r.actionsPerRound === ap && r.policy === policy) ?? reports[0];
+  const report = reports.find(r => r.actionsPerRound === ap && r.policy === policy);
+  if (!report) throw new Error(`no report for ${ap} AP × ${policy}`);
   const generated = new Date(report.generatedUtc).toISOString().replace("T", " ").slice(0, 16);
 
   // Column groups: enemy kinds in the order of the report's encounters (roster order, then count).
@@ -191,6 +192,7 @@ export function BuildMatrix({ reports }: { reports: Report[] }) {
               <Box component="dl" sx={{ display: "grid", gridTemplateColumns: "auto 1fr", gap: 1, m: 0 }}>
                 {[
                   ["Build", unitsText(selected.build)],
+                  ["Policy", report.policy],
                   ["Action points", String(report.actionsPerRound)],
                   ["Win rate", `${percent(selected.cell.winRate)} of ${report.seeds} fights`],
                   ["Rounds (avg)", selected.cell.avgRounds.toFixed(1)],

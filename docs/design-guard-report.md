@@ -16,8 +16,8 @@ The file is a JSON array of reports (`reportsSchema`, at least one), one per `ac
 
 - `builds[]`: `id` (the key cells use), `name` (row label), `units` (liquid → count).
 - `encounters[]`: `id` (the key cells use), `enemy`, `enemies`.
-- Grid and uniqueness (checked by the schema): every `actionsPerRound` × `policy` pair has exactly one report, build ids, encounter ids, and one cell per build × encounter; a duplicate would collide as React keys and overwrite cells.
-- `cells[]`: `build` and `encounter` are ids; `enemy`, `enemies` copied from the encounter; `winRate` 0–1, `avgRounds`, `avgUnitsLeft`, `avgUnitsSpent`; `cause` (most common loss cause, `null` when every fight was won); `causes` (cause → fights, `{}` when every fight was won). Causes look like `melee:<Enemy>`, `status:<Status>`, `timeout`.
+- Grid and uniqueness (checked by the schema): each `actionsPerRound` × `policy` pair has exactly one report; build ids and encounter ids are unique; one cell per build × encounter; a duplicate would collide as React keys and overwrite cells.
+- `cells[]`: `build` and `encounter` are ids; `enemy`, `enemies` copied from the encounter; `winRate` 0–1, `avgRounds`, `avgUnitsLeft`, `avgUnitsSpent`; `cause` (most common loss cause, `null` when every fight was won); `causes` (cause → fights, `{}` when every fight was won). Causes look like `melee:<Enemy>`, `status:<Status>`, `timeout`, `stalemate`.
 
 ## How the page uses it
 
@@ -26,4 +26,4 @@ The file is a JSON array of reports (`reportsSchema`, at least one), one per `ac
 - Rows: `builds` in the report's order; the row label is `name`, its tooltip lists `units`.
 - Column groups: enemy kinds in the order of `encounters` (roster order, then count), each with its encounters as sub-columns. A cell is the entry of `cells` with that build id and encounter id; a missing one shows `—`.
 - Cell: `winRate` sets the hue, 0 = red, 0.5 = yellow, 1 = green, lighter in light mode and darker in dark mode; it shows `winRate` and `avgUnitsLeft`.
-- Dialog: the build's `units`, `actionsPerRound`, `winRate` of `seeds` fights, `avgRounds`, `avgUnitsSpent`, `avgUnitsLeft`, `cause` ("no losses" when `null`) and `causes` sorted by count.
+- Dialog: the build's `units`, `policy`, `actionsPerRound`, `winRate` of `seeds` fights, `avgRounds`, `avgUnitsSpent`, `avgUnitsLeft`, `cause` ("no losses" when `null`) and `causes` sorted by count.
