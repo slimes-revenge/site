@@ -58,7 +58,6 @@
   "creature.noPicture": "картинки пока нет",
   "creature.type": "Тип",
   "creature.element": "Стихия",
-  "creature.does": "Что делает",
   "creature.levels": "Где встречается",
   "creature.loot": "Что берёшь с трупа",
   "creature.lootLevels": "на уровнях {levels}",

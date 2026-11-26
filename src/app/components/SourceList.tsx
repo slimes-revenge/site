@@ -21,7 +21,7 @@ export function SourceList({ from, lang, intl }: { from: Source[]; lang: string;
       label = intl.formatMessage({ id: `source.${source.kind}` });
     }
     return (
-      <Fragment key={`${source.kind}-${source.creature ?? i}`}>
+      <Fragment key={i}>
         {i ? ", " : null}
         {label}
         {source.note ? ` (${tr(source.note, lang)})` : null}

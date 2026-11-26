@@ -27,7 +27,15 @@ export function CreaturePicture({
   if (existsSync(join(process.cwd(), "public", file))) {
     return (
       <Box sx={box}>
-        <Image src={file} alt={name} width={size} height={size} style={{ imageRendering: "pixelated" }} />
+        <Image
+          src={file}
+          alt={name}
+          width={size}
+          height={size}
+          // Served as is: the optimizer would re-encode the pixel art as lossy WebP.
+          unoptimized
+          style={{ imageRendering: "pixelated" }}
+        />
       </Box>
     );
   }
