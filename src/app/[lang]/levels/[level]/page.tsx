@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
-import { Breadcrumbs, Chip, Container, Paper, Stack, Typography } from "@mui/material";
+import { Breadcrumbs, Container, Paper, Stack, Typography } from "@mui/material";
 
-import { findBoss, getBoss, getCreature, getLevel, getLiquid, getMap, wiki } from "../../../../data/wiki";
+import { findBoss, getCreature, getLevel, getLiquid, getMap, wiki } from "../../../../data/wiki";
 import { getIntl, tr } from "../../../../i18n";
 import { BossCard } from "../../../components/BossCard";
 import { StatusMark } from "../../../components/StatusMark";
-import { RouterLink } from "../../../components/RouterLink";
+import { LiquidLink } from "../../../components/LiquidLink";
+import { RouterChip, RouterLink } from "../../../components/RouterLink";
+import { SourceList } from "../../../components/SourceList";
 
 interface IProps {
   params: Promise<{ lang: string; level: string }>;
@@ -53,7 +55,7 @@ export default async function LevelPage({ params }: IProps) {
       </Typography>
       <Stack direction="row" sx={{ flexWrap: "wrap", gap: 0.75, mb: 2 }}>
         {level.enemies.map(id => (
-          <Chip key={id} label={tr(getCreature(id).name, lang)} size="small" />
+          <RouterChip key={id} href={`/${lang}/bestiary/${id}`} label={tr(getCreature(id).name, lang)} size="small" />
         ))}
       </Stack>
 
@@ -63,18 +65,11 @@ export default async function LevelPage({ params }: IProps) {
       <Stack component="ul" sx={{ pl: 2.5, mt: 0.5, mb: 2 }} spacing={0.25}>
         {level.liquids.map(({ liquid, from }) => (
           <li key={liquid}>
-            <b>{liquidName(liquid)}</b>
+            <b>
+              <LiquidLink id={liquid} lang={lang} />
+            </b>
             {" — "}
-            {from
-              .map(source => {
-                const label = source.creature
-                  ? source.kind === "corpse"
-                    ? tr(getCreature(source.creature).name, lang)
-                    : `${tr(getBoss(source.creature).name, lang)} (${t(`boss.kind.${getBoss(source.creature).kind}`)})`
-                  : t(`source.${source.kind}`);
-                return source.note ? `${label} (${tr(source.note, lang)})` : label;
-              })
-              .join(", ")}
+            <SourceList from={from} lang={lang} intl={intl} />
           </li>
         ))}
       </Stack>

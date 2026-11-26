@@ -30,6 +30,8 @@ src/app/
   [lang]/page.tsx         `/ru`: the route — maps, their levels, the stops
   [lang]/maps/[map]/      a map page
   [lang]/levels/[level]/  a level page
+  [lang]/bestiary/        creature list + a page per creature
+  [lang]/liquids/         liquid list + a page per liquid
   [lang]/sim/page.tsx     `/ru/sim`: loads the simulator reports, sample-data banner, BuildMatrix
   theme.ts                MUI theme, light + dark colour schemes via CSS variables
   components/
@@ -37,12 +39,16 @@ src/app/
     RouterLink.tsx        MUI Link / Chip through next/link (client)
     StatusMark.tsx        status dot: decided / working / proposal / idea
     BossCard.tsx          a guardian, boss or arena boss
+    CreaturePicture.tsx   public/creatures/<id>.png or an empty slot
+    LiquidLink.tsx        a liquid name linked to its page
+    SourceList.tsx        where a liquid comes from on a level
     BuildMatrix.tsx       action-points switch, header line, matrix table, fight-summary dialog (client)
 src/i18n/                 locales, ru.json UI messages, getIntl(), tr() for `{ ru, en? }` data text
 src/data/
   wiki.ts                 zod schema of data/wiki.json + id reference checks, getMap/getLevel/… lookups
   schema.ts               zod schema of design-guard.json (schemaVersion 1, an array of reports)
   report.ts               loadReport(): download at build time, fall back to the sample
+public/creatures/         creature pictures cut from the game's sprite sheets (docs/wiki-data.md)
 data/wiki.json            wiki content from the lore session (copied as is, not formatted by Prettier)
 data/sample-design-guard.json   snapshot of a real report (a2f83f6, 2026-11-25), used when the download fails
 docs/                     knowledge notes, index in docs/README.md
