@@ -8,7 +8,7 @@ The file is spoiler-free at the source: the story twist and the endings stay pri
 
 ## Validation
 
-`src/data/wiki.ts` parses the file with zod when the module loads, so a broken export fails the build with the zod message. Besides the shape it checks that ids are unique per list and that every reference resolves: map → levels, guardian, boss, stop; level → map, enemies, bosses, liquids and their sources; boss → map and levels; creature → element, loot, weak and immune liquids; stop → map and liquids. `getMap`, `getLevel`, `getBoss`, `getCreature`, `getLiquid`, `getStop` look items up by id and throw on an unknown one.
+`src/data/wiki.ts` parses the file with zod (strict objects: an unknown field fails too) when the module loads, so a broken export fails the build with the zod message. Besides the shape it checks that ids are unique per list and that every reference resolves: map → levels, guardian, boss, stop; level → map, enemies, bosses, liquids and their sources; boss → map and levels; creature → element, loot, weak and immune liquids; stop → map and liquids. Both sides of a link must agree: a map's `levels` are exactly the levels naming it, `map.stop` is the stop whose `afterMap` is the map, a level's `guardian` and `boss` list that level in their `levels`, level numbers are unique; corpse, guardian and boss sources must name their `creature`. `getMap`, `getLevel`, `getBoss`, `getCreature`, `getLiquid`, `getStop` look items up by id and throw on an unknown one.
 
 Text fields are `{ ru, en? }`; names are `{ ru, en }`. `tr(text, lang)` picks the language and falls back to Russian. `status` is `decided | working | proposal | idea`; pages show it as a coloured dot (`StatusMark`), spelled out in the tooltip.
 
@@ -20,7 +20,7 @@ Server components cannot pass `component={NextLink}` to MUI; `RouterLink` and `R
 
 ## Pages
 
-- `/ru` — the route: five maps, each with its four levels (boss level red, the map's first level outlined) and the stop after it.
+- `/ru` — the route: five maps, each with its four levels (boss level red, the unique level outlined) and the stop after it.
 - `/ru/maps/[map]` — sky, what blocks the river, the levels, the location guardian, the map boss and the arena bosses, the creatures whose `levels` fall on the map, the stop after it.
 - `/ru/levels/[level]` — kind and surface exit; enemies; each liquid with its sources (river, a creature's corpse, a guardian or boss, an in-level source, with the note); the level's `variants`: every guardian, boss or arena that can stand there, each pool alternative separately (the full `bosses` record when there is one, otherwise the variant's own `about` and `pass`); secret-room variants; in-level sources and filters; what resets on exit; rooms, enemies per room, capacity per difficulty, hunters on Hard. Empty sections are left out.
 - `/ru/sim` — the simulator's build matrix (`design-guard-report.md`).

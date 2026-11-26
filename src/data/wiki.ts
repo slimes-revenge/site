@@ -4,12 +4,13 @@ import raw from "../../data/wiki.json";
 
 // The game wiki data, exported by the lore session (spoiler-free) and copied into `data/wiki.json`.
 // Text is `{ ru, en? }`; ids are stable slugs and become URLs.
+// Objects are strict: a field the export adds or renames fails the build instead of being dropped unnoticed.
 
-const text = z.object({ ru: z.string(), en: z.string().optional() });
-const name = z.object({ ru: z.string(), en: z.string() });
+const text = z.strictObject({ ru: z.string(), en: z.string().optional() });
+const name = z.strictObject({ ru: z.string(), en: z.string() });
 const status = z.enum(["decided", "working", "proposal", "idea"]);
 
-const mapSchema = z.object({
+const mapSchema = z.strictObject({
   id: z.string(),
   n: z.number().int(),
   name,
@@ -22,7 +23,7 @@ const mapSchema = z.object({
   stop: z.string().nullable(),
 });
 
-const levelSchema = z.object({
+const levelSchema = z.strictObject({
   id: z.string(),
   n: z.number().int(),
   map: z.string(),
@@ -31,10 +32,10 @@ const levelSchema = z.object({
   status,
   enemies: z.array(z.string()),
   liquids: z.array(
-    z.object({
+    z.strictObject({
       liquid: z.string(),
       from: z.array(
-        z.object({
+        z.strictObject({
           kind: z.enum(["river", "corpse", "source", "guardian", "boss", "secret"]),
           // A creature or boss id for corpse, guardian and boss sources.
           creature: z.string().optional(),
@@ -45,22 +46,29 @@ const levelSchema = z.object({
   ),
   guardian: z.string().nullable(),
   boss: z.string().nullable(),
-  secrets: z.array(z.object({ name: text, note: text.nullable(), status })),
+  secrets: z.array(z.strictObject({ name: text, note: text.nullable(), status })),
   inside: z.array(text),
-  resetsOnExit: z.array(z.object({ liquid: z.string(), becomes: z.string().nullable(), where: text })),
+  resetsOnExit: z.array(z.strictObject({ liquid: z.string(), becomes: z.string().nullable(), where: text })),
   exit: z.enum(["day", "night", "none"]),
-  capacity: z.object({ easy: z.number().int(), normal: z.number().int(), hard: z.number().int() }),
+  capacity: z.strictObject({ easy: z.number().int(), normal: z.number().int(), hard: z.number().int() }),
   rooms: z.number().int(),
   perRoom: text,
-  hunters: z.object({ note: text, status }).nullable(),
+  hunters: z.strictObject({ note: text, status }).nullable(),
   // Every guardian, boss or arena that can stand on this level; a pool lists each alternative.
   // An id may be missing from `bosses` (a pool alternative described only here).
   variants: z.array(
-    z.object({ id: z.string(), name, kind: z.enum(["guardian", "boss", "arena"]), about: text, pass: text, status }),
+    z.strictObject({
+      id: z.string(),
+      name,
+      kind: z.enum(["guardian", "boss", "arena"]),
+      about: text,
+      pass: text,
+      status,
+    }),
   ),
 });
 
-const bossSchema = z.object({
+const bossSchema = z.strictObject({
   id: z.string(),
   kind: z.enum(["guardian", "boss", "arena"]),
   name,
@@ -76,7 +84,7 @@ const bossSchema = z.object({
   status,
 });
 
-const creatureSchema = z.object({
+const creatureSchema = z.strictObject({
   id: z.string(),
   name,
   type: text,
@@ -84,13 +92,15 @@ const creatureSchema = z.object({
   does: text,
   levels: z.array(z.number().int()),
   // `levels`: where this corpse gives this liquid (loot can differ by map).
-  loot: z.array(z.object({ liquid: z.string(), levels: z.array(z.number().int()).optional(), note: text.optional() })),
+  loot: z.array(
+    z.strictObject({ liquid: z.string(), levels: z.array(z.number().int()).optional(), note: text.optional() }),
+  ),
   weakTo: z.array(z.string()),
   immuneTo: z.array(z.string()),
   status,
 });
 
-const liquidSchema = z.object({
+const liquidSchema = z.strictObject({
   id: z.string(),
   name,
   group: z.enum(["circle-1", "circle-2", "status", "single"]),
@@ -102,7 +112,7 @@ const liquidSchema = z.object({
   status,
 });
 
-const stopSchema = z.object({
+const stopSchema = z.strictObject({
   id: z.string(),
   name,
   afterMap: z.string(),
@@ -164,9 +174,12 @@ const wikiSchema = z
       });
       level.liquids.forEach(({ liquid, from }) => {
         check("liquid", liquid, level.id);
-        from.forEach(source =>
-          check(source.kind === "corpse" ? "creature" : "boss", source.creature, `${level.id} ${liquid}`),
-        );
+        from.forEach(source => {
+          const where = `${level.id} ${liquid}`;
+          if (["corpse", "guardian", "boss"].includes(source.kind) && !source.creature)
+            ctx.addIssue({ code: "custom", message: `${where}: a ${source.kind} source needs "creature"` });
+          check(source.kind === "corpse" ? "creature" : "boss", source.creature, where);
+        });
       });
     });
     wiki.bosses.forEach(boss => {
@@ -181,6 +194,27 @@ const wikiSchema = z
     wiki.stops.forEach(stop => {
       check("map", stop.afterMap, stop.id);
       [...stop.offers, stop.fixed].forEach(id => check("liquid", id, stop.id));
+    });
+    // Both sides of a link agree.
+    if (new Set(wiki.levels.map(level => level.n)).size !== wiki.levels.length)
+      ctx.addIssue({ code: "custom", message: "duplicate level number" });
+    wiki.maps.forEach(map => {
+      const listed = wiki.levels.filter(level => level.map === map.id).map(level => level.id);
+      if (listed.join() !== map.levels.join())
+        ctx.addIssue({
+          code: "custom",
+          message: `${map.id}: levels [${map.levels.join()}] ≠ levels naming it [${listed.join()}]`,
+        });
+      const stop = wiki.stops.find(item => item.afterMap === map.id)?.id ?? null;
+      if (stop !== map.stop)
+        ctx.addIssue({ code: "custom", message: `${map.id}: stop "${map.stop}" ≠ stop after it "${stop}"` });
+    });
+    wiki.levels.forEach(level => {
+      [level.guardian, level.boss].forEach(id => {
+        const boss = id ? wiki.bosses.find(item => item.id === id) : undefined;
+        if (boss && !boss.levels.includes(level.id))
+          ctx.addIssue({ code: "custom", message: `${level.id}: ${boss.id} does not list it in its levels` });
+      });
     });
   });
 

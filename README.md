@@ -1,6 +1,6 @@
 # site
 
-The Slime's Revenge game wiki. The [simulator](https://github.com/slimes-revenge/simulator) plays fights by the design rules; this site draws its report, so a change to the design shows at a glance which slime builds now win or lose against which enemies. Later the same data becomes a player wiki.
+The Slime's Revenge game wiki: the slime's route through maps and levels, who lives where, what you can absorb, the bosses — only what a player meets in play. It also shows the report of the design [simulator](https://github.com/slimes-revenge/simulator) at `/ru/sim`: which slime builds win or lose against which enemies.
 
 Stack: Next.js (App Router) + React + Material UI, TypeScript. It runs locally only for now; hosting (Vercel) comes later, closer to the game's first version.
 
