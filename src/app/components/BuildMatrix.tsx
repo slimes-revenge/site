@@ -39,9 +39,13 @@ const unitsText = (build: Build) =>
 const stickyColumn = { position: "sticky", left: 0, zIndex: 1, bgcolor: "background.paper" } as const;
 
 export function BuildMatrix({ reports }: { reports: Report[] }) {
-  const [index, setIndex] = useState(0);
+  // One report per actionsPerRound × policy; two switches pick it. Every pair exists (checked by the schema).
+  const aps = [...new Set(reports.map(r => r.actionsPerRound))];
+  const policies = [...new Set(reports.map(r => r.policy))];
+  const [ap, setAp] = useState(aps[0]);
+  const [policy, setPolicy] = useState(policies[0]);
   const [selected, setSelected] = useState<{ build: Build; cell: Cell } | null>(null);
-  const report = reports[index];
+  const report = reports.find(r => r.actionsPerRound === ap && r.policy === policy) ?? reports[0];
   const generated = new Date(report.generatedUtc).toISOString().replace("T", " ").slice(0, 16);
 
   // Column groups: enemy kinds in the order of the report's encounters (roster order, then count).
@@ -54,21 +58,41 @@ export function BuildMatrix({ reports }: { reports: Report[] }) {
   return (
     <>
       <Box sx={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: 1, mb: 1 }}>
-        {reports.length > 1 ? (
+        {aps.length > 1 ? (
           <ToggleButtonGroup
             size="small"
             exclusive
-            value={index}
+            value={ap}
             onChange={(_event, value: number | null) => {
               if (value !== null) {
-                setIndex(value);
+                setAp(value);
               }
             }}
             aria-label="Action points per round"
           >
-            {reports.map((r, i) => (
-              <ToggleButton key={r.actionsPerRound} value={i}>
-                {r.actionsPerRound} AP
+            {aps.map(value => (
+              <ToggleButton key={value} value={value}>
+                {value} AP
+              </ToggleButton>
+            ))}
+          </ToggleButtonGroup>
+        ) : null}
+        {policies.length > 1 ? (
+          <ToggleButtonGroup
+            size="small"
+            exclusive
+            value={policy}
+            onChange={(_event, value: string | null) => {
+              if (value !== null) {
+                setPolicy(value);
+              }
+            }}
+            aria-label="Policy"
+            sx={{ flexWrap: "wrap" }}
+          >
+            {policies.map(value => (
+              <ToggleButton key={value} value={value}>
+                {value}
               </ToggleButton>
             ))}
           </ToggleButtonGroup>

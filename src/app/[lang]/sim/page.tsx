@@ -17,7 +17,7 @@ export default async function Page() {
       {sampleReason ? (
         <Alert severity="warning" sx={{ my: 1 }}>
           <b>Sample data.</b> The simulator report could not be loaded at build time ({sampleReason}), so this page
-          shows a saved snapshot (simulator commit a2f83f6, 2026-11-25), <code>data/sample-design-guard.json</code>.
+          shows a saved snapshot (simulator commit 8a37dec, 2026-11-26), <code>data/sample-design-guard.json</code>.
           Source: <Link href={REPORT_URL}>simulator release asset</Link>
         </Alert>
       ) : null}
